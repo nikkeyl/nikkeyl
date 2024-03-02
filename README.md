@@ -1,4 +1,4 @@
-# **Hello, I'm Nikkeyl**
+# Hello, I'm Nikkeyl
 
 ## Tools
 
@@ -23,7 +23,5 @@
 
 ## Stats
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nikkeyl&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nikkeyl&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nikkeyl&theme=2077)
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=nikkeyl&theme=2077)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nikkeyl&theme=react)
+![Most Commit](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nikkeyl&theme=react)
