@@ -1,11 +1,8 @@
 # Hello, I'm Nikkeyl
 
-I am a young **Front-End Developer** with two years of experience,
-not inferior to more experienced colleagues in terms of **code speed and quality**.
-
-My focus is **clean and scalable code** that can effectively **solve business problems**.
-I have a good understanding of **business requirements** and strive for simple
-and robust **architectural solutions**.
+I'm a Front-End Developer who focuses on **clean and scalable code** that
+can **solve business problems** efficiently. I have a good understanding of
+**business requirements** and strive for simple and reliable **architectural solutions**.
 
 ## Tools
 
