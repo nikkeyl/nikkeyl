@@ -1,3 +1,5 @@
+[日本語](README_JP.md) | [Русский](README_RU.md)
+
 # Hello, I'm Nikkeyl
 
 I'm a Front-End Developer who focuses on **clean and scalable code** that
