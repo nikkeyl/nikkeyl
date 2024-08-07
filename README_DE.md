@@ -76,4 +76,6 @@ aber jedes Mal gelingt es ihm, ein weiteres Verbrechen zu lösen.*
 
 ## Statistiken
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=nikkeyl&theme=dark&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat)](https://git.io/streak-stats)
+<p align="center">
+  <img width="800" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=dark&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
+</p>
