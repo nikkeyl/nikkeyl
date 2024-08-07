@@ -1,10 +1,15 @@
 [日本語](README_JP.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
 
-# Hello, I'm Nikkeyl
+*This city was rotten due to dirty code and lack of tests,
+it needed a Front-End developer who cleanly and scalably got rid of business problems,
+he understands business requirements well,
+so he strives for simple and robust architectural solutions.*
 
-I'm a Front-End Developer who focuses on **clean and scalable code** that
-can **solve business problems** efficiently. I have a good understanding of
-**business requirements** and strive for simple and reliable **architectural solutions**.
+*But he is not at all secretive, if he needs the help of another detective,
+he brings his partner into the loop without the slightest hesitation.*
+
+*Each new case makes him plunge into the crazy abyss of spaghetti code,
+but each time he manages to solve another crime.*
 
 ## Languages & Tools
 
