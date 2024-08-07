@@ -1,11 +1,17 @@
 [English](README.md) | [日本語](README_JP.md) | [Русский](README_RU.md)
 
-# Hallo, ich bin Nikkeyl
+*Diese Stadt war mit schmutzigem Code und fehlenden Tests verseucht,
+sie brauchte einen Front-End-Entwickler,
+der die geschäftlichen Probleme sauber und skalierbar beseitigt.
+Er versteht die geschäftlichen Anforderungen sehr gut und strebt daher nach einfachen
+und zuverlässigen architektonischen Lösungen.*
 
-Ich bin ein Front-End-Entwickler, der sich auf **sauberen und skalierbaren Code**
-konzentriert, der die **Geschäftsprobleme** effizient lösen kann.
-Ich habe ein gutes Verständnis für **Geschäftsanforderungen**
-und strebe nach einfachen und zuverlässigen **Architekturlösungen**.
+*Aber er ist keineswegs verschlossen,
+wenn er die Hilfe eines anderen Detektivs benötigt,
+holt er seinen Partner ohne das geringste Zögern mit ins Boot.*
+
+*Jeder neue Fall zwingt ihn, sich in den Wahnsinn des Spaghetti-Codes zu stürzen,
+aber jedes Mal gelingt es ihm, ein weiteres Verbrechen zu lösen.*
 
 ## Sprachen & Tools
 
