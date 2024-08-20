@@ -70,7 +70,6 @@ aber jedes Mal gelingt es ihm, ein weiteres Verbrechen zu lösen.*
 
 ### Andere
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" width="40" height="40" title="Firebase" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="40" height="40" title="GitHub Actions" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg" width="40" height="40" title="Vercel" />&nbsp;
 
