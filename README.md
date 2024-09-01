@@ -1,79 +1,97 @@
 [日本語](README_JP.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
 
-*This city was rotten due to dirty code and lack of tests,
-it needed a Front-End developer who cleanly and scalably got rid of business problems,
-he understands business requirements well,
-so he strives for simple and robust architectural solutions.*
+🖖 I'm a Front-End developer who loves css,
+automates everything and is business savvy.
 
-*But he is not at all secretive, if he needs the help of another detective,
-he brings his partner into the loop without the slightest hesitation.*
+## Current Work
 
-*Each new case makes him plunge into the crazy abyss of spaghetti code,
-but each time he manages to solve another crime.*
+🏢 [**Batumi Estate**](https://batumi.estate) - Marketplace of new buildings in Batumi.
 
-## Languages & Tools
+## Organizations
 
-### Languages
+<a href="https://github.com/archoleat">
+  <img src="./label.jpg" alt="Archoleat Science" />
+</a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" width="40" height="40" title="HTML5" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" width="40" height="40" title="CSS3" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" width="40" height="40" title="SCSS" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40" title="JavaScript" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" height="40" title="TypeScript" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" width="40" height="40" title="Markdown" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yaml/yaml-original.svg" width="40" height="40" title="YAML" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" width="40" height="40" title="JSON" />&nbsp;
+## Tools
 
-### Frameworks & Libs
+### Programming Languages
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="40" height="40" title="NextJS" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40" title="React" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" width="40" height="40" title="GraphQL" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" width="40" height="40" title="Redux" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" title="Tailwind" />&nbsp;
+![TypeScript](https://img.shields.io/badge/typescript-1e2830?style=for-the-badge&logo=typescript)
+
+### Markup & Stylization Languages
+
+![HTML5](https://img.shields.io/badge/html5-1e2830?style=for-the-badge&logo=html5)
+![Pug](https://img.shields.io/badge/pug-1e2830?style=for-the-badge&logo=pug)
+![SCSS](https://img.shields.io/badge/sass-1e2830?style=for-the-badge&logo=sass)
+![SVG](https://img.shields.io/badge/svg-1e2830?style=for-the-badge&logo=svg)
+![Markdown](https://img.shields.io/badge/markdown-1e2830?style=for-the-badge&logo=markdown)
+![YAML](https://img.shields.io/badge/yaml-1e2830?style=for-the-badge&logo=yaml)
+![JSON](https://img.shields.io/badge/json-1e2830?style=for-the-badge&logo=json)
 
 ### Environments, Bundlers & Package Managers
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg" width="40" height="40" title="Bun" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="40" height="40" title="NodeJS" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original-wordmark.svg" width="40" height="40" title="PNPM" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="40" height="40" title="NPM" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="40" height="40" title="Vite" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rollup/rollup-original.svg" width="40" height="40" title="Rollup" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" width="40" height="40" title="Webpack" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" width="40" height="40" title="Gulp" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg" width="40" height="40" title="Babel" />&nbsp;
+![Bun](https://img.shields.io/badge/bun-1e2830?style=for-the-badge&logo=bun)
+![Node.JS](https://img.shields.io/badge/node.js-1e2830?style=for-the-badge&logo=node.js)
+![NVM](https://img.shields.io/badge/nvm-1e2830?style=for-the-badge&logo=nvm)
+![PNPM](https://img.shields.io/badge/pnpm-1e2830?style=for-the-badge&logo=pnpm)
+![NPM](https://img.shields.io/badge/npm-1e2830?style=for-the-badge&logo=npm)
+![Vite](https://img.shields.io/badge/vite-1e2830?style=for-the-badge&logo=vite)
+![Rollup](https://img.shields.io/badge/rollup.js-1e2830?style=for-the-badge&logo=rollup.js)
+![Webpack](https://img.shields.io/badge/webpack-1e2830?style=for-the-badge&logo=webpack)
+![Gulp](https://img.shields.io/badge/gulp-1e2830?style=for-the-badge&logo=gulp)
 
-### Code Quality & Test Frameworks
+### Frameworks & Libs
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" width="40" height="40" title="ESLint" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg" width="40" height="40" title="Vitest" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mocha/mocha-plain.svg" width="40" height="40" title="Mocha" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg" width="40" height="40" title="Cypress" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" width="40" height="40" title="Playwright" />&nbsp;
+![Next.JS](https://img.shields.io/badge/next.js-1e2830?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/react-1e2830?style=for-the-badge&logo=react)
+![GraphQL](https://img.shields.io/badge/graphql-1e2830?style=for-the-badge&logo=graphql)
+![Redux](https://img.shields.io/badge/redux-1e2830?style=for-the-badge&logo=redux)
+![Tailwind](https://img.shields.io/badge/tailwind-1e2830?style=for-the-badge&logo=tailwindcss)
+
+### Testing
+
+![Lighthouse](https://img.shields.io/badge/lighthouse-1e2830?style=for-the-badge&logo=lighthouse)
+![Mocha](https://img.shields.io/badge/mocha-1e2830?style=for-the-badge&logo=mocha)
+![Vitest](https://img.shields.io/badge/vitest-1e2830?style=for-the-badge&logo=vitest)
+![Cypress](https://img.shields.io/badge/cypress-1e2830?style=for-the-badge&logo=cypress)
+
+### Code Quality
+
+![Editor Config](https://img.shields.io/badge/editor_config-1e2830?style=for-the-badge&logo=editorconfig)
+![Prettier](https://img.shields.io/badge/prettier-1e2830?style=for-the-badge&logo=prettier)
+![ESLint](https://img.shields.io/badge/eslint-1e2830?style=for-the-badge&logo=eslint)
+![StyleLint](https://img.shields.io/badge/stylelint-1e2830?style=for-the-badge&logo=stylelint)
+![Remark](https://img.shields.io/badge/remark-1e2830?style=for-the-badge&logo=remark)
+![Pre Commit](https://img.shields.io/badge/pre_commit-1e2830?style=for-the-badge&logo=precommit)
+![Commitlint](https://img.shields.io/badge/commitlint-1e2830?style=for-the-badge&logo=commitlint)
 
 ### Programs
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40" title="Visual Studio Code" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="40" height="40" title="Git" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="40" height="40" title="Figma" />&nbsp;
+![FIgma](https://img.shields.io/badge/figma-1e2830?style=for-the-badge&logo=figma)
 
 ### Git
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="40" height="40" title="GitHub" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" width="40" height="40" title="GitLab" />&nbsp;
+![Git](https://img.shields.io/badge/git-1e2830?style=for-the-badge&logo=git)
+![GitHub](https://img.shields.io/badge/github-1e2830?style=for-the-badge&logo=github)
+![GitLab](https://img.shields.io/badge/gitlab-1e2830?style=for-the-badge&logo=gitlab)
 
-### OS
+### CI/CD & Deployment
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" width="40" height="40" title="Vercel" />&nbsp;
+![GitHub Actions](https://img.shields.io/badge/github_actions-1e2830?style=for-the-badge&logo=githubactions)
+![GitHub Pages](https://img.shields.io/badge/github_pages-1e2830?style=for-the-badge&logo=githubpages)
+![Vercel](https://img.shields.io/badge/vercel-1e2830?style=for-the-badge&logo=vercel)
 
 ### Other
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="40" height="40" title="GitHub Actions" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg" width="40" height="40" title="Vercel" />&nbsp;
+![Semantic Release](https://img.shields.io/badge/semantic_release-1e2830?style=for-the-badge&logo=semanticrelease)
+![SemVer](https://img.shields.io/badge/semver-1e2830?style=for-the-badge&logo=semver)
+![BEM](https://img.shields.io/badge/bem-1e2830?style=for-the-badge&logo=bem)
+![SVGO](https://img.shields.io/badge/svgo-1e2830?style=for-the-badge&logo=svgo)
+![Babel](https://img.shields.io/badge/babel-1e2830?style=for-the-badge&logo=babel)
 
 ## Stats
 
 <p align="center">
-  <img width="800" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=dark&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
+  <img width="1200" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=github-dark-dimmed&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
 </p>
