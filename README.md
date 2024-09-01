@@ -1,15 +1,11 @@
 [日本語](README_JP.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
 
-*This city was rotten due to dirty code and lack of tests,
-it needed a Front-End developer who cleanly and scalably got rid of business problems,
-he understands business requirements well,
-so he strives for simple and robust architectural solutions.*
+🖖 I'm a Front-End developer who loves css,
+automates everything and is business savvy.
 
-*But he is not at all secretive, if he needs the help of another detective,
-he brings his partner into the loop without the slightest hesitation.*
+## Current Work
 
-*Each new case makes him plunge into the crazy abyss of spaghetti code,
-but each time he manages to solve another crime.*
+🏢 [**Batumi Estate**](https://batumi.estate) - Marketplace of new buildings in Batumi.
 
 ## Organizations
 
@@ -21,14 +17,12 @@ but each time he manages to solve another crime.*
 
 ### Programming Languages
 
-![JavaScript](https://img.shields.io/badge/javascript-1e2830?style=for-the-badge&logo=javascript)
 ![TypeScript](https://img.shields.io/badge/typescript-1e2830?style=for-the-badge&logo=typescript)
 
 ### Markup & Stylization Languages
 
 ![HTML5](https://img.shields.io/badge/html5-1e2830?style=for-the-badge&logo=html5)
 ![Pug](https://img.shields.io/badge/pug-1e2830?style=for-the-badge&logo=pug)
-![CSS3](https://img.shields.io/badge/css3-1e2830?style=for-the-badge&logo=css3)
 ![SCSS](https://img.shields.io/badge/sass-1e2830?style=for-the-badge&logo=sass)
 ![SVG](https://img.shields.io/badge/svg-1e2830?style=for-the-badge&logo=svg)
 ![Markdown](https://img.shields.io/badge/markdown-1e2830?style=for-the-badge&logo=markdown)
@@ -99,5 +93,5 @@ but each time he manages to solve another crime.*
 ## Stats
 
 <p align="center">
-  <img width="1200" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=dark&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
+  <img width="1200" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=github-dark-dimmed&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
 </p>
