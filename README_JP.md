@@ -1,10 +1,9 @@
 [English](README.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
 
 [![Telegram](https://img.shields.io/badge/telegram-1e2830?style=for-the-badge&logo=telegram)](https://t.me/nikkeyl)
-[![Discord](https://img.shields.io/badge/discord-1e2830?style=for-the-badge&logo=discord)](https://discord.com/users/1185631682053816423)
 [![Portfolio](https://img.shields.io/badge/portfolio-1e2830?style=for-the-badge&logo=vercel)](https://nikkeyl.vercel.app)
 
-🖖 私はcssが大好きなフロントエンド開発者です、
+🖖 私は css が大好きなフロントエンド開発者です、
 ビジネスにも精通しています。.
 
 ## 現在の仕事
