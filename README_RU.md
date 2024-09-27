@@ -38,6 +38,7 @@
 ![Node.JS](https://img.shields.io/badge/node.js-1e2830?style=for-the-badge&logo=node.js)
 ![NVM](https://img.shields.io/badge/nvm-1e2830?style=for-the-badge&logo=nvm)
 ![PNPM](https://img.shields.io/badge/pnpm-1e2830?style=for-the-badge&logo=pnpm)
+![Yarn](https://img.shields.io/badge/yarn-1e2830?style=for-the-badge&logo=yarn)
 ![NPM](https://img.shields.io/badge/npm-1e2830?style=for-the-badge&logo=npm)
 ![Vite](https://img.shields.io/badge/vite-1e2830?style=for-the-badge&logo=vite)
 ![Rollup](https://img.shields.io/badge/rollup.js-1e2830?style=for-the-badge&logo=rollup.js)
