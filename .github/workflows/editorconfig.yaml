@@ -10,7 +10,7 @@ on:
 
 jobs:
   editorconfig:
-    name: Lint
+    name: Editorconfig
 
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -19,19 +19,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set Up PNPM
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
-
-      - name: Set Up NodeJS
-        uses: actions/setup-node@v4
-        with:
-          cache: pnpm
-          node-version: lts/*
+      - name: Set Up Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Install Dependencies
-        run: pnpm install
+        run: bun i
 
       - name: Lint
-        run: pnpm run editorconfig:lint
+        run: bun editorconfig-checker
