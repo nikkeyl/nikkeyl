@@ -8,13 +8,12 @@ automates everything and is business savvy.
 
 ## Current Work
 
-🏢 [**Batumi Estate**](https://batumi.estate) - Marketplace of new buildings in Batumi.
+🏢 [**Batumi Estate**](https://batumi.estate) -
+Marketplace of new buildings in Batumi.
 
 ## Organizations
 
-<a href="https://github.com/archoleat">
-  <img src="./label.jpg" alt="Archoleat Science" />
-</a>
+[![Archoleat Science](public/github/label.jpg)](https://github.com/archoleat)
 
 ## Tools
 
@@ -96,6 +95,4 @@ automates everything and is business savvy.
 
 ## Stats
 
-<p align="center">
-  <img width="1200" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=github-dark-dimmed&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
-</p>
+![Stats](https://streak-stats.demolab.com?user=nikkeyl&theme=github-dark-dimmed&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800)
