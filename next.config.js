@@ -11,4 +11,17 @@ export default defineConfig({
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*?)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 's-maxage=1, stale-while-revalidate=59',
+          },
+        ],
+      },
+    ];
+  },
 });
