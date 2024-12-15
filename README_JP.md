@@ -10,12 +10,6 @@
 
 🏢 [**Batumi Estate**](https://batumi.estate) - バトゥーミの新しい建物の市場.
 
-## 組織
-
-<a href="https://github.com/archoleat">
-  <img src="./label.jpg" alt="Archoleat Science" />
-</a>
-
 ## ツール
 
 ### プログラミング・ランゲージ

@@ -1,1 +1,2 @@
-Sitemap: https://nikkeyl.vercel.app/sitemap.xml
+User-agent: *
+Allow: /

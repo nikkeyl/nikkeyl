@@ -10,12 +10,6 @@ alles automatisiert und geschäftlich versiert ist.
 
 🏢 [**Batumi Estate**](https://batumi.estate) - Marktplatz der neuen Gebäude in Batumi.
 
-## Organisationen
-
-<a href="https://github.com/archoleat">
-  <img src="./label.jpg" alt="Archoleat Science" />
-</a>
-
 ## Werkzeuge
 
 ### Programmiersprachen

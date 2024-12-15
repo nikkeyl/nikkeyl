@@ -24,8 +24,11 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      // Styles
-      "@styles/*": ["./src/app/styles/*"]
+      "@/config/*": ["./src/app/config/*"],
+      "@/socials/*": ["./public/socials/*"],
+      "@/styles/*": ["./src/app/styles/*"],
+      "@/ui/*": ["./src/shared/ui/*"],
+      "@/widgets/*": ["./src/widgets/*"]
     },
     "resolveJsonModule": true,
     // Projects

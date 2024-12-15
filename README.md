@@ -11,10 +11,6 @@ automates everything and is business savvy.
 🏢 [**Batumi Estate**](https://batumi.estate) -
 Marketplace of new buildings in Batumi.
 
-## Organizations
-
-[![Archoleat Science](public/github/label.jpg)](https://github.com/archoleat)
-
 ## Tools
 
 ### Programming Languages

@@ -10,12 +10,6 @@
 
 🏢 [**Batumi Estate**](https://batumi.estate) - Маркетплейс новостроек в Батуми.
 
-## Организации
-
-<a href="https://github.com/archoleat">
-  <img src="./label.jpg" alt="Archoleat Science" />
-</a>
-
 ## Инструменты
 
 ### Языки программирования
