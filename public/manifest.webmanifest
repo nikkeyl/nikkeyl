@@ -1,11 +1,11 @@
 {
-  "background_color": "",
-  "description": "",
+  "background_color": "#050A0E",
+  "description": "Website development, and why not?",
   "display": "standalone",
-  "name": "",
-  "short_name": "",
+  "name": "nikkeyl",
+  "short_name": "nikkeyl",
   "start_url": "/",
-  "theme_color": "",
+  "theme_color": "#050A0E",
   "icons": [
     {
       "sizes": "192x192",
