@@ -25,6 +25,7 @@
     "moduleResolution": "Bundler",
     "paths": {
       "@/config/*": ["./src/app/config/*"],
+      "@/icons/*": ["./src/shared/icons/*"],
       "@/socials/*": ["./public/socials/*"],
       "@/styles/*": ["./src/app/styles/*"],
       "@/ui/*": ["./src/shared/ui/*"],

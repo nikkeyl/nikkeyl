@@ -1,0 +1,40 @@
+@use "@/styles/abstracts" as *;
+
+*,
+*::before,
+*::after {
+  outline: none;
+
+  margin: 0;
+
+  border: 0;
+
+  box-sizing: border-box;
+
+  padding: 0;
+
+  user-select: none;
+}
+
+body {
+  min-block-size: 100svb;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background-color: var(--color-primary, $color-primary);
+}
+
+img {
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+button {
+  appearance: none;
+  display: block;
+
+  &:disabled,
+  [aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
