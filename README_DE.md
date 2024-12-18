@@ -1,95 +1,71 @@
 [English](README.md) | [日本語](README_JP.md) | [Русский](README_RU.md)
 
-[![Telegram](https://img.shields.io/badge/telegram-1e2830?style=for-the-badge&logo=telegram)](https://t.me/nikkeyl)
-[![Portfolio](https://img.shields.io/badge/portfolio-1e2830?style=for-the-badge&logo=vercel)](https://nikkeyl.vercel.app)
-
-🖖 Ich bin ein Front-End-Entwickler, der css liebt,
-alles automatisiert und geschäftlich versiert ist.
-
-## Aktuelle Arbeit
-
-🏢 [**Batumi Estate**](https://batumi.estate) - Marktplatz der neuen Gebäude in Batumi.
-
-## Werkzeuge
-
 ### Programmiersprachen
 
-![TypeScript](https://img.shields.io/badge/typescript-1e2830?style=for-the-badge&logo=typescript)
+<img src="public/images/tools/javascript.svg" height="50" width="50" alt="JavaScript" title="JavaScript" />
+<img src="public/images/tools/typescript.svg" height="50" width="50" alt="TypeScript" title="TypeScript" />
 
 ### Auszeichnungs & Stilisierungssprachen
 
-![HTML5](https://img.shields.io/badge/html5-1e2830?style=for-the-badge&logo=html5)
-![Pug](https://img.shields.io/badge/pug-1e2830?style=for-the-badge&logo=pug)
-![SCSS](https://img.shields.io/badge/sass-1e2830?style=for-the-badge&logo=sass)
-![SVG](https://img.shields.io/badge/svg-1e2830?style=for-the-badge&logo=svg)
-![Markdown](https://img.shields.io/badge/markdown-1e2830?style=for-the-badge&logo=markdown)
-![YAML](https://img.shields.io/badge/yaml-1e2830?style=for-the-badge&logo=yaml)
-![JSON](https://img.shields.io/badge/json-1e2830?style=for-the-badge&logo=json)
+<img src="public/images/tools/html.svg" height="50" width="50" alt="HTML5" title="HTML5" />
+<img src="public/images/tools/pug.svg" height="50" width="50" alt="Pug" title="Pug" />
+<img src="public/images/tools/css.svg" height="50" width="50" alt="CSS3" title="CSS3" />
+<img src="public/images/tools/scss.svg" height="50" width="50" alt="SCSS" title="SCSS" />
+<img src="public/images/tools/markdown.svg" height="50" width="50" alt="Markdown" title="Markdown" />
+<img src="public/images/tools/yaml.svg" height="50" width="50" alt="YAML" title="YAML" />
 
 ### Umgebungen, Bundler & Paketmanager
 
-![Bun](https://img.shields.io/badge/bun-1e2830?style=for-the-badge&logo=bun)
-![Node.JS](https://img.shields.io/badge/node.js-1e2830?style=for-the-badge&logo=node.js)
-![NVM](https://img.shields.io/badge/nvm-1e2830?style=for-the-badge&logo=nvm)
-![PNPM](https://img.shields.io/badge/pnpm-1e2830?style=for-the-badge&logo=pnpm)
-![Yarn](https://img.shields.io/badge/yarn-1e2830?style=for-the-badge&logo=yarn)
-![NPM](https://img.shields.io/badge/npm-1e2830?style=for-the-badge&logo=npm)
-![Vite](https://img.shields.io/badge/vite-1e2830?style=for-the-badge&logo=vite)
-![Rollup](https://img.shields.io/badge/rollup.js-1e2830?style=for-the-badge&logo=rollup.js)
-![Webpack](https://img.shields.io/badge/webpack-1e2830?style=for-the-badge&logo=webpack)
-![Gulp](https://img.shields.io/badge/gulp-1e2830?style=for-the-badge&logo=gulp)
+<img src="public/images/tools/bun.svg" height="50" width="50" alt="Bun" title="Bun" />
+<img src="public/images/tools/node.svg" height="50" width="50" alt="NodeJS" title="NodeJS" />
+<img src="public/images/tools/nvm.svg" height="50" width="50" alt="NVM" title="NVM" />
+<img src="public/images/tools/pnpm.svg" height="50" width="50" alt="PNPM" title="PNPM" />
+<img src="public/images/tools/yarn.svg" height="50" width="50" alt="Yarn" title="Yarn" />
+<img src="public/images/tools/npm.svg" height="50" width="50" alt="NPM" title="NPM" />
+<img src="public/images/tools/vite.svg" height="50" width="50" alt="Vite" title="Vite" />
+<img src="public/images/tools/rollup.svg" height="50" width="50" alt="Rollup" title="Rollup" />
+<img src="public/images/tools/webpack.svg" height="50" width="50" alt="Webpack" title="Webpack" />
+<img src="public/images/tools/gulp.svg" height="50" width="50" alt="Gulp" title="Gulp" />
 
 ### Frameworks & Bibliotheken
 
-![Next.JS](https://img.shields.io/badge/next.js-1e2830?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/react-1e2830?style=for-the-badge&logo=react)
-![GraphQL](https://img.shields.io/badge/graphql-1e2830?style=for-the-badge&logo=graphql)
-![Redux](https://img.shields.io/badge/redux-1e2830?style=for-the-badge&logo=redux)
-![Tailwind](https://img.shields.io/badge/tailwind-1e2830?style=for-the-badge&logo=tailwindcss)
+<img src="public/images/tools/next.svg" height="50" width="50" alt="Next" title="Next" />
+<img src="public/images/tools/react.svg" height="50" width="50" alt="React" title="React" />
+<img src="public/images/tools/graphql.svg" height="50" width="50" alt="GraphQL" title="GraphQL" />
 
 ### Prüfung
 
-![Lighthouse](https://img.shields.io/badge/lighthouse-1e2830?style=for-the-badge&logo=lighthouse)
-![Mocha](https://img.shields.io/badge/mocha-1e2830?style=for-the-badge&logo=mocha)
-![Vitest](https://img.shields.io/badge/vitest-1e2830?style=for-the-badge&logo=vitest)
-![Cypress](https://img.shields.io/badge/cypress-1e2830?style=for-the-badge&logo=cypress)
+<img src="public/images/tools/lighthouse.svg" height="50" width="50" alt="Lighthouse" title="Lighthouse" />
+<img src="public/images/tools/mocha.svg" height="50" width="50" alt="Mocha" title="Mocha" />
+<img src="public/images/tools/playwright.svg" height="50" width="50" alt="PlayWright" title="PlayWright" />
+<img src="public/images/tools/vitest.svg" height="50" width="50" alt="Vitest" title="Vitest" />
 
 ### Code Qualität
 
-![Editor Config](https://img.shields.io/badge/editor_config-1e2830?style=for-the-badge&logo=editorconfig)
-![Prettier](https://img.shields.io/badge/prettier-1e2830?style=for-the-badge&logo=prettier)
-![ESLint](https://img.shields.io/badge/eslint-1e2830?style=for-the-badge&logo=eslint)
-![StyleLint](https://img.shields.io/badge/stylelint-1e2830?style=for-the-badge&logo=stylelint)
-![Remark](https://img.shields.io/badge/remark-1e2830?style=for-the-badge&logo=remark)
-![Pre Commit](https://img.shields.io/badge/pre_commit-1e2830?style=for-the-badge&logo=precommit)
-![Commitlint](https://img.shields.io/badge/commitlint-1e2830?style=for-the-badge&logo=commitlint)
+<img src="public/images/tools/editorconfig.svg" height="50" width="50" alt="Editorconfig" title="Editorconfig" />
+<img src="public/images/tools/prettier.svg" height="50" width="50" alt="Prettier" title="Prettier" />
+<img src="public/images/tools/eslint.svg" height="50" width="50" alt="ESLint" title="ESLint" />
+<img src="public/images/tools/stylelint.svg" height="50" width="50" alt="StyleLint" title="StyleLint" />
+<img src="public/images/tools/remark.svg" height="50" width="50" alt="Remark" title="Remark" />
+<img src="public/images/tools/pre-commit.svg" height="50" width="50" alt="Pre-commit" title="Pre-commit" />
+<img src="public/images/tools/commitlint.svg" height="50" width="50" alt="Commitlint" title="Commitlint" />
 
 ### Programme
 
-![FIgma](https://img.shields.io/badge/figma-1e2830?style=for-the-badge&logo=figma)
+<img src="public/images/tools/figma.svg" height="50" width="50" alt="Figma" title="Figma" />
+<img src="public/images/tools/vscode.svg" height="50" width="50" alt="VSCode" title="VSCode" />
 
 ### Git
 
-![Git](https://img.shields.io/badge/git-1e2830?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/github-1e2830?style=for-the-badge&logo=github)
-![GitLab](https://img.shields.io/badge/gitlab-1e2830?style=for-the-badge&logo=gitlab)
+<img src="public/images/tools/git.svg" height="50" width="50" alt="Git" title="Git" />
+<img src="public/images/tools/github.svg" height="50" width="50" alt="GitHub" title="GitHub" />
+<img src="public/images/tools/gitlab.svg" height="50" width="50" alt="GitLab" title="GitLab" />
 
-### CI/CD & Bereitstellung
+### CI/CD
 
-![GitHub Actions](https://img.shields.io/badge/github_actions-1e2830?style=for-the-badge&logo=githubactions)
-![GitHub Pages](https://img.shields.io/badge/github_pages-1e2830?style=for-the-badge&logo=githubpages)
-![Vercel](https://img.shields.io/badge/vercel-1e2830?style=for-the-badge&logo=vercel)
+<img src="public/images/tools/github-actions.svg" height="50" width="50" alt="GitHub actions" title="GitHub Actions" />
 
 ### Andere
 
-![Semantic Release](https://img.shields.io/badge/semantic_release-1e2830?style=for-the-badge&logo=semanticrelease)
-![SemVer](https://img.shields.io/badge/semver-1e2830?style=for-the-badge&logo=semver)
-![BEM](https://img.shields.io/badge/bem-1e2830?style=for-the-badge&logo=bem)
-![SVGO](https://img.shields.io/badge/svgo-1e2830?style=for-the-badge&logo=svgo)
-![Babel](https://img.shields.io/badge/babel-1e2830?style=for-the-badge&logo=babel)
-
-## Statistiken
-
-<p align="center">
-  <img width="1200" height="220" src="https://streak-stats.demolab.com?user=nikkeyl&theme=github-dark-dimmed&hide_border=true&border_radius=10&date_format=n%2Fj%5B%2FY%5D&exclude_days=Sun%2CSat&width=800" />
-</p>
+<img src="public/images/tools/bem.svg" height="50" width="50" alt="BEM" title="BEM" />
+<img src="public/images/tools/browserslist.svg" height="50" width="50" alt="Browserslist" title="Browserslist" />
