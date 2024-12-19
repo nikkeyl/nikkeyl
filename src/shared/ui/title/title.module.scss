@@ -5,7 +5,7 @@
   font-weight: 700;
   color: var(--color-accent, #fcee09);
 
-  @media (width >= 992px) {
+  @media (width >= to-em(992)) {
     font-size: to-rem(40);
   }
 }

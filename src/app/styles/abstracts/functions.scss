@@ -10,3 +10,7 @@
 @function to-rem($px) {
   @return rounder($px, 16) + rem;
 }
+
+@function to-em($px) {
+  @return rounder($px, 16) + em;
+}

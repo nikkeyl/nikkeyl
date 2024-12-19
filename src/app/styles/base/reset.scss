@@ -16,11 +16,14 @@
   user-select: none;
 }
 
+html {
+  background-color: var(--color-primary, $color-primary);
+}
+
 body {
-  min-block-size: 100svb;
+  min-inline-size: to-rem(320);
   overflow: hidden;
   overscroll-behavior: none;
-  background-color: var(--color-primary, $color-primary);
 }
 
 img {
