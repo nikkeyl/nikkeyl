@@ -2,11 +2,9 @@
 
 .wrapper {
   min-block-size: 100svb;
-  padding-inline: to-rem(20);
 
   @media (width >= to-em(992)) {
     display: grid;
-    padding-inline: 0;
     grid-template-columns: to-rem(500) 1fr;
   }
 }

@@ -9,6 +9,6 @@
   svg {
     block-size: to-rem(20);
     inline-size: to-rem(20);
-    color: var(--color-accent, #fcee09);
+    color: var(--color-accent, $color-accent);
   }
 }

@@ -3,7 +3,7 @@
 .title {
   font-size: to-rem(35);
   font-weight: 700;
-  color: var(--color-accent, #fcee09);
+  color: var(--color-accent, $color-accent);
 
   @media (width >= to-em(992)) {
     font-size: to-rem(40);

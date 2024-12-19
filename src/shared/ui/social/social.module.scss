@@ -8,11 +8,11 @@
 
   flex-wrap: nowrap;
 
-  color: var(--color-inverse, #00f0ff);
+  color: var(--color-inverse, $color-inverse);
 
-  transition: color var(--default-transition, 0.2s ease-in-out);
+  transition: color var(--default-transition, $default-transition);
 
   @include media-hover {
-    color: var(--color-accent, #fcee09);
+    color: var(--color-accent, $color-accent);
   }
 }
