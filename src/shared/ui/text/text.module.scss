@@ -11,4 +11,8 @@
 
 .blue {
   color: var(--color-inverse, #00f0ff);
+
+  span {
+    color: var(--color-highlight, #ff003c);
+  }
 }
