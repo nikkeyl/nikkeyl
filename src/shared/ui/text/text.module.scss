@@ -1,12 +1,8 @@
 @use "@/styles/abstracts" as *;
 
 .text {
-  font-size: to-rem(16);
+  font-size: to-rem(20);
   color: var(--color-highlight, #ff003c);
-
-  @media (width >= to-em(992)) {
-    font-size: to-rem(20);
-  }
 }
 
 .bold {
