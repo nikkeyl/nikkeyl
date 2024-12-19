@@ -24,12 +24,12 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@/config/*": ["./src/app/config/*"],
-      "@/icons/*": ["./src/shared/icons/*"],
+      "@/config": ["./src/app/config/index.ts"],
+      "@/icons": ["./src/shared/icons/index.ts"],
       "@/socials/*": ["./public/socials/*"],
       "@/styles/*": ["./src/app/styles/*"],
-      "@/ui/*": ["./src/shared/ui/*"],
-      "@/widgets/*": ["./src/widgets/*"]
+      "@/ui": ["./src/shared/ui/index.ts"],
+      "@/widgets": ["./src/widgets/index.ts"]
     },
     "resolveJsonModule": true,
     // Projects
