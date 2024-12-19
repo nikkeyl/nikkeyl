@@ -1,7 +1,11 @@
 @use "@/styles/abstracts" as *;
 
 .title {
-  font-size: to-rem(40);
+  font-size: to-rem(35);
   font-weight: 700;
   color: var(--color-accent, #fcee09);
+
+  @media (width >= to-em(992)) {
+    font-size: to-rem(40);
+  }
 }

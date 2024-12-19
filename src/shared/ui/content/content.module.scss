@@ -1,0 +1,9 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  padding: to-rem(15) 0;
+
+  @media (width >= to-em(992)) {
+    padding: to-rem(35) to-rem(20);
+  }
+}
