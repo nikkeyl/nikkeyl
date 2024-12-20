@@ -1,4 +1,4 @@
-[日本語](README_JP.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
+[日本語](README_JA.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
 
 ### Programming Languages
 
