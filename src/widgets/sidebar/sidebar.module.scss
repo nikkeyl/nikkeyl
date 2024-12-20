@@ -17,10 +17,11 @@
   margin-block-end: to-rem(15);
   margin-inline: auto;
 
+  gap: to-rem(20);
+
   flex-wrap: nowrap;
 
   align-items: center;
-  justify-content: space-around;
 }
 
 .socials {
