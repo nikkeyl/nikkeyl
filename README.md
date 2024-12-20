@@ -1,21 +1,11 @@
-[日本語](README_JA.md) | [Deutsch](README_DE.md) | [Русский](README_RU.md)
-
-### Programming Languages
-
 <img src="public/images/tools/javascript.svg" height="50" width="50" alt="JavaScript" title="JavaScript" />&nbsp;
 <img src="public/images/tools/typescript.svg" height="50" width="50" alt="TypeScript" title="TypeScript" />&nbsp;
-
-### Markup & Stylization Languages
-
 <img src="public/images/tools/html.svg" height="50" width="50" alt="HTML5" title="HTML5" />&nbsp;
 <img src="public/images/tools/pug.svg" height="50" width="50" alt="Pug" title="Pug" />&nbsp;
 <img src="public/images/tools/css.svg" height="50" width="50" alt="CSS3" title="CSS3" />&nbsp;
 <img src="public/images/tools/scss.svg" height="50" width="50" alt="SCSS" title="SCSS" />&nbsp;
 <img src="public/images/tools/markdown.svg" height="50" width="50" alt="Markdown" title="Markdown" />&nbsp;
 <img src="public/images/tools/yaml.svg" height="50" width="50" alt="YAML" title="YAML" />&nbsp;
-
-### Environments, Bundlers & Package Managers
-
 <img src="public/images/tools/bun.svg" height="50" width="50" alt="Bun" title="Bun" />&nbsp;
 <img src="public/images/tools/node.svg" height="50" width="50" alt="NodeJS" title="NodeJS" />&nbsp;
 <img src="public/images/tools/nvm.svg" height="50" width="50" alt="NVM" title="NVM" />&nbsp;
@@ -26,22 +16,13 @@
 <img src="public/images/tools/rollup.svg" height="50" width="50" alt="Rollup" title="Rollup" />&nbsp;
 <img src="public/images/tools/webpack.svg" height="50" width="50" alt="Webpack" title="Webpack" />&nbsp;
 <img src="public/images/tools/gulp.svg" height="50" width="50" alt="Gulp" title="Gulp" />&nbsp;
-
-### Frameworks & Libs
-
 <img src="public/images/tools/next.svg" height="50" width="50" alt="Next" title="Next" />&nbsp;
 <img src="public/images/tools/react.svg" height="50" width="50" alt="React" title="React" />&nbsp;
 <img src="public/images/tools/graphql.svg" height="50" width="50" alt="GraphQL" title="GraphQL" />&nbsp;
-
-### Testing
-
 <img src="public/images/tools/lighthouse.svg" height="50" width="50" alt="Lighthouse" title="Lighthouse" />&nbsp;
 <img src="public/images/tools/mocha.svg" height="50" width="50" alt="Mocha" title="Mocha" />&nbsp;
 <img src="public/images/tools/playwright.svg" height="50" width="50" alt="PlayWright" title="PlayWright" />&nbsp;
 <img src="public/images/tools/vitest.svg" height="50" width="50" alt="Vitest" title="Vitest" />&nbsp;
-
-### Code Quality
-
 <img src="public/images/tools/editorconfig.svg" height="50" width="50" alt="Editorconfig" title="Editorconfig" />&nbsp;
 <img src="public/images/tools/prettier.svg" height="50" width="50" alt="Prettier" title="Prettier" />&nbsp;
 <img src="public/images/tools/eslint.svg" height="50" width="50" alt="ESLint" title="ESLint" />&nbsp;
@@ -49,23 +30,11 @@
 <img src="public/images/tools/remark.svg" height="50" width="50" alt="Remark" title="Remark" />&nbsp;
 <img src="public/images/tools/pre-commit.svg" height="50" width="50" alt="Pre-commit" title="Pre-commit" />&nbsp;
 <img src="public/images/tools/commitlint.svg" height="50" width="50" alt="Commitlint" title="Commitlint" />&nbsp;
-
-### Programs
-
 <img src="public/images/tools/figma.svg" height="50" width="50" alt="Figma" title="Figma" />&nbsp;
 <img src="public/images/tools/vscode.svg" height="50" width="50" alt="VSCode" title="VSCode" />&nbsp;
-
-### Git
-
 <img src="public/images/tools/git.svg" height="50" width="50" alt="Git" title="Git" />&nbsp;
 <img src="public/images/tools/github.svg" height="50" width="50" alt="GitHub" title="GitHub" />&nbsp;
 <img src="public/images/tools/gitlab.svg" height="50" width="50" alt="GitLab" title="GitLab" />&nbsp;
-
-### CI/CD
-
 <img src="public/images/tools/github-actions.svg" height="50" width="50" alt="GitHub actions" title="GitHub Actions" />&nbsp;
-
-### Other
-
 <img src="public/images/tools/bem.svg" height="50" width="50" alt="BEM" title="BEM" />&nbsp;
 <img src="public/images/tools/browserslist.svg" height="50" width="50" alt="Browserslist" title="Browserslist" />&nbsp;
