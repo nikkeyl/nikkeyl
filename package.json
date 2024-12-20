@@ -11,7 +11,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.1",
     "next": "^15.1.0",
-    "next-intl": "^3.26.1",
+    "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.33.5"
