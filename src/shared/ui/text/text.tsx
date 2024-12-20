@@ -10,10 +10,8 @@ const Text = (properties: Properties) => {
     <p
       className={clsx(
         styles.text,
-        {
-          [styles[color]]: color,
-          [styles[fontWeight]]: fontWeight,
-        },
+        color && styles[color],
+        fontWeight && styles[fontWeight],
         className,
       )}
     >
