@@ -1,0 +1,15 @@
+{
+  "exclude": [
+    "next-env.d.ts",
+    "README_DE.md",
+    "README_RU.md",
+    "README.md",
+    "src/shared/icons/arrow.tsx",
+    "src/shared/icons/coin.tsx",
+    "src/shared/icons/github.tsx",
+    "src/shared/icons/link.tsx",
+    "src/shared/icons/telegram.tsx",
+    "src/shared/icons/terminal.tsx",
+    "src/widgets/sidebar/sidebar.tsx"
+  ]
+}

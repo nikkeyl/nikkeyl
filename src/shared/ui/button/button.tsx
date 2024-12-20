@@ -1,5 +1,5 @@
 import styles from './button.module.scss';
 
-const Button = () => ('');
+const Button = () => '';
 
 export { Button };

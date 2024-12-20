@@ -1,5 +1,5 @@
 import styles from './tool-card.module.scss';
 
-const ToolCard = () => ('');
+const ToolCard = () => '';
 
 export { ToolCard };
