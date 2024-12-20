@@ -1,0 +1,72 @@
+@use "@/styles/abstracts" as *;
+
+*,
+*::before,
+*::after {
+  outline: none;
+
+  margin: 0;
+
+  border: 0;
+
+  box-sizing: border-box;
+
+  padding: 0;
+}
+
+*::selection {
+  color: var(--color-primary, $color-primary);
+  background-color: var(--color-accent, $color-accent);
+}
+
+html {
+  background-color: var(--color-primary, $color-primary);
+}
+
+body {
+  min-inline-size: to-rem(320);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+img {
+  border-radius: inherit;
+  object-fit: cover;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+img,
+svg {
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-inverse, $color-inverse);
+  transition: color var(--default-transition, 0.3s ease-in-out);
+
+  @include media-hover {
+    color: var(--color-accent, $color-accent);
+  }
+}
+
+button {
+  appearance: none;
+  display: block;
+
+  &:disabled,
+  [aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,37 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  position: relative;
+
+  border: to-rem(2) solid var(--color-highlight, $color-highlight);
+
+  block-size: to-rem(200);
+  inline-size: to-rem(200);
+
+  overflow: hidden;
+
+  clip-path: polygon(90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
+
+  &::before,
+  &::after {
+    @include pseudo;
+
+    z-index: 1;
+    inline-size: to-rem(30);
+    block-size: to-rem(25);
+  }
+
+  &::before {
+    inset-block-end: to-rem(-11);
+    inset-inline-start: to-rem(-15);
+    border-block-start: to-rem(2) solid var(--color-highlight, $color-highlight);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    inset-block-start: to-rem(-11);
+    inset-inline-end: to-rem(-16);
+    border-block-end: to-rem(2) solid var(--color-highlight, $color-highlight);
+    transform: rotate(45deg);
+  }
+}
