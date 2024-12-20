@@ -35,10 +35,7 @@ const socials = [
 const Sidebar = () => (
   <aside className={styles.wrapper}>
     <div className={styles.me}>
-      <ImageWrapper
-        alt='nikkeyl'
-        src='/images/about-me/nikkeyl.jpg'
-      />
+      <ImageWrapper alt='nikkeyl' src='/images/about-me/nikkeyl.jpg' />
       <ul className={styles.socials}>
         {socials.map(({ icon, href, key }) => (
           <li key={key}>
