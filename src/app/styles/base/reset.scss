@@ -12,8 +12,11 @@
   box-sizing: border-box;
 
   padding: 0;
+}
 
-  user-select: none;
+*::selection {
+  color: var(--color-primary, $color-primary);
+  background-color: var(--color-accent, $color-accent);
 }
 
 html {
@@ -29,10 +32,31 @@ body {
 img {
   border-radius: inherit;
   object-fit: cover;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+img,
+svg {
+  user-select: none;
+}
+
+ul {
+  list-style: none;
 }
 
 p {
   text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-inverse, $color-inverse);
+  transition: color var(--default-transition, 0.3s ease-in-out);
+
+  @include media-hover {
+    color: var(--color-accent, $color-accent);
+  }
 }
 
 button {
