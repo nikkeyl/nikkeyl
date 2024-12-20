@@ -1,4 +1,4 @@
-import styles from './project-card.module.scss';
+// import styles from './project-card.module.scss';
 
 const ProjectCard = () => '';
 

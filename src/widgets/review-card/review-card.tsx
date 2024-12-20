@@ -1,4 +1,4 @@
-import styles from './review-card.module.scss';
+// import styles from './review-card.module.scss';
 
 const ReviewCard = () => '';
 
