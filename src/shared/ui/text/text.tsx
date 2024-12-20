@@ -7,13 +7,7 @@ const Text = (properties: Properties) => {
   const { children, className, color } = properties;
 
   return (
-    <p
-      className={clsx(
-        styles.text,
-        color && styles[color],
-        className,
-      )}
-    >
+    <p className={clsx(styles.text, color && styles[color], className)}>
       {children}
     </p>
   );
