@@ -20,7 +20,7 @@ const ExperienceLabel = (properties: Properties) => {
   return (
     <div className={styles.wrapper}>
       {icon}
-      <Text color='blue' fontWeight='bold'>
+      <Text color='blue'>
         <span>{experienceText}</span> {text}
       </Text>
     </div>

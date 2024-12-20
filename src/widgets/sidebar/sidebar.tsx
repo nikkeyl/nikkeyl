@@ -1,5 +1,3 @@
-import clsx from 'clsx';
-
 import { CoinIcon, GitHubIcon, TelegramIcon, TerminalIcon } from '@/icons';
 import { ImageWrapper, Social, Text, Title } from '@/ui';
 
@@ -46,7 +44,7 @@ const Sidebar = () => (
         ))}
       </ul>
     </div>
-    <Title className={clsx(styles.title)} title='Никита Алманов (nikkeyl)' />
+    <Title className={styles.title} title='Никита Алманов (nikkeyl)' />
     <ul className={styles.labels}>
       {experiences.map(({ icon, startDate, text, key }) => (
         <li key={key}>
