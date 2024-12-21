@@ -6,8 +6,6 @@
   },
   "dependencies": {
     "@guna81/react-ticker": "^3.4.1",
-    "@vercel/analytics": "^1.4.1",
-    "@vercel/speed-insights": "^1.1.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.1",
     "next": "^15.1.2",
