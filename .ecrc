@@ -1,9 +1,5 @@
 {
   "exclude": [
-    "next-env.d.ts",
-    "README_DE.md",
-    "README_JA.md",
-    "README_RU.md",
     "README.md",
     "src/shared/icons/arrow.tsx",
     "src/shared/icons/coin.tsx",
