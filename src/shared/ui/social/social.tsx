@@ -4,6 +4,8 @@ import type { Properties } from './social.properties';
 const Social = (properties: Properties) => {
   const { href, icon } = properties;
 
+  const Icon = icon;
+
   return (
     <a
       className={styles.wrapper}
@@ -11,7 +13,7 @@ const Social = (properties: Properties) => {
       rel='nofollow noreferrer'
       target='_blank'
     >
-      {icon}
+      <Icon />
     </a>
   );
 };

@@ -7,8 +7,7 @@
   align-items: center;
 
   svg {
-    block-size: to-rem(20);
-    inline-size: to-rem(20);
+    flex: 0 0 to-rem(20);
     color: var(--color-accent, $color-accent);
   }
 }
