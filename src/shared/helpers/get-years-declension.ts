@@ -3,16 +3,15 @@ const getYearsDeclension = (years: number) => {
     return 'лет';
   }
 
-  switch (years % 10) {
-    case 1:
-      return 'год';
-    case 2:
-    case 3:
-    case 4:
-      return 'года';
-    default:
-      return 'лет';
+  if (years % 10 === 1) {
+    return 'год';
   }
+
+  if (years % 10 >= 2 && years % 10 <= 4) {
+    return 'года';
+  }
+
+  return 'лет';
 };
 
 export { getYearsDeclension };
