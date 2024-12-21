@@ -1,7 +1,5 @@
 import '@/styles/app.scss';
 
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import type { PropsWithChildren } from 'react';
@@ -24,8 +22,6 @@ const RootLayout = async (properties: PropsWithChildren) => {
             <Content>{children}</Content>
           </Wrapper>
         </NextIntlClientProvider>
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
