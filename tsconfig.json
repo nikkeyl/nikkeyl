@@ -25,6 +25,7 @@
     "moduleResolution": "Bundler",
     "paths": {
       "@/config": ["./src/app/config/index.ts"],
+      "@/data": ["./src/shared/data/index.ts"],
       "@/helpers": ["./src/shared/helpers/index.ts"],
       "@/icons": ["./src/shared/icons/index.ts"],
       "@/socials/*": ["./public/socials/*"],

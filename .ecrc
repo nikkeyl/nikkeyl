@@ -6,7 +6,6 @@
     "src/shared/icons/github.tsx",
     "src/shared/icons/link.tsx",
     "src/shared/icons/telegram.tsx",
-    "src/shared/icons/terminal.tsx",
-    "src/widgets/sidebar/sidebar.tsx"
+    "src/shared/icons/terminal.tsx"
   ]
 }
