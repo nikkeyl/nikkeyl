@@ -1,7 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 
-import { experience, socials } from '@/data';
-import { ImageWrapper, Social, Text, Title } from '@/ui';
+import { experience } from '@/data/experience';
+import { socials } from '@/data/socials';
+import { ImageWrapper } from '@/ui/image-wrapper/image-wrapper';
+import { Social } from '@/ui/social/social';
+import { Text } from '@/ui/text/text';
+import { Title } from '@/ui/title/title';
 
 import { ExperienceLabel } from '../experience-label/experience-label';
 import styles from './sidebar.module.scss';

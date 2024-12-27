@@ -1,9 +1,7 @@
-import {
-  calculateExperience,
-  getMonthsDeclension,
-  getYearsDeclension,
-} from '@/helpers';
-import { Text } from '@/ui';
+import { calculateExperience } from '@/helpers/calculate-experience';
+import { getMonthsDeclension } from '@/helpers/get-months-declension';
+import { getYearsDeclension } from '@/helpers/get-years-declension';
+import { Text } from '@/ui/text/text';
 
 import styles from './experience-label.module.scss';
 import type { Properties } from './experience-label.properties';

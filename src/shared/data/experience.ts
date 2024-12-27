@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
-import { CoinIcon, TerminalIcon } from '@/icons';
+import { CoinIcon } from '@/icons/coin';
+import { TerminalIcon } from '@/icons/terminal';
 
 const translations = await getTranslations('labels');
 

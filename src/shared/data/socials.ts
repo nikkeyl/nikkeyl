@@ -1,4 +1,5 @@
-import { GitHubIcon, TelegramIcon } from '@/icons';
+import { GitHubIcon } from '@/icons/github';
+import { TelegramIcon } from '@/icons/telegram';
 
 const socials = [
   {
