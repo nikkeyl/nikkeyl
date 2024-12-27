@@ -4,7 +4,7 @@ type Properties = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 > & {
-  icon: ReactNode;
+  icon: () => ReactNode;
 };
 
 export type { Properties };

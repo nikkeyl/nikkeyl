@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import socialCoverImage from '@/socials/cover.jpg';
 
 const title = 'nikkeyl';
-const description = 'Website development, and why not?';
+const description = `${title} — Front-End Development`;
 const images = [
   {
     url: socialCoverImage.src,
@@ -13,7 +13,7 @@ const images = [
 ];
 const siteName = title;
 const siteURL = 'https://nikkeyl.vercel.app';
-const author = 'nikkeyl';
+const author = title;
 
 const metadata: Metadata = {
   alternates: { canonical: siteURL },

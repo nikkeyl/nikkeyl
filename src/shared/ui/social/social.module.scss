@@ -10,9 +10,15 @@
 
   color: var(--color-inverse, $color-inverse);
 
-  transition: color var(--default-transition, $default-transition);
+  transition: var(--default-transition, $default-transition);
+  transition-property: color, scale;
 
   @include media-hover {
     color: var(--color-accent, $color-accent);
+
+    &:active {
+      color: var(--color-highlight, $color-highlight);
+      scale: 0.9;
+    }
   }
 }
