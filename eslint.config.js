@@ -56,6 +56,7 @@ export default defineFlatConfig([
       'react/jsx-sort-props': 'warn',
       'simple-import-sort/exports': 'warn',
       'simple-import-sort/imports': 'warn',
+      'sort-destructure-keys/sort-destructure-keys': 'warn',
       'unicorn/no-unused-properties': 'warn',
       'unicorn/string-content': 'warn',
     },
