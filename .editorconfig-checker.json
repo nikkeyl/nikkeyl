@@ -1,11 +1,13 @@
 {
   "exclude": [
+    "arrow.tsx",
+    "coin.tsx",
+    "en.json",
+    "github.tsx",
+    "link.tsx",
     "README.md",
-    "src/shared/icons/arrow.tsx",
-    "src/shared/icons/coin.tsx",
-    "src/shared/icons/github.tsx",
-    "src/shared/icons/link.tsx",
-    "src/shared/icons/telegram.tsx",
-    "src/shared/icons/terminal.tsx"
+    "ru.json",
+    "telegram.tsx",
+    "terminal.tsx"
   ]
 }
