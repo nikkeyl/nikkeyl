@@ -1,14 +1,14 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  display: flex;
+  color: var(--color-inverse, $color-inverse);
 
   block-size: to-rem(40);
   inline-size: to-rem(40);
 
-  flex-wrap: nowrap;
+  display: flex;
 
-  color: var(--color-inverse, $color-inverse);
+  flex-wrap: nowrap;
 
   transition: var(--default-transition, $default-transition);
   transition-property: color, scale;
@@ -17,8 +17,8 @@
     color: var(--color-accent, $color-accent);
 
     &:active {
-      color: var(--color-highlight, $color-highlight);
       scale: 0.9;
+      color: var(--color-highlight, $color-highlight);
     }
   }
 }

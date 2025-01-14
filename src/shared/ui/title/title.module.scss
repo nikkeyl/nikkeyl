@@ -1,9 +1,9 @@
 @use "@/styles/abstracts" as *;
 
 .title {
+  color: var(--color-accent, $color-accent);
   font-size: to-rem(35);
   font-weight: 700;
-  color: var(--color-accent, $color-accent);
 
   @media (width >= to-em(992)) {
     font-size: to-rem(40);
