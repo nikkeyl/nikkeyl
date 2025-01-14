@@ -7,16 +7,16 @@
 
   margin: 0;
 
+  padding: 0;
+
   border: 0;
 
   box-sizing: border-box;
-
-  padding: 0;
 }
 
 *::selection {
-  color: var(--color-primary, $color-primary);
   background-color: var(--color-accent, $color-accent);
+  color: var(--color-primary, $color-primary);
 }
 
 html {
@@ -24,16 +24,16 @@ html {
 }
 
 body {
+  overscroll-behavior: none;
   min-inline-size: to-rem(320);
   overflow: hidden;
-  overscroll-behavior: none;
 }
 
 img {
   border-radius: inherit;
-  object-fit: cover;
   block-size: 100%;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 img,
@@ -51,8 +51,8 @@ button {
 
   &:disabled,
   [aria-disabled="true"] {
-    opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
+    opacity: 0.5;
   }
 }
