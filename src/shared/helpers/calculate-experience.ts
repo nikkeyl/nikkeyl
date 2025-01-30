@@ -1,5 +1,6 @@
 const calculateExperience = (startDate: Date) => {
   const currentDate = new Date();
+
   let years = currentDate.getFullYear() - startDate.getFullYear();
   let months = currentDate.getMonth() - startDate.getMonth();
 
