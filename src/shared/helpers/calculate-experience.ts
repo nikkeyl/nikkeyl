@@ -1,7 +1,12 @@
 const calculateExperience = (startDate: Date) => {
   const currentDate = new Date();
-  const years = currentDate.getFullYear() - startDate.getFullYear();
-  const months = currentDate.getMonth() - startDate.getMonth();
+  let years = currentDate.getFullYear() - startDate.getFullYear();
+  let months = currentDate.getMonth() - startDate.getMonth();
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
 
   return { years, months };
 };

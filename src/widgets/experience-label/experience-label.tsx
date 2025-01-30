@@ -9,7 +9,7 @@ import type { Properties } from './experience-label.properties';
 const ExperienceLabel = async (properties: Properties) => {
   const { icon, startDate, text } = properties;
 
-  const { years, months } = calculateExperience(new Date(startDate));
+  const { months, years } = calculateExperience(new Date(startDate));
 
   const yearsText = years > 0 ? `${years} ${getYearsDeclension(years)}` : '';
   const monthsText = months > 0 ? `${months} ${getMonthsDeclension(months)}` : '';

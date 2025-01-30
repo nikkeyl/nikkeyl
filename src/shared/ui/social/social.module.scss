@@ -3,8 +3,12 @@
 .wrapper {
   color: var(--color-inverse, $color-inverse);
 
+  border-radius: 50%;
+
   block-size: to-rem(40);
   inline-size: to-rem(40);
+
+  overflow: hidden;
 
   display: flex;
 

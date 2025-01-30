@@ -1,7 +1,11 @@
 {
   "about": {
-    "name": "Nikita Almanov",
     "info": "Why the hell write something about yourself here when the projects will tell you everything and even show you much better?"
+  },
+  "titles": {
+    "tools": "Tools",
+    "projects": "Projects",
+    "reviews": "Reviews"
   },
   "labels": {
     "development": "in development",

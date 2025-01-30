@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
-import { experience } from '@/data/experience';
-import { socials } from '@/data/socials';
+import { experience } from '@/mocks/experience';
+import { socials } from '@/mocks/socials';
 import { ImageWrapper } from '@/ui/image-wrapper/image-wrapper';
 import { Social } from '@/ui/social/social';
 import { Text } from '@/ui/text/text';
@@ -15,19 +15,23 @@ const Sidebar = async () => {
 
   return (
     <aside className={styles.wrapper}>
-      <div className={styles.me}>
-        <ImageWrapper alt='nikkeyl' src='/images/about-me/nikkeyl.jpg' />
+      <ImageWrapper
+        alt='nikkeyl'
+        className={styles.avatar}
+        src='/images/about-me/nikkeyl.svg'
+      />
+      <div className={styles.info}>
+        <Title title='nikkeyl' />
         <ul className={styles.socials}>
-          {socials.map(({ icon, href, key }) => (
+          {socials.map(({ href, icon, key }) => (
             <li key={key}>
               <Social href={href} icon={icon} />
             </li>
           ))}
         </ul>
       </div>
-      <Title className={styles.title} title={`${translations('name')} (nikkeyl)`} />
       <ul className={styles.labels}>
-        {experience.map(({ icon, startDate, text, key }) => (
+        {experience.map(({ icon, key, startDate, text }) => (
           <li key={key}>
             <ExperienceLabel icon={icon} startDate={startDate} text={text} />
           </li>

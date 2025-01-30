@@ -1,14 +1,18 @@
+import { getTranslations } from 'next-intl/server';
+
+const translations = await getTranslations('dates');
+
 const getYearsDeclension = (years: number) => {
   if (years % 100 >= 11 && years % 100 <= 14) {
-    return 'лет';
+    return translations('years');
   }
 
   if (years % 10 === 1) {
-    return 'год';
+    return translations('year');
   }
 
   if (years % 10 >= 2 && years % 10 <= 4) {
-    return 'года';
+    return translations('years');
   }
 
   return 'лет';
