@@ -4,18 +4,17 @@ import { CoinIcon } from '@/icons/coin';
 import { TerminalIcon } from '@/icons/terminal';
 
 const translations = await getTranslations('labels');
-
 const experience = [
-  {
-    icon: TerminalIcon,
-    startDate: '2021-04-21',
-    text: translations('development'),
-    key: 0,
-  },
   {
     icon: CoinIcon,
     startDate: '2024-08-23',
     text: translations('commerce'),
+    key: 0,
+  },
+  {
+    icon: TerminalIcon,
+    startDate: '2021-04-21',
+    text: translations('development'),
     key: 1,
   },
 ];

@@ -4,7 +4,7 @@ import styles from './title.module.scss';
 import type { Properties } from './title.properties';
 
 const Title = (properties: Properties) => {
-  const { title, level = 'h2', className } = properties;
+  const { className, level = 'h2', title } = properties;
 
   const TitleLevel = level;
 
