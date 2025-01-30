@@ -1,4 +1,4 @@
-import styles from './social.module.scss';
+import style from './social.module.scss';
 import type { Properties } from './social.properties';
 
 const Social = (properties: Properties) => {
@@ -8,7 +8,7 @@ const Social = (properties: Properties) => {
 
   return (
     <a
-      className={styles.wrapper}
+      className={style.wrapper}
       href={href}
       rel='nofollow noreferrer'
       target='_blank'

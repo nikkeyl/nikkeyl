@@ -1,4 +1,4 @@
-// import styles from './tool-card.module.scss';
+// import style from './tool-card.module.scss';
 
 const ToolCard = () => '';
 

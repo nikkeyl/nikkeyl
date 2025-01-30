@@ -8,21 +8,21 @@ import { Text } from '@/ui/text/text';
 import { Title } from '@/ui/title/title';
 
 import { ExperienceLabel } from '../experience-label/experience-label';
-import styles from './sidebar.module.scss';
+import style from './sidebar.module.scss';
 
 const Sidebar = async () => {
   const translations = await getTranslations('about');
 
   return (
-    <aside className={styles.wrapper}>
+    <aside className={style.wrapper}>
       <ImageWrapper
         alt='nikkeyl'
-        className={styles.avatar}
+        className={style.avatar}
         src='/images/about-me/nikkeyl.svg'
       />
-      <div className={styles.info}>
+      <div className={style.info}>
         <Title title='nikkeyl' />
-        <ul className={styles.socials}>
+        <ul className={style.socials}>
           {socials.map(({ href, icon, key }) => (
             <li key={key}>
               <Social href={href} icon={icon} />
@@ -30,7 +30,7 @@ const Sidebar = async () => {
           ))}
         </ul>
       </div>
-      <ul className={styles.labels}>
+      <ul className={style.labels}>
         {experience.map(({ icon, key, startDate, text }) => (
           <li key={key}>
             <ExperienceLabel icon={icon} startDate={startDate} text={text} />

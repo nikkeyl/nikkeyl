@@ -2,6 +2,7 @@
   "exclude": [
     "arrow.tsx",
     "coin.tsx",
+    "de.json",
     "en.json",
     "github.tsx",
     "link.tsx",

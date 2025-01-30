@@ -1,0 +1,29 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  background-color: var(--color-inverse, $color-inverse);
+
+  color: var(--color-primary, $color-primary);
+
+  padding: to-rem(8) to-rem(10);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  justify-content: center;
+
+  font-size: to-rem(20);
+  font-weight: 700;
+
+  transition: background-color var(--default-transition, $default-transition);
+
+  @include media-hover {
+    background-color: var(--color-accent, $color-accent);
+
+    &:active {
+      scale: 0.9;
+      color: var(--color-highlight, $color-highlight);
+    }
+  }
+}

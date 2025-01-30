@@ -26,7 +26,7 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
-  overflow: hidden;
+  overflow-inline: hidden;
 }
 
 img {
@@ -45,9 +45,11 @@ ul {
   list-style: none;
 }
 
-button {
-  appearance: none;
+button,
+a {
+  cursor: pointer;
   display: block;
+  appearance: none;
 
   &:disabled,
   [aria-disabled="true"] {

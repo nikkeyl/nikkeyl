@@ -3,7 +3,7 @@ import { getMonthsDeclension } from '@/helpers/get-months-declension';
 import { getYearsDeclension } from '@/helpers/get-years-declension';
 import { Text } from '@/ui/text/text';
 
-import styles from './experience-label.module.scss';
+import style from './experience-label.module.scss';
 import type { Properties } from './experience-label.properties';
 
 const ExperienceLabel = async (properties: Properties) => {
@@ -17,7 +17,7 @@ const ExperienceLabel = async (properties: Properties) => {
   const Icon = icon;
 
   return (
-    <div className={styles.wrapper}>
+    <div className={style.wrapper}>
       <Icon />
       <Text color='blue'>
         <span>{experienceText}</span> {text}

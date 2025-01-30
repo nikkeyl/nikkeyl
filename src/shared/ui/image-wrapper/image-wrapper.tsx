@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
-import styles from './image-wrapper.module.scss';
+import style from './image-wrapper.module.scss';
 import type { Properties } from './image-wrapper.properties';
 
 const ImageWrapper = (properties: Properties) => {
@@ -10,7 +10,7 @@ const ImageWrapper = (properties: Properties) => {
   const blur = 'UklGRhwAAABXRUJQVlA4TBAAAAAvY8AYAAcQ/S9P/wMR0f8A';
 
   return (
-    <div className={clsx(styles.wrapper, className)}>
+    <div className={clsx(style.wrapper, className)}>
       <Image
         alt={alt}
         blurDataURL={`data:image/webp;base64,${blur}`}
