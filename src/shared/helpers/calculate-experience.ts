@@ -5,7 +5,7 @@ const calculateExperience = (startDate: Date) => {
   let months = currentDate.getMonth() - startDate.getMonth();
 
   if (months < 0) {
-    years--;
+    years -= 1;
     months += 12;
   }
 

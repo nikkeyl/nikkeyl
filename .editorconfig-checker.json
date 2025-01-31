@@ -1,6 +1,7 @@
 {
   "exclude": [
     "arrow.tsx",
+    "bun.lockb",
     "coin.tsx",
     "de.json",
     "en.json",
