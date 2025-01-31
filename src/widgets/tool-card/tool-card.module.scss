@@ -7,7 +7,7 @@
 
   background-color: var(--color-highlight, var(--color-highlight));
 
-  border: to-rem(2) solid var(--color-highlight, $color-highlight);
+  border: var(--default-border, $default-border);
 
   max-block-size: to-rem(90);
   max-inline-size: fit-content;
@@ -27,7 +27,7 @@
 
     transform: rotate(44deg);
 
-    border-block-end: to-rem(2) solid var(--color-highlight, $color-highlight);
+    border-block-end: var(--default-border, $default-border);
 
     block-size: to-rem(25);
     inline-size: to-rem(30);

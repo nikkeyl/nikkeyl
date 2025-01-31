@@ -7,7 +7,7 @@
 
   background-color: var(--color-highlight, $color-highlight);
 
-  border: to-rem(2) solid var(--color-highlight, $color-highlight);
+  border: var(--default-border, $default-border);
 
   block-size: to-rem(200);
   inline-size: to-rem(200);
@@ -27,14 +27,14 @@
     inset-block-end: to-rem(-11);
     inset-inline-start: to-rem(-15);
     transform: rotate(45deg);
-    border-block-start: to-rem(2) solid var(--color-highlight, $color-highlight);
+    border-block-start: var(--default-border, $default-border);
   }
 
   &::after {
     inset-block-start: to-rem(-11);
     inset-inline-end: to-rem(-16);
     transform: rotate(45deg);
-    border-block-end: to-rem(2) solid var(--color-highlight, $color-highlight);
+    border-block-end: var(--default-border, $default-border);
   }
 
   > img {

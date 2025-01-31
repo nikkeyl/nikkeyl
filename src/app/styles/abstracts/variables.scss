@@ -1,9 +1,14 @@
+@use "./functions" as *;
+
 // Main Colors
 $color-primary: #050a0e;
 $color-secondary: #fafafa;
 $color-accent: #fcee09;
 $color-inverse: #00f0ff;
 $color-highlight: #ff003c;
+
+// borders
+$default-border: to-rem(2) solid $color-highlight;
 
 // Transitions
 $default-transition: 0.3s linear;
