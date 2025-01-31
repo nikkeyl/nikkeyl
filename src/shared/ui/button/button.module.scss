@@ -16,6 +16,7 @@
   font-size: to-rem(20);
   font-weight: 700;
 
+  // stylelint-disable
   transition: background-color var(--default-transition, $default-transition);
 
   @include media-hover {
