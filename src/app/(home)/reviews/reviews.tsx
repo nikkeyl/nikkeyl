@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Title } from '@/ui/title/title';
 
-import style from './reviews.module.scss';
+// import style from './reviews.module.scss';
 
 const Reviews = () => {
   const translations = useTranslations('titles');
