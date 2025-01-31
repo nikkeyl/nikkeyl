@@ -34,7 +34,7 @@ const Tools = () => {
   }, []);
 
   return (
-    <section className={style.wrapper}>
+    <section>
       <Title className={style.title} title={translations('tools')} />
       <Marquee className={style.list} speed={80}>
         {tools.map(({ key, src }) => (

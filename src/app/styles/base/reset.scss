@@ -26,7 +26,11 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
-  overflow-x: hidden;
+  overflow-inline: hidden;
+}
+
+section {
+  padding-block: to-rem(15);
 }
 
 img {
