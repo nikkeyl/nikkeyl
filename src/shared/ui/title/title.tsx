@@ -4,19 +4,12 @@ import style from './title.module.scss';
 import type { Properties } from './title.properties';
 
 const Title = (properties: Properties) => {
-  const { className, color, level = 'h2', title } = properties;
+  const { className, level = 'h2', title } = properties;
 
   const TitleLevel = level;
 
   return (
-    <TitleLevel
-      className={clsx(
-        style.title,
-        level && style[level],
-        color && style[color],
-        className,
-      )}
-    >
+    <TitleLevel className={clsx(style.title, level && style[level], className)}>
       {title}
     </TitleLevel>
   );

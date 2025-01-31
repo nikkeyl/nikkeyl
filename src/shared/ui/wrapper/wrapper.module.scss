@@ -3,7 +3,7 @@
 .wrapper {
   min-block-size: 100svb;
 
-  @media (width >= to-em(992)) {
+  @media (width >= to-em(768)) {
     display: grid;
     grid-template-columns: to-rem(320) 1fr;
   }

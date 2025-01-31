@@ -4,8 +4,8 @@
   padding: to-rem(15);
   border-block-end: 1px solid var(--color-highlight, $color-highlight);
 
-  @media (width >= to-em(992)) {
-    padding: to-rem(35) to-rem(15);
+  @media (width >= to-em(768)) {
+    padding: to-rem(30) to-rem(15);
     border-block-end: none;
     border-inline-end: var(--default-border, $default-border);
   }
@@ -13,23 +13,18 @@
 
 .avatar {
   margin-block-end: to-rem(15);
-}
-
-.info {
-  margin-block-end: to-rem(10);
 
   display: flex;
 
   flex-wrap: nowrap;
 
-  gap: to-rem(10);
+  gap: to-rem(30);
 
   align-items: center;
 }
 
 .socials {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
   gap: to-rem(10);
 }
 

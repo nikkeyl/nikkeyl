@@ -38,6 +38,16 @@
   }
 
   > img {
-    padding-inline-start: to-rem(18);
+    padding-inline-start: to-rem(20);
   }
+}
+
+.title {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  text-orientation: upright;
+  text-wrap: nowrap;
+
+  writing-mode: vertical-lr;
 }

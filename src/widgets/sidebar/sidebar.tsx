@@ -5,7 +5,6 @@ import { socials } from '@/mocks/socials';
 import { ImageWrapper } from '@/ui/image-wrapper/image-wrapper';
 import { Social } from '@/ui/social/social';
 import { Text } from '@/ui/text/text';
-import { Title } from '@/ui/title/title';
 
 import { ExperienceLabel } from '../experience-label/experience-label';
 import style from './sidebar.module.scss';
@@ -15,13 +14,8 @@ const Sidebar = () => {
 
   return (
     <aside className={style.wrapper}>
-      <ImageWrapper
-        alt='nikkeyl'
-        className={style.avatar}
-        src='/images/about-me/nikkeyl.svg'
-      />
-      <div className={style.info}>
-        <Title level='h1' title='nikkeyl' />
+      <div className={style.avatar}>
+        <ImageWrapper alt='nikkeyl' src='/images/about-me/nikkeyl.svg' />
         <ul className={style.socials}>
           {socials.map(({ href, icon, key }) => (
             <li key={key}>
@@ -30,14 +24,16 @@ const Sidebar = () => {
           ))}
         </ul>
       </div>
-      <ul className={style.labels}>
-        {experience.map(({ icon, key, startDate, text }) => (
-          <li key={key}>
-            <ExperienceLabel icon={icon} startDate={startDate} text={text} />
-          </li>
-        ))}
-      </ul>
-      <Text>{translations('info')}</Text>
+      <div>
+        <ul className={style.labels}>
+          {experience.map(({ icon, key, startDate, text }) => (
+            <li key={key}>
+              <ExperienceLabel icon={icon} startDate={startDate} text={text} />
+            </li>
+          ))}
+        </ul>
+        <Text>{translations('info')}</Text>
+      </div>
     </aside>
   );
 };
