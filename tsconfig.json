@@ -30,6 +30,7 @@
       "@/mocks/*": ["./src/shared/mocks/*"],
       "@/socials/*": ["./public/socials/*"],
       "@/styles/*": ["./src/app/styles/*"],
+      "@/types/*": ["./src/shared/types/*"],
       "@/ui/*": ["./src/shared/ui/*"],
       "@/widgets/*": ["./src/widgets/*"]
     },

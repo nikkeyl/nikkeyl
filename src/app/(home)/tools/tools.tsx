@@ -5,13 +5,14 @@ import { useEffect, useState } from 'react';
 import Marquee from 'react-fast-marquee';
 
 import { extractFileName } from '@/helpers/extract-file-name';
+import type { ToolsTypes } from '@/types/tools';
 import { Title } from '@/ui/title/title';
 import { ToolCard } from '@/widgets/tool-card/tool-card';
 
 import style from './tools.module.scss';
 
 const Tools = () => {
-  const [tools, setTools] = useState<string[]>([]);
+  const [tools, setTools] = useState<ToolsTypes[]>([]);
 
   const translations = useTranslations('titles');
 
@@ -28,9 +29,7 @@ const Tools = () => {
       setTools(toolsList);
     };
 
-    setTimeout(() => {
-      fetchTools();
-    }, 1000);
+    fetchTools();
   }, []);
 
   return (

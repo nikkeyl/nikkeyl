@@ -26,7 +26,9 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
-  overflow-inline: hidden;
+
+  // stylelint-disable
+  overflow-x: hidden;
 }
 
 section {
