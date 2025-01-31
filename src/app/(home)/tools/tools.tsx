@@ -36,7 +36,7 @@ const Tools = () => {
   return (
     <section>
       <Title className={style.title} title={translations('tools')} />
-      <Marquee className={style.list} speed={80}>
+      <Marquee className={style.list || ''} speed={80}>
         {tools.map(({ key, src }) => (
           <ToolCard key={key} src={src} title={extractFileName(src)} />
         ))}
