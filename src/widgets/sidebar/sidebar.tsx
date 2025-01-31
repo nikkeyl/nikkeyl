@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 import { experience } from '@/mocks/experience';
 import { socials } from '@/mocks/socials';
@@ -10,8 +10,8 @@ import { Title } from '@/ui/title/title';
 import { ExperienceLabel } from '../experience-label/experience-label';
 import style from './sidebar.module.scss';
 
-const Sidebar = async () => {
-  const translations = await getTranslations('about');
+const Sidebar = () => {
+  const translations = useTranslations('about');
 
   return (
     <aside className={style.wrapper}>
@@ -21,7 +21,7 @@ const Sidebar = async () => {
         src='/images/about-me/nikkeyl.svg'
       />
       <div className={style.info}>
-        <Title title='nikkeyl' />
+        <Title level='h1' title='nikkeyl' />
         <ul className={style.socials}>
           {socials.map(({ href, icon, key }) => (
             <li key={key}>

@@ -1,11 +1,11 @@
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 import { Title } from '@/ui/title/title';
 
 import style from './projects.module.scss';
 
-const Projects = async () => {
-  const translations = await getTranslations('titles');
+const Projects = () => {
+  const translations = useTranslations('titles');
 
   return (
     <section>
