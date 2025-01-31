@@ -2,19 +2,19 @@
   "about": {
     "info": "プロジェクトがすべてを教えてくれるし、もっといいものを見せてくれるのに、なぜここで自分のことを書くんだ？"
   },
-  "titles": {
-    "tools": "ツール",
-    "projects": "プロジェクト",
-    "reviews": "レビュー"
-  },
-  "labels": {
-    "development": "開発中",
-    "commerce": "商業経験"
-  },
   "dates": {
     "month": "月",
     "months": "月",
     "year": "年",
     "years": "年"
+  },
+  "labels": {
+    "commerce": "商業経験",
+    "development": "開発中"
+  },
+  "titles": {
+    "projects": "プロジェクト",
+    "reviews": "レビュー",
+    "tools": "ツール"
   }
 }

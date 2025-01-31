@@ -2,19 +2,19 @@
   "about": {
     "info": "Warum zum Teufel sollte man hier etwas über sich selbst schreiben, wenn die Projekte einem alles sagen und sogar viel besser zeigen?"
   },
-  "titles": {
-    "tools": "Werkzeuge",
-    "projects": "Projekte",
-    "reviews": "Bewertungen"
-  },
-  "labels": {
-    "development": "in entwicklung",
-    "commerce": "kommerzielle erfahrung"
-  },
   "dates": {
     "month": "monat",
     "months": "monate",
     "year": "jahr",
     "years": "jahre"
+  },
+  "labels": {
+    "commerce": "kommerzielle erfahrung",
+    "development": "in entwicklung"
+  },
+  "titles": {
+    "projects": "Projekte",
+    "reviews": "Bewertungen",
+    "tools": "Werkzeuge"
   }
 }

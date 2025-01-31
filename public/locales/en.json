@@ -2,19 +2,19 @@
   "about": {
     "info": "Why the hell write something about yourself here when the projects will tell you everything and even show you much better?"
   },
-  "titles": {
-    "tools": "Tools",
-    "projects": "Projects",
-    "reviews": "Reviews"
-  },
-  "labels": {
-    "development": "in development",
-    "commerce": "commercial experience"
-  },
   "dates": {
     "month": "month",
     "months": "months",
     "year": "year",
     "years": "years"
+  },
+  "labels": {
+    "commerce": "commercial experience",
+    "development": "in development"
+  },
+  "titles": {
+    "projects": "Projects",
+    "reviews": "Reviews",
+    "tools": "Tools"
   }
 }

@@ -1,6 +1,7 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 const translations = await getTranslations('dates');
+const locale = await getLocale();
 
 const getYearsDeclension = (years: number) => {
   if (years % 100 >= 11 && years % 100 <= 14) {
@@ -11,11 +12,15 @@ const getYearsDeclension = (years: number) => {
     return translations('year');
   }
 
+  if (locale === 'ru' && years % 10 >= 2 && years % 10 <= 4) {
+    return translations('years2');
+  }
+
   if (years % 10 >= 2 && years % 10 <= 4) {
     return translations('years');
   }
 
-  return 'лет';
+  return translations('years');
 };
 
 export { getYearsDeclension };
