@@ -1,9 +1,6 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  padding: to-rem(15);
-
-  @media (width >= to-em(992)) {
-    padding-block: to-rem(35);
-  }
+  padding-inline: to-rem(15);
+  overflow: hidden;
 }

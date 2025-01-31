@@ -16,7 +16,6 @@ const Title = (properties: Properties) => {
         color && style[color],
         className,
       )}
-      title={title}
     >
       {title}
     </TitleLevel>

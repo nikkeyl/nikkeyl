@@ -1,0 +1,5 @@
+@use "@/styles/abstracts" as *;
+
+.rfm-child:not(:last-child) {
+  margin-inline-end: to-rem(15);
+}

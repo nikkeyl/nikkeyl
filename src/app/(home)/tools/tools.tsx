@@ -2,12 +2,13 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import Marquee from 'react-fast-marquee';
 
+import { extractFileName } from '@/helpers/extract-file-name';
 import { Title } from '@/ui/title/title';
 import { ToolCard } from '@/widgets/tool-card/tool-card';
-import { extractFileName } from '@/helpers/extract-file-name';
 
-// import style from './tools.module.scss';
+import style from './tools.module.scss';
 
 const Tools = () => {
   const [tools, setTools] = useState<string[]>([]);
@@ -33,15 +34,13 @@ const Tools = () => {
   }, []);
 
   return (
-    <section>
-      <Title title={translations('tools')} />
-      <ul>
+    <section className={style.wrapper}>
+      <Title className={style.title} title={translations('tools')} />
+      <Marquee className={style.list}>
         {tools.map(({ key, src }) => (
-          <li key={key}>
-            <ToolCard src={src} title={extractFileName(src)} />
-          </li>
+          <ToolCard src={src} title={extractFileName(src)} key={key} />
         ))}
-      </ul>
+      </Marquee>
     </section>
   );
 };
