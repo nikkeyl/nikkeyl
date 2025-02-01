@@ -41,17 +41,15 @@
 }
 
 .info {
-  max-block-size: fit-content;
-  max-inline-size: to-rem(30);
+  border-inline-start: to-rem(2) solid var(--color-primary, $color-secondary);
 
   display: flex;
 
-  flex-wrap: wrap;
+  flex-direction: column;
 
   gap: to-rem(5);
 
-  align-items: start;
-  justify-content: center;
+  align-items: center;
 
   > h3 {
     max-inline-size: fit-content;
@@ -65,7 +63,7 @@
 }
 
 .title {
-  padding-block: to-rem(4) to-rem(6);
+  padding-block: to-rem(3);
 
   overflow: hidden;
 

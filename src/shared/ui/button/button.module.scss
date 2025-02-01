@@ -22,7 +22,7 @@
 
   // stylelint-disable
   transition: var(--default-transition, $default-transition);
-  transition-property: background-color, scale;
+  transition-property: background-color, scale, color;
 
   @include media-hover {
     background-color: var(--color-accent, $color-accent);
@@ -30,6 +30,7 @@
     &:active {
       scale: 0.9;
       background-color: var(--color-highlight, $color-highlight);
+      color: var(--color-secondary, $color-secondary);
     }
   }
 }

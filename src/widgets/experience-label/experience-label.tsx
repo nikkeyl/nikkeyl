@@ -11,8 +11,8 @@ const ExperienceLabel = async (properties: Properties) => {
 
   const { months, years } = calculateExperience(new Date(startDate));
 
-  const yearsText = years > 0 ? `${years} ${getYearsDeclension(years)}` : '';
-  const monthsText = months > 0 ? `${months} ${getMonthsDeclension(months)}` : '';
+  const yearsText = years > 0 ? `${years} ${await getYearsDeclension(years)}` : '';
+  const monthsText = months > 0 ? `${months} ${await getMonthsDeclension(months)}` : '';
   const experienceText = [yearsText, monthsText].join(' ');
 
   const Icon = icon;

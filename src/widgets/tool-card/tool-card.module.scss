@@ -39,19 +39,25 @@
 
   padding: to-rem(5);
 
+  block-size: to-rem(90);
+  inline-size: to-rem(90);
+
   display: flex;
 
   flex-wrap: nowrap;
 
   align-items: center;
+  justify-content: center;
 
   > img {
-    inline-size: to-rem(80);
-    block-size: to-rem(80);
+    inline-size: to-rem(60);
+    block-size: to-rem(60);
   }
 }
 
 .title {
+  border-block-start: to-rem(2) solid var(--color-primary, $color-secondary);
+
   max-block-size: to-rem(90);
 
   overflow: hidden;

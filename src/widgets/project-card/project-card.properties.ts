@@ -9,8 +9,8 @@ type Properties = DetailedHTMLProps<
   HTMLAnchorElement
 > &
   DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> & {
-    hosting: 'github' | 'vercel';
-    isCommerce: boolean;
+    hosting: 'github' | 'vercel' | 'other';
+    isCommerce?: boolean;
   };
 
 export type { Properties };
