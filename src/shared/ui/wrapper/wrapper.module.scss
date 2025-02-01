@@ -1,7 +1,7 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  min-block-size: 100svb;
+  block-size: 100svb;
 
   @media (width >= to-em(768)) {
     display: grid;

@@ -1,0 +1,19 @@
+@use "@/styles/abstracts" as *;
+
+.title {
+  margin-block-end: to-rem(15);
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: to-rem(15);
+}
+
+.project {
+  flex: 0 0 to-rem(290);
+}

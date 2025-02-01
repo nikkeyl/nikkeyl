@@ -22,10 +22,10 @@
     @include pseudo;
 
     inset-block-start: to-rem(-12);
-    inset-inline-end: to-rem(-24.5);
+    inset-inline-end: to-rem(-24);
     z-index: 1;
 
-    transform: rotate(44deg);
+    transform: rotate(45deg);
 
     border-block-end: var(--default-border, $default-border);
 

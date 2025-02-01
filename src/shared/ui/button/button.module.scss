@@ -1,11 +1,15 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
+  clip-path: polygon(95% 0, 100% 35%, 100% 100%, 5% 100%, 0 65%, 0 0);
+
   background-color: var(--color-inverse, $color-inverse);
 
   color: var(--color-primary, $color-primary);
 
   padding: to-rem(8) to-rem(10);
+
+  inline-size: 100%;
 
   display: flex;
 
@@ -24,7 +28,7 @@
 
     &:active {
       scale: 0.9;
-      color: var(--color-highlight, $color-highlight);
+      background-color: var(--color-highlight, $color-highlight);
     }
   }
 }
