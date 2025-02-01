@@ -15,6 +15,9 @@
     "commerce": "commercial experience",
     "development": "in development"
   },
+  "reviews": {
+    "alexey-mozgunov": "Thanks to Nikita for the prompt creation of the site. The task was completed within the agreed time frame. The site turned out to be light and high-quality according to modern trends and requirements, which is important for it's SEO promotion."
+  },
   "titles": {
     "projects": "Projects",
     "reviews": "Reviews",
