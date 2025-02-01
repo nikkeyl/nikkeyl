@@ -76,7 +76,7 @@ const Projects = () => {
           </button>
         </div>
       </div>
-      <div ref={sliderRef} className={style.slider}>
+      <div ref={sliderRef}>
         <ul className={style.projects}>
           {projects.map(({ alt, hosting, href, isCommerce, key, src, title }) => (
             <li key={key} className={style.project}>

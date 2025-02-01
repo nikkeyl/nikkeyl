@@ -3,6 +3,9 @@
 .wrapper {
   position: relative;
 
+  transform: rotateX(15deg) rotateY(15deg) translateY(to-rem(-10))
+    translateZ(to-rem(-10));
+
   clip-path: polygon(90% 0, 100% 8.3%, 100% 100%, 10% 100%, 0 91.7%, 0 0);
 
   background-color: var(--color-accent, $color-accent);
@@ -17,6 +20,8 @@
   display: flex;
 
   flex-wrap: nowrap;
+
+  transition: transform var(--default-transition, $default-transition);
 
   &::after {
     @include pseudo;
@@ -34,6 +39,8 @@
   }
 
   @include media-hover {
+    transform: rotateX(0) rotateY(0) translateY(0) translateZ(0);
+
     .view {
       opacity: 1;
     }

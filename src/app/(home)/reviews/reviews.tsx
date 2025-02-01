@@ -43,7 +43,7 @@ const Reviews = () => {
           </button>
         </div>
       </div>
-      <div ref={sliderRef} className={style.slider}>
+      <div ref={sliderRef}>
         <ul className={style.reviews}>
           {reviews.map(({ avatar, key, siteLink, text }) => (
             <li key={key} className={style.review}>
