@@ -19,12 +19,17 @@
   // stylelint-disable
   transition-property: color, scale;
 
+  > svg {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
   @include media-hover {
-    color: var(--color-accent, $color-accent);
+    color: var(--color-highlight, $color-highlight);
 
     &:active {
       scale: 0.9;
-      color: var(--color-highlight, $color-highlight);
+      color: var(--color-accent, $color-accent);
     }
   }
 }

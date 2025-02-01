@@ -39,9 +39,9 @@ img {
   object-fit: cover;
 }
 
-img,
 svg {
-  user-select: none;
+  inline-size: to-rem(20);
+  block-size: to-rem(20);
 }
 
 ul {
@@ -57,10 +57,9 @@ a {
   appearance: none;
 
   &:disabled,
-  [aria-disabled="true"] {
+  &[aria-disabled="true"] {
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.5;
   }
-  
 }

@@ -2,7 +2,7 @@
 
 .wrapper {
   padding: to-rem(15);
-  border-block-end: 1px solid var(--color-highlight, $color-highlight);
+  border-block-end: 1px solid var(--color-accent, $color-accent);
 
   @media (width >= to-em(768)) {
     padding: to-rem(30) to-rem(15);

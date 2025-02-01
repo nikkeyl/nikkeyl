@@ -6,7 +6,7 @@
 
   scrollbar-gutter: stable;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-highlight, $color-highlight)
+  scrollbar-color: var(--color-accent, $color-accent)
     var(--color-primary, $color-primary);
 
   padding: to-rem(15);
@@ -23,7 +23,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-highlight, $color-highlight);
+    background-color: var(--color-accent, $color-accent);
     border-radius: to-rem(5);
     border: to-rem(2) solid var(--color-primary, $color-primary);
   }

@@ -37,11 +37,11 @@
   }
 
   @include media-hover {
-    background-color: var(--color-accent, $color-accent);
+    background-color: var(--color-highlight, $color-highlight);
 
     &:active {
       scale: 0.9;
-      background-color: var(--color-highlight, $color-highlight);
+      background-color: var(--color-accent, $color-accent);
       color: var(--color-secondary, $color-secondary);
     }
   }

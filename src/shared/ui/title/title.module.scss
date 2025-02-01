@@ -9,7 +9,7 @@
 }
 
 .h2 {
-  color: var(--color-accent, $color-accent);
+  color: var(--color-highlight, $color-highlight);
   font-size: to-rem(35);
 
   @media (width >= to-em(768)) {

@@ -5,7 +5,7 @@
 
   clip-path: polygon(90% 0, 100% 8.3%, 100% 100%, 10% 100%, 0 91.7%, 0 0);
 
-  background-color: var(--color-highlight, $color-highlight);
+  background-color: var(--color-accent, $color-accent);
 
   border: var(--default-border, $default-border);
 
@@ -55,7 +55,6 @@
     max-inline-size: fit-content;
   }
 
-  > svg,
   > img {
     inline-size: to-rem(20);
     block-size: to-rem(20);
