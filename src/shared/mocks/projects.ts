@@ -1,3 +1,5 @@
+import { author } from "@/config/constants";
+
 const projects = [
   {
     alt: 'Aqua Profi',
@@ -29,7 +31,7 @@ const projects = [
   {
     alt: 'Agency',
     hosting: 'github',
-    href: '//nikkeyl.github.io/agency',
+    href: `//${author}.github.io/agency`,
     isCommerce: false,
     src: '/images/projects/agency.jpg',
     title: 'agency',
@@ -38,7 +40,7 @@ const projects = [
   {
     alt: 'Abc',
     hosting: 'github',
-    href: '//nikkeyl.github.io/abc',
+    href: `//${author}.github.io/abc`,
     isCommerce: false,
     src: '/images/projects/abc.jpg',
     title: 'abc',
@@ -47,7 +49,7 @@ const projects = [
   {
     alt: 'Car Dealership',
     hosting: 'github',
-    href: '//nikkeyl.github.io/car-dealership',
+    href: `//${author}.github.io/car-dealership`,
     isCommerce: false,
     src: '/images/projects/car-dealership.jpg',
     title: 'car dealership',
@@ -56,7 +58,7 @@ const projects = [
   {
     alt: 'Deep',
     hosting: 'github',
-    href: '//nikkeyl.github.io/deep',
+    href: `//${author}.github.io/deep`,
     isCommerce: false,
     src: '/images/projects/deep.jpg',
     title: 'deep',
@@ -65,7 +67,7 @@ const projects = [
   {
     alt: 'Noiceland',
     hosting: 'github',
-    href: '//nikkeyl.github.io/noiceland',
+    href: `//${author}.github.io/noiceland`,
     isCommerce: false,
     src: '/images/projects/noiceland.jpg',
     title: 'noiceland',
@@ -74,7 +76,7 @@ const projects = [
   {
     alt: 'Ofdr',
     hosting: 'github',
-    href: '//nikkeyl.github.io/ofdr',
+    href: `//${author}.github.io/ofdr`,
     isCommerce: false,
     src: '/images/projects/ofdr.jpg',
     title: 'ofdr',
@@ -83,7 +85,7 @@ const projects = [
   {
     alt: 'Saimon',
     hosting: 'github',
-    href: '//nikkeyl.github.io/saimon',
+    href: `//${author}.github.io/saimon`,
     isCommerce: false,
     src: '/images/projects/saimon.jpg',
     title: 'saimon',

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { blur } from '@/config/constants';
+import { author, blur } from '@/config/constants';
 
 import { Title } from '../title/title';
 import style from './avatar.module.scss';
@@ -11,7 +11,7 @@ const Avatar = (properties: Properties) => {
 
   return (
     <div className={style.wrapper}>
-      <Title className={style.title} level='h1' title='nikkeyl' />
+      <Title className={style.title} level='h1' title={author} />
       <Image
         alt={alt}
         blurDataURL={`data:image/webp;base64,${blur}`}

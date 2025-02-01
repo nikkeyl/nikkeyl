@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 
+import { author } from '@/config/constants';
 import { experience } from '@/mocks/experience';
 import { socials } from '@/mocks/socials';
 import { Avatar } from '@/ui/avatar/avatar';
@@ -15,7 +16,7 @@ const Sidebar = () => {
   return (
     <aside className={style.wrapper}>
       <div className={style.avatar}>
-        <Avatar alt='nikkeyl' src='/images/about-me/nikkeyl.svg' />
+        <Avatar alt={author} src={`/images/about-me/${author}.svg`} />
         <ul className={style.socials}>
           {socials.map(({ href, icon, key }) => (
             <li key={key}>
