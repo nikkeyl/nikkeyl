@@ -2,6 +2,9 @@
   "about": {
     "info": "Why the hell write something about yourself here when the projects will tell you everything and even show you much better?"
   },
+  "buttons": {
+    "view": "view"
+  },
   "dates": {
     "month": "month",
     "months": "months",

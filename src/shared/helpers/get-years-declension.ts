@@ -1,9 +1,9 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 
-const translations = await getTranslations('dates');
-const locale = await getLocale();
+const getYearsDeclension = async (years: number) => {
+  const translations = await getTranslations('dates');
+  const locale = await getLocale();
 
-const getYearsDeclension = (years: number) => {
   if (years % 100 >= 11 && years % 100 <= 14) {
     return translations('years');
   }

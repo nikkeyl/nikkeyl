@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+  user-select: none;
+
   outline: none;
 
   margin: 0;

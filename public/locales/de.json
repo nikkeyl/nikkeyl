@@ -2,6 +2,9 @@
   "about": {
     "info": "Warum zum Teufel sollte man hier etwas über sich selbst schreiben, wenn die Projekte einem alles sagen und sogar viel besser zeigen?"
   },
+  "buttons": {
+    "view": "Siehe"
+  },
   "dates": {
     "month": "monat",
     "months": "monate",

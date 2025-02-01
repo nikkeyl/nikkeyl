@@ -40,6 +40,30 @@
   }
 }
 
+.info {
+  max-block-size: fit-content;
+  max-inline-size: to-rem(30);
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: to-rem(5);
+
+  align-items: start;
+  justify-content: center;
+
+  > h3 {
+    max-inline-size: fit-content;
+  }
+
+  > svg,
+  > img {
+    inline-size: to-rem(20);
+    block-size: to-rem(20);
+  }
+}
+
 .title {
   padding-block: to-rem(4) to-rem(6);
 

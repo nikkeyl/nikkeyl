@@ -21,7 +21,8 @@
   font-weight: 700;
 
   // stylelint-disable
-  transition: background-color var(--default-transition, $default-transition);
+  transition: var(--default-transition, $default-transition);
+  transition-property: background-color, scale;
 
   @include media-hover {
     background-color: var(--color-accent, $color-accent);

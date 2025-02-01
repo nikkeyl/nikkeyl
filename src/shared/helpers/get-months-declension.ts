@@ -1,9 +1,9 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 
-const translations = await getTranslations('dates');
-const locale = await getLocale();
+const getMonthsDeclension = async (months: number) => {
+  const translations = await getTranslations('dates');
+  const locale = await getLocale();
 
-const getMonthsDeclension = (months: number) => {
   if (months % 10 === 1 && months !== 11) {
     return translations('month');
   }

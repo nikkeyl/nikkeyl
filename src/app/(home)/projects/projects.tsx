@@ -1,9 +1,11 @@
 'use client';
 
+import clsx from 'clsx';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react'; // Добавлен useCallback
 
+import { ArrowIcon } from '@/icons/arrow';
 import { Title } from '@/ui/title/title';
 import { ProjectCard } from '@/widgets/project-card/project-card';
 
@@ -14,6 +16,14 @@ const Projects = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start', startIndex: 0 });
 
   const translations = useTranslations('titles');
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -33,12 +43,26 @@ const Projects = () => {
 
   return (
     <section>
-      <Title className={style.title} title={translations('projects')} />
+      <div className={style.head}>
+        <Title title={translations('projects')} />
+        <div className={style.controls}>
+          <button className={style.button} onClick={scrollPrev} type='button'>
+            <ArrowIcon />
+          </button>
+          <button
+            className={clsx(style.button, style.rotate)}
+            onClick={scrollNext}
+            type='button'
+          >
+            <ArrowIcon />
+          </button>
+        </div>
+      </div>
       <div ref={emblaRef} className={style.slider}>
         <ul className={style.projects}>
           {projects.map(({ key, src }) => (
             <li key={key} className={style.project}>
-              <ProjectCard alt={src} href='' src={src} />
+              <ProjectCard alt={src} hosting='github' href='' isCommerce src={src} />
             </li>
           ))}
         </ul>
