@@ -12,7 +12,7 @@ const ToolCard = (properties: Properties) => {
     <div className={style.wrapper} title={title}>
       <Title className={style.title} level='h3' title={title} />
       <div className={style.image}>
-        <Image alt={title || ''} height={100} src={src || ''} width={100} />
+        <Image alt={title || ''} height={60} src={src || ''} width={60} />
       </div>
     </div>
   );

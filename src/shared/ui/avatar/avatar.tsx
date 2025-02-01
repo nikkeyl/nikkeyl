@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
+import { blur } from '@/config/constants';
+
 import { Title } from '../title/title';
-import style from './image-wrapper.module.scss';
-import type { Properties } from './image-wrapper.properties';
+import style from './avatar.module.scss';
+import type { Properties } from './avatar.properties';
 
-const ImageWrapper = (properties: Properties) => {
+const Avatar = (properties: Properties) => {
   const { alt, src } = properties;
-
-  const blur = 'UklGRhwAAABXRUJQVlA4TBAAAAAvY8AYAAcQ/S9P/wMR0f8A';
 
   return (
     <div className={style.wrapper}>
@@ -25,4 +25,4 @@ const ImageWrapper = (properties: Properties) => {
   );
 };
 
-export { ImageWrapper };
+export { Avatar };

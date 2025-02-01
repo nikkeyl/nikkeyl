@@ -35,7 +35,7 @@
 }
 
 .title {
-  border-block-start: to-rem(2) solid var(--color-primary, $color-secondary);
+  border-block-start: var(--dark-border, $dark-border);
 
   inline-size: 100%;
 

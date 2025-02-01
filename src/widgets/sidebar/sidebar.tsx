@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { experience } from '@/mocks/experience';
 import { socials } from '@/mocks/socials';
-import { ImageWrapper } from '@/ui/image-wrapper/image-wrapper';
+import { Avatar } from '@/ui/avatar/avatar';
 import { Social } from '@/ui/social/social';
 import { Text } from '@/ui/text/text';
 
@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <aside className={style.wrapper}>
       <div className={style.avatar}>
-        <ImageWrapper alt='nikkeyl' src='/images/about-me/nikkeyl.svg' />
+        <Avatar alt='nikkeyl' src='/images/about-me/nikkeyl.svg' />
         <ul className={style.socials}>
           {socials.map(({ href, icon, key }) => (
             <li key={key}>
@@ -24,16 +24,14 @@ const Sidebar = () => {
           ))}
         </ul>
       </div>
-      <div>
-        <ul className={style.labels}>
-          {experience.map(({ icon, key, startDate, text }) => (
-            <li key={key}>
-              <ExperienceLabel icon={icon} startDate={startDate} text={text} />
-            </li>
-          ))}
-        </ul>
-        <Text>{translations('info')}</Text>
-      </div>
+      <ul className={style.labels}>
+        {experience.map(({ icon, key, startDate, text }) => (
+          <li key={key}>
+            <ExperienceLabel icon={icon} startDate={startDate} text={text} />
+          </li>
+        ))}
+      </ul>
+      <Text>{translations('info')}</Text>
     </aside>
   );
 };

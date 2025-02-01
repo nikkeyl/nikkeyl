@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import { extractFileName } from '@/helpers/extract-file-name';
+import { blur } from '@/config/constants';
 import { CoinIcon } from '@/icons/coin';
 import { Button } from '@/ui/button/button';
 import { Title } from '@/ui/title/title';
@@ -10,7 +10,7 @@ import style from './project-card.module.scss';
 import type { Properties } from './project-card.properties';
 
 const ProjectCard = (properties: Properties) => {
-  const { alt, hosting, href, isCommerce = false, src } = properties;
+  const { alt, hosting, href, isCommerce = false, src, title } = properties;
 
   const translations = useTranslations('buttons');
 
@@ -22,11 +22,7 @@ const ProjectCard = (properties: Properties) => {
       target='_blank'
     >
       <div className={style.info}>
-        <Title
-          className={style.title}
-          level='h3'
-          title={extractFileName(src || '')}
-        />
+        <Title className={style.title} level='h3' title={title} />
         {hosting !== 'other' &&
           (hosting === 'github' ? (
             <Image
@@ -46,7 +42,15 @@ const ProjectCard = (properties: Properties) => {
         {isCommerce && <CoinIcon />}
       </div>
       <div className={style.image}>
-        <Image alt={alt || ''} fill src={src || ''} />
+        <Image
+          alt={alt || ''}
+          blurDataURL={`data:image/webp;base64,${blur}`}
+          fetchPriority='high'
+          fill
+          placeholder='blur'
+          priority
+          src={src || ''}
+        />
         <div className={style.view}>
           <Button text={translations('view')} />
         </div>

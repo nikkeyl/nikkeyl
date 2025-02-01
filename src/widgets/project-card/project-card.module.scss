@@ -41,7 +41,7 @@
 }
 
 .info {
-  border-inline-start: to-rem(2) solid var(--color-primary, $color-secondary);
+  border-inline-start: var(--dark-border, $dark-border);
 
   display: flex;
 

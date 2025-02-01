@@ -1,10 +1,11 @@
 'use client';
 
 import clsx from 'clsx';
-import useEmblaCarousel from 'embla-carousel-react';
+import slider from 'embla-carousel-react';
 import { useTranslations } from 'next-intl';
-import { useCallback /* , useEffect, useState */ } from 'react'; // Добавлен useCallback
+import { useCallback } from 'react';
 
+import { defaultSliderOptions } from '@/config/default-slider-options';
 import { ArrowIcon } from '@/icons/arrow';
 import { projects } from '@/mocks/projects';
 import { Title } from '@/ui/title/title';
@@ -13,34 +14,17 @@ import { ProjectCard } from '@/widgets/project-card/project-card';
 import style from './projects.module.scss';
 
 const Projects = () => {
-  // const [projects, setProjects] = useState<{ src: string; key: number }[]>([]);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start', startIndex: 0 });
+  const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
 
   const translations = useTranslations('titles');
 
   const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
+    if (sliderApi) sliderApi.scrollPrev();
+  }, [sliderApi]);
 
   const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
-  // useEffect(() => {
-  //   const fetchProjects = async () => {
-  //     const response = await fetch('/api/get-projects-images');
-  //     const project = await response.json();
-
-  //     const projectsList = project.map((src: string, key: number) => ({
-  //       src,
-  //       key,
-  //     }));
-
-  //     setProjects(projectsList);
-  //   };
-
-  //   fetchProjects();
-  // }, []);
+    if (sliderApi) sliderApi.scrollNext();
+  }, [sliderApi]);
 
   return (
     <section>
@@ -59,9 +43,9 @@ const Projects = () => {
           </button>
         </div>
       </div>
-      <div ref={emblaRef} className={style.slider}>
+      <div ref={sliderRef} className={style.slider}>
         <ul className={style.projects}>
-          {projects.map(({ alt, hosting, href, isCommerce, key, src }) => (
+          {projects.map(({ alt, hosting, href, isCommerce, key, src, title }) => (
             <li key={key} className={style.project}>
               <ProjectCard
                 alt={alt}
@@ -69,6 +53,7 @@ const Projects = () => {
                 href={href}
                 isCommerce={isCommerce}
                 src={src}
+                title={title}
               />
             </li>
           ))}

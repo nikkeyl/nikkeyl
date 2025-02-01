@@ -5,6 +5,7 @@ const projects = [
     href: '//aquaprofi.by',
     isCommerce: true,
     src: '/images/projects/aqua-profi.jpg',
+    title: 'aqua profi',
     key: 0,
   },
   {
@@ -13,6 +14,7 @@ const projects = [
     href: '//brainarti.ru',
     isCommerce: true,
     src: '/images/projects/brainarti.jpg',
+    title: 'brainarti',
     key: 1,
   },
   {
@@ -21,6 +23,7 @@ const projects = [
     href: '//chillofi.vercel.app',
     isCommerce: false,
     src: '/images/projects/chillofi.jpg',
+    title: 'chillofi',
     key: 2,
   },
   {
@@ -29,6 +32,7 @@ const projects = [
     href: '//nikkeyl.github.io/agency',
     isCommerce: false,
     src: '/images/projects/agency.jpg',
+    title: 'agency',
     key: 3,
   },
   {
@@ -37,6 +41,7 @@ const projects = [
     href: '//nikkeyl.github.io/abc',
     isCommerce: false,
     src: '/images/projects/abc.jpg',
+    title: 'abc',
     key: 4,
   },
   {
@@ -45,6 +50,7 @@ const projects = [
     href: '//nikkeyl.github.io/car-dealership',
     isCommerce: false,
     src: '/images/projects/car-dealership.jpg',
+    title: 'car dealership',
     key: 5,
   },
   {
@@ -53,6 +59,7 @@ const projects = [
     href: '//nikkeyl.github.io/deep',
     isCommerce: false,
     src: '/images/projects/deep.jpg',
+    title: 'deep',
     key: 6,
   },
   {
@@ -61,6 +68,7 @@ const projects = [
     href: '//nikkeyl.github.io/noiceland',
     isCommerce: false,
     src: '/images/projects/noiceland.jpg',
+    title: 'noiceland',
     key: 7,
   },
   {
@@ -69,6 +77,7 @@ const projects = [
     href: '//nikkeyl.github.io/ofdr',
     isCommerce: false,
     src: '/images/projects/ofdr.jpg',
+    title: 'ofdr',
     key: 8,
   },
   {
@@ -77,6 +86,7 @@ const projects = [
     href: '//nikkeyl.github.io/saimon',
     isCommerce: false,
     src: '/images/projects/saimon.jpg',
+    title: 'saimon',
     key: 9,
   },
 ];

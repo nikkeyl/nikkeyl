@@ -16,11 +16,6 @@
   box-sizing: border-box;
 }
 
-*::selection {
-  background-color: var(--color-accent, $color-accent);
-  color: var(--color-primary, $color-primary);
-}
-
 html {
   background-color: var(--color-primary, $color-primary);
 }
@@ -67,4 +62,5 @@ a {
     pointer-events: none;
     opacity: 0.5;
   }
+  
 }

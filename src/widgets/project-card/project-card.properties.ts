@@ -9,7 +9,8 @@ type Properties = DetailedHTMLProps<
   HTMLAnchorElement
 > &
   DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> & {
-    hosting: 'github' | 'vercel' | 'other';
+    title: string;
+    hosting: string;
     isCommerce?: boolean;
   };
 
