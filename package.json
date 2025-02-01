@@ -8,7 +8,7 @@
     "@guna81/react-ticker": "^3.4.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",
-    "next": "^15.1.4",
+    "next": "^15.1.6",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
