@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import { blur } from '@/config/constants';
-import { extractFileName } from '@/helpers/extract-file-name';
 import { LinkIcon } from '@/icons/link';
 import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Text } from '@/ui/text/text';
@@ -11,7 +10,7 @@ import style from './review-card.module.scss';
 import type { Properties } from './review-card.properties';
 
 const ReviewCard = (properties: Properties) => {
-  const { avatar, siteLink, text } = properties;
+  const { avatar, name, siteLink, text } = properties;
 
   return (
     <CardWrapper className={style.wrapper}>
@@ -30,11 +29,7 @@ const ReviewCard = (properties: Properties) => {
             />
           </div>
           <div className={style.info}>
-            <Title
-              className={style.name}
-              level='h3'
-              title={extractFileName(avatar)}
-            />
+            <Title className={style.name} level='h3' title={name} />
             <a
               className={style.link}
               href={siteLink}

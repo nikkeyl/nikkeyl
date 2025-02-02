@@ -1,5 +1,6 @@
 type Properties = {
   avatar: string;
+  name: string;
   siteLink: string;
   text: string;
 };

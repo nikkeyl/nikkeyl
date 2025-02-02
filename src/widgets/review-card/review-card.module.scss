@@ -1,14 +1,30 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  clip-path: polygon(90% 0, 100% 12.4%, 100% 100%, 10% 100%, 0 87.6%, 0 0);
+  transform: rotateX(15deg) rotateY(15deg) translateY(to-rem(-10))
+    translateZ(to-rem(-10));
+
+  clip-path: polygon(90% 0, 100% 10.2%, 100% 100%, 10% 100%, 0 89.8%, 0 0);
+
   padding-inline-start: to-rem(28);
+
+  min-block-size: to-rem(290);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  transition: transform var(--default-transition, $default-transition);
 
   &::after {
     inset-block-start: to-rem(-1);
     inset-inline-end: to-rem(-32);
     block-size: to-rem(25);
     inline-size: to-rem(60);
+  }
+
+  @include media-hover {
+    transform: rotateX(0) rotateY(0) translateY(0) translateZ(0);
   }
 }
 
@@ -26,17 +42,50 @@
 
   gap: to-rem(10);
 
-  align-items: center;
+  align-items: flex-start;
 }
 
 .image {
+  position: relative;
+
+  clip-path: polygon(80% 0, 100% 19.6%, 100% 100%, 20% 100%, 0 80.5%, 0 0);
+
   border: var(--default-border, $default-border);
+
   block-size: to-rem(50);
   inline-size: to-rem(50);
+
+  overflow: hidden;
+
   flex: 0 0 to-rem(50);
+
+  &::before,
+  &::after {
+    @include pseudo;
+
+    z-index: 1;
+
+    transform: rotate(45deg);
+
+    border-block-end: var(--default-border, $default-border);
+
+    block-size: to-rem(25);
+    inline-size: to-rem(60);
+  }
+
+  &::before {
+    inset-block-end: to-rem(-1);
+    inset-inline-start: to-rem(-17.7);
+  }
+
+  &::after {
+    inset-block-start: to-rem(-1);
+    inset-inline-end: to-rem(-51);
+  }
 }
 
 .info {
+  max-inline-size: to-rem(170);
   overflow: hidden;
 }
 
@@ -45,9 +94,11 @@
 
   overflow: hidden;
 
+  margin-bottom: to-rem(5);
   text-overflow: ellipsis;
   text-transform: capitalize;
-  text-wrap: nowrap;
+
+  word-break: keep-all;
 }
 
 .link {
@@ -62,8 +113,6 @@
   align-items: center;
 
   transition: var(--default-transition, $default-transition);
-
-  // stylelint-disable-next-line
   transition-property: color;
 
   > svg {
