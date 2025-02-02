@@ -11,7 +11,8 @@ import { ExperienceLabel } from '../experience-label/experience-label';
 import style from './sidebar.module.scss';
 
 const Sidebar = () => {
-  const translations = useTranslations('about');
+  const translationsAbout = useTranslations('about');
+  const translationsLabel = useTranslations('labels');
 
   return (
     <aside className={style.wrapper}>
@@ -28,11 +29,15 @@ const Sidebar = () => {
       <ul className={style.labels}>
         {experience.map(({ icon, key, startDate, text }) => (
           <li key={key}>
-            <ExperienceLabel icon={icon} startDate={startDate} text={text} />
+            <ExperienceLabel
+              icon={icon}
+              startDate={startDate}
+              text={translationsLabel(text)}
+            />
           </li>
         ))}
       </ul>
-      <Text>{translations('info')}</Text>
+      <Text>{translationsAbout('info')}</Text>
     </aside>
   );
 };
