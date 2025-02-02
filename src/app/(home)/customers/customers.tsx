@@ -6,20 +6,20 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
 import { extractFileName } from '@/helpers/extract-file-name';
-import { reviews } from '@/mocks/reviews';
+import { customers } from '@/mocks/customers';
 import { Controls } from '@/ui/controls/controls';
 import { Title } from '@/ui/title/title';
-import { ReviewCard } from '@/widgets/review-card/review-card';
+import { CustomerCard } from '@/widgets/customer-card/customer-card';
 
-import style from './reviews.module.scss';
+import style from './customers.module.scss';
 
-const Reviews = () => {
+const Customers = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
   const [isScrollNext, setIsScrollNext] = useState(false);
 
   const translationsTitle = useTranslations('titles');
-  const translationsReview = useTranslations('reviews');
+  const translationsReview = useTranslations('customers');
 
   const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
@@ -55,7 +55,7 @@ const Reviews = () => {
   return (
     <section>
       <div className={style.head}>
-        <Title title={translationsTitle('reviews')} />
+        <Title title={translationsTitle('customers')} />
         <Controls
           isScrollNext={isScrollNext}
           isScrollPrevious={isScrollPrevious}
@@ -65,9 +65,9 @@ const Reviews = () => {
       </div>
       <div ref={sliderRef}>
         <ul className={style.slider}>
-          {reviews.map(({ avatar, key, siteLink }) => (
+          {customers.map(({ avatar, key, siteLink }) => (
             <li key={key} className={style.slide}>
-              <ReviewCard
+              <CustomerCard
                 avatar={avatar}
                 name={translationsReview(`${extractFileName(avatar)}.name`)}
                 siteLink={siteLink}
@@ -81,4 +81,4 @@ const Reviews = () => {
   );
 };
 
-export { Reviews };
+export { Customers };

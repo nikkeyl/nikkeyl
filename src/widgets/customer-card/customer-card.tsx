@@ -6,10 +6,10 @@ import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Text } from '@/ui/text/text';
 import { Title } from '@/ui/title/title';
 
-import style from './review-card.module.scss';
-import type { Properties } from './review-card.properties';
+import style from './customer-card.module.scss';
+import type { Properties } from './customer-card.properties';
 
-const ReviewCard = (properties: Properties) => {
+const CustomerCard = (properties: Properties) => {
   const { avatar, name, siteLink, text } = properties;
 
   return (
@@ -41,10 +41,12 @@ const ReviewCard = (properties: Properties) => {
             </a>
           </div>
         </div>
-        <Text>{text}</Text>
+        <div className={style.text}>
+          <Text>{text}</Text>
+        </div>
       </div>
     </CardWrapper>
   );
 };
 
-export { ReviewCard };
+export { CustomerCard };
