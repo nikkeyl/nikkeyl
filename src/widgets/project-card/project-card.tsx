@@ -46,7 +46,7 @@ const ProjectCard = (properties: Properties) => {
         <Image
           alt={alt || ''}
           blurDataURL={`data:image/webp;base64,${blur}`}
-          fetchPriority='auto'
+          fetchPriority='low'
           fill
           placeholder='blur'
           priority

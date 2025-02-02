@@ -13,14 +13,7 @@ const ToolCard = (properties: Properties) => {
     <CardWrapper className={style.wrapper} title={title}>
       <Title className={style.title} direction='vertical' level='h3' title={title} />
       <div className={style.image}>
-        <Image
-          alt={title || ''}
-          fetchPriority='auto'
-          height={60}
-          priority
-          src={src || ''}
-          width={60}
-        />
+        <Image alt={title || ''} height={60} src={src || ''} width={60} />
       </div>
     </CardWrapper>
   );

@@ -13,6 +13,7 @@ const Social = (properties: Properties) => {
       href={href}
       rel='nofollow noreferrer'
       target='_blank'
+      title={ariaLabel}
     >
       <Icon />
     </a>
