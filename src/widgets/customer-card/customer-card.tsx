@@ -20,10 +20,8 @@ const CustomerCard = (properties: Properties) => {
             <Image
               alt={avatar}
               blurDataURL={`data:image/webp;base64,${blur}`}
-              fetchPriority='high'
               height={60}
               placeholder='blur'
-              priority
               src={avatar}
               width={60}
             />
