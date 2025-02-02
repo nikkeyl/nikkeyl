@@ -92,9 +92,10 @@
 .name {
   color: var(--color-highlight, $color-highlight);
 
+  margin-block-end: to-rem(5);
+
   overflow: hidden;
 
-  margin-bottom: to-rem(5);
   text-overflow: ellipsis;
   text-transform: capitalize;
 
@@ -113,6 +114,8 @@
   align-items: center;
 
   transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable
   transition-property: color;
 
   > svg {

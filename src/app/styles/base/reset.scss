@@ -29,8 +29,8 @@ body {
 }
 
 section {
-  padding-block: to-rem(15);
-  overflow: hidden;
+  padding: to-rem(15);
+  min-block-size: to-rem(170);
 }
 
 img {
