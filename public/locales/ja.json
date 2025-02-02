@@ -15,7 +15,7 @@
     "commerce": "商業経験",
     "development": "開発中"
   },
-  "reviews": {
+  "customers": {
     "alexey-mozgunov": {
       "name":"アレクセイ モズグノフ",
       "text":"ニキータの迅速なサイト制作に感謝します。タスクは合意した期間内に完了しました。サイトは、現代のトレンドと要件に沿った軽快で高品質なものになりました。"
@@ -25,8 +25,8 @@
     "loading": "ロード..."
   },
   "titles": {
+    "customers": "お客様",
     "projects": "プロジェクト",
-    "reviews": "レビュー",
     "tools": "ツール"
   }
 }
