@@ -1,13 +1,12 @@
 'use client';
 
-import clsx from 'clsx';
 import slider from 'embla-carousel-react';
 import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
-import { ArrowIcon } from '@/icons/arrow';
 import { projects } from '@/mocks/projects';
+import { Controls } from '@/ui/controls/controls';
 import { Title } from '@/ui/title/title';
 import { ProjectCard } from '@/widgets/project-card/project-card';
 
@@ -15,12 +14,12 @@ import style from './projects.module.scss';
 
 const Projects = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
+  const [isScrollPrevious, setIsScrollPrevious] = useState(false);
+  const [isScrollNext, setIsScrollNext] = useState(false);
 
   const translations = useTranslations('titles');
 
-  const scrollPrev = useCallback(() => {
+  const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
   }, [sliderApi]);
 
@@ -30,8 +29,8 @@ const Projects = () => {
 
   const updateScrollState = useCallback(() => {
     if (sliderApi) {
-      setCanScrollPrev(sliderApi.canScrollPrev());
-      setCanScrollNext(sliderApi.canScrollNext());
+      setIsScrollPrevious(sliderApi.canScrollPrev());
+      setIsScrollNext(sliderApi.canScrollNext());
     }
   }, [sliderApi]);
 
@@ -55,33 +54,17 @@ const Projects = () => {
     <section>
       <div className={style.head}>
         <Title title={translations('projects')} />
-        <div className={style.controls}>
-          <button
-            aria-disabled={!canScrollPrev}
-            aria-label='Previous Slide'
-            className={style.button}
-            disabled={!canScrollPrev}
-            onClick={scrollPrev}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-          <button
-            aria-disabled={!canScrollNext}
-            aria-label='Next Slide'
-            className={clsx(style.button, style.rotate)}
-            disabled={!canScrollNext}
-            onClick={scrollNext}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-        </div>
+        <Controls
+          isScrollNext={isScrollNext}
+          isScrollPrevious={isScrollPrevious}
+          scrollNext={scrollNext}
+          scrollPrevious={scrollPrevious}
+        />
       </div>
       <div ref={sliderRef}>
-        <ul className={style.projects}>
+        <ul className={style.slider}>
           {projects.map(({ alt, hosting, href, isCommerce, key, src, title }) => (
-            <li key={key} className={style.project}>
+            <li key={key} className={style.slide}>
               <ProjectCard
                 alt={alt}
                 hosting={hosting}

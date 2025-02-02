@@ -1,14 +1,13 @@
 'use client';
 
-import clsx from 'clsx';
 import slider from 'embla-carousel-react';
 import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
 import { extractFileName } from '@/helpers/extract-file-name';
-import { ArrowIcon } from '@/icons/arrow';
 import { reviews } from '@/mocks/reviews';
+import { Controls } from '@/ui/controls/controls';
 import { Title } from '@/ui/title/title';
 import { ReviewCard } from '@/widgets/review-card/review-card';
 
@@ -16,13 +15,13 @@ import style from './reviews.module.scss';
 
 const Reviews = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
+  const [isScrollPrevious, setIsScrollPrevious] = useState(false);
+  const [isScrollNext, setIsScrollNext] = useState(false);
 
   const translationsTitle = useTranslations('titles');
   const translationsReview = useTranslations('reviews');
 
-  const scrollPrev = useCallback(() => {
+  const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
   }, [sliderApi]);
 
@@ -32,8 +31,8 @@ const Reviews = () => {
 
   const updateScrollState = useCallback(() => {
     if (sliderApi) {
-      setCanScrollPrev(sliderApi.canScrollPrev());
-      setCanScrollNext(sliderApi.canScrollNext());
+      setIsScrollPrevious(sliderApi.canScrollPrev());
+      setIsScrollNext(sliderApi.canScrollNext());
     }
   }, [sliderApi]);
 
@@ -57,33 +56,17 @@ const Reviews = () => {
     <section>
       <div className={style.head}>
         <Title title={translationsTitle('reviews')} />
-        <div className={style.controls}>
-          <button
-            aria-disabled={!canScrollPrev}
-            aria-label='Previous Slide'
-            className={style.button}
-            disabled={!canScrollPrev}
-            onClick={scrollPrev}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-          <button
-            aria-disabled={!canScrollNext}
-            aria-label='Next Slide'
-            className={clsx(style.button, style.rotate)}
-            disabled={!canScrollNext}
-            onClick={scrollNext}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-        </div>
+        <Controls
+          isScrollNext={isScrollNext}
+          isScrollPrevious={isScrollPrevious}
+          scrollNext={scrollNext}
+          scrollPrevious={scrollPrevious}
+        />
       </div>
       <div ref={sliderRef}>
-        <ul className={style.reviews}>
+        <ul className={style.slider}>
           {reviews.map(({ avatar, key, siteLink }) => (
-            <li key={key} className={style.review}>
+            <li key={key} className={style.slide}>
               <ReviewCard
                 avatar={avatar}
                 name={translationsReview(`${extractFileName(avatar)}.name`)}

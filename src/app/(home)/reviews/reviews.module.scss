@@ -7,56 +7,12 @@
   justify-content: space-between;
 }
 
-.controls {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: to-rem(10);
-  align-items: center;
-}
-
-.button {
-  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0 0);
-
-  background-color: $color-inverse;
-
-  color: $color-primary;
-
-  padding: to-rem(5);
-
-  display: flex;
-
-  flex-wrap: nowrap;
-
-  // stylelint-disable
-  transition: var(--default-transition, $default-transition);
-  transition-property: background-color, scale, color;
-
-  svg {
-    inline-size: to-rem(25);
-    block-size: to-rem(25);
-  }
-
-  @include media-hover {
-    background-color: var(--color-highlight, $color-highlight);
-
-    &:active {
-      scale: 0.9;
-      background-color: var(--color-accent, $color-accent);
-      color: var(--color-secondary, $color-secondary);
-    }
-  }
-}
-
-.rotate {
-  rotate: 180deg;
-}
-
-.reviews {
+.slider {
   display: flex;
   flex-wrap: nowrap;
   gap: to-rem(15);
 }
 
-.review {
+.slide {
   flex: 0 0 to-rem(290);
 }
