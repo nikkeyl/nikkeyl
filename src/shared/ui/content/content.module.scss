@@ -9,7 +9,7 @@
   scrollbar-color: var(--color-accent, $color-accent)
     var(--color-primary, $color-primary);
 
-  padding: to-rem(15);
+  padding-block: to-rem(15);
 
   overflow: hidden auto;
 

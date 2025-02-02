@@ -4,8 +4,8 @@ import { Tools } from './tools/tools';
 
 const HomePage = () => (
   <>
-    <Tools />
     <Projects />
+    <Tools />
     <Reviews />
   </>
 );

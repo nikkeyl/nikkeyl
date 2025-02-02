@@ -21,6 +21,9 @@
       "text":"Vielen Dank an Nikita für die prompte Erstellung der Website. Die Aufgabe wurde innerhalb des vereinbarten Zeitrahmens abgeschlossen. Die Website ist leicht und qualitativ hochwertig und entspricht den modernen Trends und Anforderungen, was für die SEO-Förderung wichtig ist."
     }
   },
+  "text": {
+    "loading": "Laden..."
+  },
   "titles": {
     "projects": "Projekte",
     "reviews": "Bewertungen",

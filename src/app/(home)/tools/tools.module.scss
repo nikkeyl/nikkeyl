@@ -4,8 +4,15 @@
   margin-block-end: to-rem(15);
 }
 
-.list {
+.loader {
+  block-size: to-rem(90);
+
   display: flex;
+
   flex-wrap: nowrap;
-  gap: to-rem(15);
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
 }
