@@ -1,9 +1,5 @@
 {
   "type": "module",
-  "scripts": {
-    "init": "bun i && husky",
-    "dev": "next dev"
-  },
   "dependencies": {
     "@guna81/react-ticker": "^3.4.1",
     "clsx": "^2.1.1",
