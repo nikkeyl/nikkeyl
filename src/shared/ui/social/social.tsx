@@ -2,12 +2,13 @@ import style from './social.module.scss';
 import type { Properties } from './social.properties';
 
 const Social = (properties: Properties) => {
-  const { href, icon } = properties;
+  const { ariaLabel, href, icon } = properties;
 
   const Icon = icon;
 
   return (
     <a
+      aria-label={ariaLabel}
       className={style.wrapper}
       href={href}
       rel='nofollow noreferrer'

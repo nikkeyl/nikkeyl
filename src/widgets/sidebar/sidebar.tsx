@@ -19,9 +19,9 @@ const Sidebar = () => {
       <div className={style.avatar}>
         <Avatar alt={author} src={`/images/about-me/${author}.svg`} />
         <ul className={style.socials}>
-          {socials.map(({ href, icon, key }) => (
+          {socials.map(({ ariaLabel, href, icon, key }) => (
             <li key={key}>
-              <Social href={href} icon={icon} />
+              <Social ariaLabel={ariaLabel} href={href} icon={icon} />
             </li>
           ))}
         </ul>

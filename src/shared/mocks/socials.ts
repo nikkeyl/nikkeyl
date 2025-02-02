@@ -4,14 +4,16 @@ import { TelegramIcon } from '@/icons/telegram';
 
 const socials = [
   {
+    ariaLabel: 'GitHub',
     href: `//github.com/${author}`,
-    key: 0,
     icon: GitHubIcon,
+    key: 0,
   },
   {
+    ariaLabel: 'Telegram',
     href: `//t.me/${author}`,
-    key: 1,
     icon: TelegramIcon,
+    key: 1,
   },
 ];
 
