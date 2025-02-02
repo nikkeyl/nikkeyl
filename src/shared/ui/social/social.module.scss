@@ -3,22 +3,33 @@
 .wrapper {
   color: var(--color-inverse, $color-inverse);
 
+  border-radius: 50%;
+
   block-size: to-rem(40);
   inline-size: to-rem(40);
+
+  overflow: hidden;
 
   display: flex;
 
   flex-wrap: nowrap;
 
   transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
   transition-property: color, scale;
 
+  > svg {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
   @include media-hover {
-    color: var(--color-accent, $color-accent);
+    color: var(--color-highlight, $color-highlight);
 
     &:active {
       scale: 0.9;
-      color: var(--color-highlight, $color-highlight);
+      color: var(--color-accent, $color-accent);
     }
   }
 }

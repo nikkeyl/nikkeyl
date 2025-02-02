@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+  user-select: none;
+
   outline: none;
 
   margin: 0;
@@ -14,11 +16,6 @@
   box-sizing: border-box;
 }
 
-*::selection {
-  background-color: var(--color-accent, $color-accent);
-  color: var(--color-primary, $color-primary);
-}
-
 html {
   background-color: var(--color-primary, $color-primary);
 }
@@ -26,28 +23,45 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
+
+  // stylelint-disable-next-line
+  overflow-x: hidden;
+}
+
+section {
+  padding-block: to-rem(15);
   overflow: hidden;
 }
 
 img {
   border-radius: inherit;
+
   block-size: 100%;
   inline-size: 100%;
+
   object-fit: cover;
+  object-position: top;
 }
 
-img,
 svg {
-  user-select: none;
+  inline-size: to-rem(20);
+  block-size: to-rem(20);
 }
 
 ul {
   list-style: none;
 }
 
-button {
-  appearance: none;
+button,
+a {
+  cursor: pointer;
+
+  color: inherit;
+
   display: block;
+  appearance: none;
+
+  text-decoration: none;
 
   &:disabled,
   [aria-disabled="true"] {

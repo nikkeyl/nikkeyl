@@ -2,23 +2,23 @@
 
 .wrapper {
   padding: to-rem(15);
-  border-block-end: 1px solid var(--color-highlight, $color-highlight);
+  border-block-end: 1px solid var(--color-accent, $color-accent);
 
-  @media (width >= to-em(992)) {
-    padding: to-rem(35) to-rem(15);
+  @media (width >= to-em(768)) {
+    padding: to-rem(30) to-rem(15);
     border-block-end: none;
-    border-inline-end: to-rem(2) solid var(--color-highlight, $color-highlight);
+    border-inline-end: var(--default-border, $default-border);
   }
 }
 
-.me {
+.avatar {
   margin-block-end: to-rem(15);
 
   display: flex;
 
   flex-wrap: nowrap;
 
-  gap: to-rem(20);
+  gap: to-rem(30);
 
   align-items: center;
 }
@@ -26,10 +26,6 @@
 .socials {
   display: grid;
   gap: to-rem(10);
-}
-
-.title {
-  margin-block-end: to-rem(10);
 }
 
 .labels {

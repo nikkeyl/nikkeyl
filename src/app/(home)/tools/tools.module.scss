@@ -1,0 +1,11 @@
+@use "@/styles/abstracts" as *;
+
+.title {
+  margin-block-end: to-rem(15);
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: to-rem(15);
+}

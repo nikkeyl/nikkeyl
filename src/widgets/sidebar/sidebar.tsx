@@ -1,39 +1,43 @@
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
-import { experience } from '@/data/experience';
-import { socials } from '@/data/socials';
-import { ImageWrapper } from '@/ui/image-wrapper/image-wrapper';
+import { author } from '@/config/constants';
+import { experience } from '@/mocks/experience';
+import { socials } from '@/mocks/socials';
+import { Avatar } from '@/ui/avatar/avatar';
 import { Social } from '@/ui/social/social';
 import { Text } from '@/ui/text/text';
-import { Title } from '@/ui/title/title';
 
 import { ExperienceLabel } from '../experience-label/experience-label';
-import styles from './sidebar.module.scss';
+import style from './sidebar.module.scss';
 
-const Sidebar = async () => {
-  const translations = await getTranslations('about');
+const Sidebar = () => {
+  const translationsAbout = useTranslations('about');
+  const translationsLabel = useTranslations('labels');
 
   return (
-    <aside className={styles.wrapper}>
-      <div className={styles.me}>
-        <ImageWrapper alt='nikkeyl' src='/images/about-me/nikkeyl.jpg' />
-        <ul className={styles.socials}>
-          {socials.map(({ icon, href, key }) => (
+    <aside className={style.wrapper}>
+      <div className={style.avatar}>
+        <Avatar alt={author} src={`/images/about-me/${author}.svg`} />
+        <ul className={style.socials}>
+          {socials.map(({ href, icon, key }) => (
             <li key={key}>
               <Social href={href} icon={icon} />
             </li>
           ))}
         </ul>
       </div>
-      <Title className={styles.title} title={`${translations('name')} (nikkeyl)`} />
-      <ul className={styles.labels}>
-        {experience.map(({ icon, startDate, text, key }) => (
+      <ul className={style.labels}>
+        {experience.map(({ icon, key, startDate, text }) => (
           <li key={key}>
-            <ExperienceLabel icon={icon} startDate={startDate} text={text} />
+            <ExperienceLabel
+              icon={icon}
+              startDate={startDate}
+              text={translationsLabel(text)}
+            />
           </li>
         ))}
       </ul>
-      <Text>{translations('info')}</Text>
+      <Text>{translationsAbout('info')}</Text>
     </aside>
   );
 };

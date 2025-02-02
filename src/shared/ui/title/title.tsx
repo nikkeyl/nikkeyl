@@ -1,14 +1,25 @@
 import clsx from 'clsx';
 
-import styles from './title.module.scss';
+import style from './title.module.scss';
 import type { Properties } from './title.properties';
 
 const Title = (properties: Properties) => {
-  const { title, level = 'h2', className } = properties;
+  const { className, direction, level = 'h2', title } = properties;
 
   const TitleLevel = level;
 
-  return <TitleLevel className={clsx(styles.title, className)}>{title}</TitleLevel>;
+  return (
+    <TitleLevel
+      className={clsx(
+        style.title,
+        level && style[level],
+        direction && style[direction],
+        className,
+      )}
+    >
+      {title}
+    </TitleLevel>
+  );
 };
 
 export { Title };

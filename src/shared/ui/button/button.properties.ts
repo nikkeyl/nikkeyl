@@ -1,6 +1,5 @@
 type Properties = {
-  src: string;
-  alt: string;
+  text: string;
 };
 
 export type { Properties };

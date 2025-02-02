@@ -1,0 +1,80 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  clip-path: polygon(90% 0, 100% 12.4%, 100% 100%, 10% 100%, 0 87.6%, 0 0);
+  padding-inline-start: to-rem(28);
+
+  &::after {
+    inset-block-start: to-rem(-1);
+    inset-inline-end: to-rem(-32);
+    block-size: to-rem(25);
+    inline-size: to-rem(60);
+  }
+}
+
+.inner {
+  background-color: var(--color-primary, $color-primary);
+  padding: to-rem(10);
+}
+
+.head {
+  margin-block-end: to-rem(15);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: to-rem(10);
+
+  align-items: center;
+}
+
+.image {
+  border: var(--default-border, $default-border);
+  block-size: to-rem(50);
+  inline-size: to-rem(50);
+  flex: 0 0 to-rem(50);
+}
+
+.info {
+  overflow: hidden;
+}
+
+.name {
+  color: var(--color-highlight, $color-highlight);
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+}
+
+.link {
+  color: var(--color-inverse, $color-inverse);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: to-rem(5);
+
+  align-items: center;
+
+  transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
+  transition-property: color;
+
+  > svg {
+    color: var(--color-highlight, $color-highlight);
+  }
+
+  @include media-hover {
+    color: var(--color-highlight, $color-highlight);
+
+    &:active {
+      color: var(--color-accent, $color-accent);
+    }
+  }
+}

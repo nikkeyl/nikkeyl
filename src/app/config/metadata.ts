@@ -2,7 +2,9 @@ import type { Metadata, Viewport } from 'next';
 
 import socialCoverImage from '@/socials/cover.jpg';
 
-const title = 'nikkeyl';
+import { author } from './constants';
+
+const title = author;
 const description = `${title} — Front-End Development`;
 const images = [
   {
@@ -12,8 +14,7 @@ const images = [
   },
 ];
 const siteName = title;
-const siteURL = 'https://nikkeyl.vercel.app';
-const author = title;
+const siteURL = `https://${author}.vercel.app`;
 
 const metadata: Metadata = {
   alternates: { canonical: siteURL },
@@ -35,10 +36,10 @@ const metadata: Metadata = {
     'front-end',
     'full-time',
     'herd-skills',
-    'nikkeyl',
     'part-time',
     'portfolio',
     'soft-skills',
+    author,
   ],
   metadataBase: new URL(siteURL),
   robots: {

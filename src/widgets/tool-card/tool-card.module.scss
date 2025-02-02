@@ -1,0 +1,46 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  clip-path: polygon(90% 0, 100% 12%, 100% 100%, 10% 100%, 0 88%, 0 0);
+
+  max-block-size: to-rem(90);
+  max-inline-size: fit-content;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  &::after {
+    inset-block-start: to-rem(-12);
+    inset-inline-end: to-rem(-24);
+    block-size: to-rem(25);
+    inline-size: to-rem(30);
+  }
+}
+
+.image {
+  background-color: var(--color-primary, $color-primary);
+
+  padding: to-rem(5);
+
+  block-size: to-rem(90);
+  inline-size: to-rem(90);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  > img {
+    inline-size: to-rem(60);
+    block-size: to-rem(60);
+  }
+}
+
+.title {
+  border-block-start: var(--dark-border, $dark-border);
+  max-block-size: to-rem(90);
+  font-size: to-rem(20);
+}

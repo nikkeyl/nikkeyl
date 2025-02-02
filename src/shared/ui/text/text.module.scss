@@ -1,10 +1,10 @@
 @use "@/styles/abstracts" as *;
 
 .text {
-  color: var(--color-highlight, $color-highlight);
+  color: var(--color-accent, $color-accent);
   font-size: to-rem(18);
 
-  @media (width >= to-em(992)) {
+  @media (width >= to-em(768)) {
     font-size: to-rem(20);
   }
 }
@@ -17,6 +17,6 @@
   color: var(--color-inverse, $color-inverse);
 
   span {
-    color: var(--color-highlight, $color-highlight);
+    color: var(--color-accent, $color-accent);
   }
 }

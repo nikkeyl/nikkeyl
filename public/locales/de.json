@@ -1,1 +1,26 @@
-{}
+{
+  "about": {
+    "info": "Warum zum Teufel sollte man hier etwas über sich selbst schreiben, wenn die Projekte einem alles sagen und sogar viel besser zeigen?"
+  },
+  "buttons": {
+    "view": "Siehe"
+  },
+  "dates": {
+    "month": "monat",
+    "months": "monate",
+    "year": "jahr",
+    "years": "jahre"
+  },
+  "labels": {
+    "commerce": "kommerzielle erfahrung",
+    "development": "in entwicklung"
+  },
+  "reviews": {
+    "alexey-mozgunov": "Vielen Dank an Nikita für die prompte Erstellung der Website. Die Aufgabe wurde innerhalb des vereinbarten Zeitrahmens abgeschlossen. Die Website ist leicht und qualitativ hochwertig und entspricht den modernen Trends und Anforderungen, was für die SEO-Förderung wichtig ist."
+  },
+  "titles": {
+    "projects": "Projekte",
+    "reviews": "Bewertungen",
+    "tools": "Werkzeuge"
+  }
+}
