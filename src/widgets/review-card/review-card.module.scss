@@ -1,27 +1,12 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  position: relative;
-
   clip-path: polygon(90% 0, 100% 12.4%, 100% 100%, 10% 100%, 0 87.6%, 0 0);
-
-  background-color: var(--color-accent, $color-accent);
-
   padding-inline-start: to-rem(28);
 
-  border: var(--default-border, $default-border);
-
   &::after {
-    @include pseudo;
-
     inset-block-start: to-rem(-1);
     inset-inline-end: to-rem(-32);
-    z-index: 1;
-
-    transform: rotate(45deg);
-
-    border-block-end: var(--default-border, $default-border);
-
     block-size: to-rem(25);
     inline-size: to-rem(60);
   }

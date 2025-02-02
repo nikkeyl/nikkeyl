@@ -7,7 +7,7 @@
 
   color: var(--color-primary, $color-primary);
 
-  padding: to-rem(8) to-rem(10);
+  padding: to-rem(10);
 
   inline-size: 100%;
 
@@ -20,8 +20,9 @@
   font-size: to-rem(20);
   font-weight: 700;
 
-  // stylelint-disable
   transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
   transition-property: background-color, scale, color;
 
   @include media-hover {

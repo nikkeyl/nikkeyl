@@ -1,30 +1,13 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  position: relative;
-
   clip-path: polygon(90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
-
-  background-color: var(--color-accent, $color-accent);
-
-  border: var(--default-border, $default-border);
-
   block-size: to-rem(200);
   inline-size: to-rem(200);
 
-  overflow: hidden;
-
   &::after {
-    @include pseudo;
-
     inset-block-start: to-rem(-11);
     inset-inline-end: to-rem(-16);
-    z-index: 1;
-
-    transform: rotate(45deg);
-
-    border-block-end: var(--default-border, $default-border);
-
     block-size: to-rem(25);
     inline-size: to-rem(30);
   }
@@ -36,14 +19,5 @@
 
 .title {
   border-block-start: var(--dark-border, $dark-border);
-
   inline-size: 100%;
-
-  overflow: hidden;
-
-  text-overflow: ellipsis;
-  text-orientation: upright;
-  text-wrap: nowrap;
-
-  writing-mode: vertical-lr;
 }

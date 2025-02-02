@@ -24,3 +24,13 @@
     font-size: to-rem(30);
   }
 }
+
+.vertical {
+  text-overflow: ellipsis;
+  text-orientation: upright;
+  text-wrap: nowrap;
+
+  writing-mode: vertical-lr;
+  overflow: hidden;
+
+}

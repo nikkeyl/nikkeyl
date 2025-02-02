@@ -24,7 +24,7 @@ body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
 
-  // stylelint-disable
+  // stylelint-disable-next-line
   overflow-x: hidden;
 }
 
@@ -35,9 +35,12 @@ section {
 
 img {
   border-radius: inherit;
+
   block-size: 100%;
   inline-size: 100%;
+
   object-fit: cover;
+  object-position: top;
 }
 
 svg {
@@ -52,13 +55,16 @@ ul {
 button,
 a {
   cursor: pointer;
-  text-decoration: none;
+
   color: inherit;
+
   display: block;
   appearance: none;
 
+  text-decoration: none;
+
   &:disabled,
-  &[aria-disabled="true"] {
+  [aria-disabled="true"] {
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.5;

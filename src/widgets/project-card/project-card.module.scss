@@ -1,21 +1,13 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  position: relative;
-
   transform: rotateX(15deg) rotateY(15deg) translateY(to-rem(-10))
     translateZ(to-rem(-10));
 
   clip-path: polygon(90% 0, 100% 8.3%, 100% 100%, 10% 100%, 0 91.7%, 0 0);
 
-  background-color: var(--color-accent, $color-accent);
-
-  border: var(--default-border, $default-border);
-
   block-size: to-rem(350);
   max-inline-size: to-rem(290);
-
-  overflow: hidden;
 
   display: flex;
 
@@ -24,16 +16,8 @@
   transition: transform var(--default-transition, $default-transition);
 
   &::after {
-    @include pseudo;
-
     inset-block-start: to-rem(-1);
     inset-inline-end: to-rem(-32);
-    z-index: 1;
-
-    transform: rotate(45deg);
-
-    border-block-end: var(--default-border, $default-border);
-
     block-size: to-rem(25);
     inline-size: to-rem(60);
   }
@@ -58,10 +42,6 @@
 
   align-items: center;
 
-  > h3 {
-    max-inline-size: fit-content;
-  }
-
   > img {
     inline-size: to-rem(20);
     block-size: to-rem(20);
@@ -70,25 +50,12 @@
 
 .title {
   padding-block: to-rem(3);
-
-  overflow: hidden;
-
   font-size: to-rem(20);
-
-  text-overflow: ellipsis;
-  text-orientation: upright;
-  text-wrap: nowrap;
-
-  writing-mode: vertical-lr;
 }
 
 .image {
   position: relative;
   inline-size: 100%;
-
-  > img {
-    object-position: top;
-  }
 }
 
 .view {

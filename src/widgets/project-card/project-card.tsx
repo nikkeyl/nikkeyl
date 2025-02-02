@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { blur } from '@/config/constants';
 import { CoinIcon } from '@/icons/coin';
 import { Button } from '@/ui/button/button';
+import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Title } from '@/ui/title/title';
 
 import style from './project-card.module.scss';
@@ -15,14 +16,14 @@ const ProjectCard = (properties: Properties) => {
   const translations = useTranslations('buttons');
 
   return (
-    <a
-      className={style.wrapper}
-      href={href}
-      rel='nofollow noreferrer'
-      target='_blank'
-    >
+    <CardWrapper className={style.wrapper} href={href} type='a'>
       <div className={style.info}>
-        <Title className={style.title} level='h3' title={title} />
+        <Title
+          className={style.title}
+          direction='vertical'
+          level='h3'
+          title={title}
+        />
         {hosting !== 'other' &&
           (hosting === 'github' ? (
             <Image
@@ -55,7 +56,7 @@ const ProjectCard = (properties: Properties) => {
           <Button text={translations('view')} />
         </div>
       </div>
-    </a>
+    </CardWrapper>
   );
 };
 
