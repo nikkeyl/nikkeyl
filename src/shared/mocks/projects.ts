@@ -1,4 +1,4 @@
-import { author } from "@/config/constants";
+import { author } from '@/config/constants';
 
 const projects = [
   {

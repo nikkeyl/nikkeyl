@@ -26,11 +26,11 @@
 }
 
 .vertical {
+  overflow: hidden;
+
   text-overflow: ellipsis;
   text-orientation: upright;
   text-wrap: nowrap;
 
   writing-mode: vertical-lr;
-  overflow: hidden;
-
 }
