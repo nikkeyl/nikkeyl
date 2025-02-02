@@ -60,6 +60,7 @@ const Reviews = () => {
         <div className={style.controls}>
           <button
             aria-disabled={!canScrollPrev}
+            aria-label='Previous Slide'
             className={style.button}
             disabled={!canScrollPrev}
             onClick={scrollPrev}
@@ -69,6 +70,7 @@ const Reviews = () => {
           </button>
           <button
             aria-disabled={!canScrollNext}
+            aria-label='Next Slide'
             className={clsx(style.button, style.rotate)}
             disabled={!canScrollNext}
             onClick={scrollNext}

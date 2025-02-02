@@ -4,6 +4,7 @@ type Properties = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 > & {
+  ariaLabel: string;
   icon: () => ReactNode;
 };
 
