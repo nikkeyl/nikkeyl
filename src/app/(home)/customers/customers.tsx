@@ -9,7 +9,7 @@ import { extractFileName } from '@/helpers/extract-file-name';
 import { customers } from '@/mocks/customers';
 import { Controls } from '@/ui/controls/controls';
 import { Title } from '@/ui/title/title';
-import { ReviewCard } from '@/widgets/review-card/review-card';
+import { CustomerCard } from '@/widgets/customer-card/customer-card';
 
 import style from './customers.module.scss';
 
@@ -67,7 +67,7 @@ const Customers = () => {
         <ul className={style.slider}>
           {customers.map(({ avatar, key, siteLink }) => (
             <li key={key} className={style.slide}>
-              <ReviewCard
+              <CustomerCard
                 avatar={avatar}
                 name={translationsReview(`${extractFileName(avatar)}.name`)}
                 siteLink={siteLink}
