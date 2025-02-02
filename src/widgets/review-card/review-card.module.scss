@@ -62,6 +62,8 @@
   align-items: center;
 
   transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
   transition-property: color;
 
   > svg {
