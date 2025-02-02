@@ -47,7 +47,7 @@ const Tools = () => {
           <Text>{translationsText('loading')}</Text>
         </div>
       ) : (
-        <Marquee speed={80}>
+        <Marquee className={style.list || ''} speed={80}>
           {tools.map(({ key, src }) => (
             <ToolCard key={key} src={src} title={extractFileName(src, true)} />
           ))}
