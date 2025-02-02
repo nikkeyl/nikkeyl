@@ -4,7 +4,8 @@
   font-weight: 700;
 }
 
-.h1 {
+.h1,
+.h3 {
   font-size: to-rem(20);
 }
 
@@ -14,14 +15,6 @@
 
   @media (width >= to-em(768)) {
     font-size: to-rem(40);
-  }
-}
-
-.h3 {
-  font-size: to-rem(25);
-
-  @media (width >= to-em(768)) {
-    font-size: to-rem(30);
   }
 }
 
