@@ -2,7 +2,7 @@
 
 .wrapper {
   position: relative;
-  background-color: var(--color-accent, var(--color-accent));
+  background-color: var(--color-accent, $color-accent);
   border: var(--default-border, $default-border);
   overflow: hidden;
 

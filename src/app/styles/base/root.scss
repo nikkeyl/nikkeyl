@@ -8,9 +8,15 @@
   --color-inverse: #{$color-inverse};
   --color-accent: #{$color-accent};
 
+  // RGB Color
+  --color-rgb-accent: #{$color-rgb-accent};
+
   // Borders
   --default-border: #{$default-border};
   --dark-border: #{$dark-border};
+
+  // Sizes
+  --default-size: #{$default-size};
 
   // Transitions
   --default-transition: #{$default-transition};

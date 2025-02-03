@@ -10,9 +10,9 @@
 .button {
   clip-path: polygon(80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0 0);
 
-  background-color: $color-inverse;
+  background-color: var(--color-inverse, $color-inverse);
 
-  color: $color-primary;
+  color: var(--color-primary, $color-primary);
 
   padding: to-rem(5);
 
@@ -20,27 +20,7 @@
 
   flex-wrap: nowrap;
 
-  transition: var(--default-transition, $default-transition);
-
-  // stylelint-disable
-  transition-property: background-color, scale, color;
-
   &.rotate {
     rotate: 180deg;
-  }
-
-  svg {
-    inline-size: to-rem(25);
-    block-size: to-rem(25);
-  }
-
-  @include media-hover {
-    background-color: var(--color-highlight, $color-highlight);
-
-    &:active {
-      scale: 0.9;
-      background-color: var(--color-accent, $color-accent);
-      color: var(--color-secondary, $color-secondary);
-    }
   }
 }

@@ -3,7 +3,7 @@
 .slider {
   display: flex;
   flex-wrap: nowrap;
-  gap: to-rem(15);
+  gap: var(--default-size, $default-size);
 
   > li {
     flex: 0 0 to-rem(290);

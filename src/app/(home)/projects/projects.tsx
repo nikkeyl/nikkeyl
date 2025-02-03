@@ -10,6 +10,8 @@ import { Head } from '@/ui/head/head';
 import { Slider } from '@/ui/slider/slider';
 import { ProjectCard } from '@/widgets/project-card/project-card';
 
+import style from './projects.module.scss';
+
 const Projects = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
@@ -47,7 +49,7 @@ const Projects = () => {
   }, [sliderApi, updateScrollState]);
 
   return (
-    <section>
+    <section className={style.wrapper}>
       <Head title='projects'>
         <Controls
           isScrollNext={isScrollNext}

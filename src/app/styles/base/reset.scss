@@ -23,14 +23,10 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
-
-  // stylelint-disable-next-line
-  overflow-x: hidden;
 }
 
 section {
-  padding: to-rem(15);
-  min-block-size: to-rem(170);
+  overflow: hidden;
 }
 
 img {
@@ -52,21 +48,35 @@ ul {
   list-style: none;
 }
 
+button {
+  transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
+  transition-property: background-color, scale, color;
+
+  &:not(:disabled) {
+    @include media-hover {
+      background-color: var(--color-highlight, $color-highlight);
+
+      &:active {
+        scale: 0.9;
+        background-color: var(--color-accent, $color-accent);
+        color: var(--color-secondary, $color-secondary);
+      }
+    }
+  }
+}
+
 button,
 a {
   cursor: pointer;
-
   color: inherit;
-
-  display: block;
   appearance: none;
-
   text-decoration: none;
 
   &:disabled,
   [aria-disabled="true"] {
     cursor: not-allowed;
-    pointer-events: none;
     opacity: 0.5;
   }
 }

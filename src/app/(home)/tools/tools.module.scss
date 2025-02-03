@@ -1,9 +1,15 @@
 @use "@/styles/abstracts" as *;
 
+.wrapper {
+  padding-block: var(--default-size, $default-size);
+  min-block-size: to-rem(170);
+}
+
 .title {
-  margin-block-end: to-rem(15);
+  margin-block-end: var(--default-size, $default-size);
+  padding-inline: var(--default-size, $default-size);
 }
 
 .list > * {
-  margin-inline-end: to-rem(15);
+  margin-inline-end: var(--default-size, $default-size);
 }

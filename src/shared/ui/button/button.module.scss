@@ -19,19 +19,4 @@
 
   font-size: to-rem(20);
   font-weight: 700;
-
-  transition: var(--default-transition, $default-transition);
-
-  // stylelint-disable-next-line
-  transition-property: background-color, scale, color;
-
-  @include media-hover {
-    background-color: var(--color-highlight, $color-highlight);
-
-    &:active {
-      scale: 0.9;
-      background-color: var(--color-accent, $color-accent);
-      color: var(--color-secondary, $color-secondary);
-    }
-  }
 }

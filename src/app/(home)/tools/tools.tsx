@@ -39,7 +39,7 @@ const Tools = () => {
   }, []);
 
   return (
-    <section>
+    <section className={style.wrapper}>
       <Title className={style.title} title={translations('tools')} />
       {isLoading ? (
         <Loader text='loading' />
