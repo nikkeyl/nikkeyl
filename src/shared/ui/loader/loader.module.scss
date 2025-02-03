@@ -1,0 +1,14 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  block-size: to-rem(90);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}

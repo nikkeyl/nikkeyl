@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 
 import { extractFileName } from '@/helpers/extract-file-name';
 import type { ToolsTypes } from '@/types/tools';
-import { Text } from '@/ui/text/text';
+import { Loader } from '@/ui/loader/loader';
 import { Title } from '@/ui/title/title';
 import { ToolCard } from '@/widgets/tool-card/tool-card';
 
@@ -16,8 +16,7 @@ const Tools = () => {
   const [tools, setTools] = useState<ToolsTypes[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const translationsTitle = useTranslations('titles');
-  const translationsText = useTranslations('text');
+  const translations = useTranslations('titles');
 
   useEffect(() => {
     const fetchTools = async () => {
@@ -41,13 +40,11 @@ const Tools = () => {
 
   return (
     <section>
-      <Title className={style.title} title={translationsTitle('tools')} />
+      <Title className={style.title} title={translations('tools')} />
       {isLoading ? (
-        <div className={style.loader}>
-          <Text>{translationsText('loading')}</Text>
-        </div>
+        <Loader text='loading' />
       ) : (
-        <Marquee className={style.list || ''} speed={80}>
+        <Marquee className={style.list || ''} pauseOnHover speed={80}>
           {tools.map(({ key, src }) => (
             <ToolCard key={key} src={src} title={extractFileName(src, true)} />
           ))}

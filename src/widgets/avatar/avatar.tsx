@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import { author, blur } from '@/config/constants';
 
-import { CardWrapper } from '../card-wrapper/card-wrapper';
-import { Title } from '../title/title';
+import { CardWrapper } from '../../shared/ui/card-wrapper/card-wrapper';
+import { Title } from '../../shared/ui/title/title';
 import style from './avatar.module.scss';
 import type { Properties } from './avatar.properties';
 

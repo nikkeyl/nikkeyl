@@ -3,10 +3,10 @@ import { useTranslations } from 'next-intl';
 import { author } from '@/config/constants';
 import { experience } from '@/mocks/experience';
 import { socials } from '@/mocks/socials';
-import { Avatar } from '@/ui/avatar/avatar';
 import { Social } from '@/ui/social/social';
 import { Text } from '@/ui/text/text';
 
+import { Avatar } from '../avatar/avatar';
 import { ExperienceLabel } from '../experience-label/experience-label';
 import style from './sidebar.module.scss';
 
