@@ -60,7 +60,7 @@
 .view {
   position: absolute;
 
-  background-color: rgb(255 0 60 / 20%);
+  background-color: var(--color-rgb-accent, $color-rgb-accent);
 
   padding-inline: to-rem(10);
 

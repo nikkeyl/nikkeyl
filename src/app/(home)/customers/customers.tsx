@@ -12,6 +12,8 @@ import { Head } from '@/ui/head/head';
 import { Slider } from '@/ui/slider/slider';
 import { CustomerCard } from '@/widgets/customer-card/customer-card';
 
+import style from './customers.module.scss';
+
 const Customers = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
@@ -51,7 +53,7 @@ const Customers = () => {
   }, [sliderApi, updateScrollState]);
 
   return (
-    <section>
+    <section className={style.wrapper}>
       <Head title='customers'>
         <Controls
           isScrollNext={isScrollNext}

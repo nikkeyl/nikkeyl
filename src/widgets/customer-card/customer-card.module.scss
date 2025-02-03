@@ -42,7 +42,7 @@
 }
 
 .head {
-  margin-block-end: to-rem(15);
+  margin-block-end: var(--default-size, $default-size);
 
   display: flex;
 

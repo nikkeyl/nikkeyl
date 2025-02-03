@@ -1,18 +1,18 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  padding: to-rem(15);
-  border-block-end: 1px solid var(--color-accent, $color-accent);
+  padding: var(--default-size, $default-size);
+  border-block-end: to-rem(1) solid var(--color-accent, $color-accent);
 
   @media (width >= to-em(768)) {
-    padding: to-rem(30) to-rem(15);
+    padding: to-rem(30) var(--default-size, $default-size);
     border-block-end: none;
     border-inline-end: var(--default-border, $default-border);
   }
 }
 
 .avatar {
-  margin-block-end: to-rem(15);
+  margin-block-end: var(--default-size, $default-size);
 
   display: flex;
 
