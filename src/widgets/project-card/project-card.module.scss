@@ -34,6 +34,8 @@
 .info {
   border-inline-start: var(--dark-border, $dark-border);
 
+  inline-size: to-rem(30);
+
   display: flex;
 
   flex-direction: column;
@@ -48,10 +50,6 @@
   }
 }
 
-.title {
-  padding-block: to-rem(3);
-}
-
 .image {
   position: relative;
   inline-size: 100%;
@@ -62,7 +60,7 @@
 
   background-color: var(--color-rgb-accent, $color-rgb-accent);
 
-  padding-inline: to-rem(10);
+  padding-inline: var(--default-size, $default-size);
 
   block-size: 100%;
   inline-size: 100%;
