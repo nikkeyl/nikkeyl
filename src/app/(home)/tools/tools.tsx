@@ -44,7 +44,7 @@ const Tools = () => {
       {isLoading ? (
         <Loader text='loading' />
       ) : (
-        <Marquee className={style.list} pauseOnHover speed={80}>
+        <Marquee className={style.list || ''} pauseOnHover speed={80}>
           {tools.map(({ key, src }) => (
             <ToolCard key={key} src={src} title={extractFileName(src, true)} />
           ))}
