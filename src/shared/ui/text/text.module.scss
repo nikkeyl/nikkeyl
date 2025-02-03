@@ -2,15 +2,6 @@
 
 .text {
   color: var(--color-accent, $color-accent);
-  font-size: to-rem(18);
-
-  @media (width >= to-em(768)) {
-    font-size: to-rem(20);
-  }
-}
-
-.bold {
-  font-weight: 700;
 }
 
 .blue {

@@ -23,6 +23,7 @@ html {
 body {
   overscroll-behavior: none;
   min-inline-size: to-rem(320);
+  font-size: to-rem(20);
 }
 
 section {
@@ -42,6 +43,7 @@ img {
 svg {
   inline-size: to-rem(20);
   block-size: to-rem(20);
+  flex: 0 0 to-rem(20);
 }
 
 ul {
@@ -70,8 +72,12 @@ button {
 button,
 a {
   cursor: pointer;
+
   color: inherit;
+
+  display: block;
   appearance: none;
+
   text-decoration: none;
 
   &:disabled,

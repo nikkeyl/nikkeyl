@@ -121,6 +121,8 @@
 
   align-items: center;
 
+  font-size: to-rem(16);
+
   transition: var(--default-transition, $default-transition);
 
   // stylelint-disable
@@ -128,6 +130,7 @@
 
   > svg {
     color: var(--color-highlight, $color-highlight);
+
   }
 
   @include media-hover {

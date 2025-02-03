@@ -10,10 +10,6 @@
 
   overflow: hidden;
 
-  display: flex;
-
-  flex-wrap: nowrap;
-
   transition: var(--default-transition, $default-transition);
 
   // stylelint-disable-next-line
