@@ -11,35 +11,38 @@ import style from './project-card.module.scss';
 import type { Properties } from './project-card.properties';
 
 const ProjectCard = (properties: Properties) => {
-  const { alt, hosting, href, isCommerce = false, src, title } = properties;
+  const {
+    alt,
+    href,
+    isCommerce = false,
+    isGitHub,
+    isVercel,
+    src,
+    title,
+  } = properties;
 
   const translations = useTranslations('buttons');
 
   return (
     <CardWrapper className={style.wrapper} href={href} type='a'>
       <div className={style.info}>
-        <Title
-          className={style.title}
-          direction='vertical'
-          level='h3'
-          title={title}
-        />
-        {hosting !== 'other' &&
-          (hosting === 'github' ? (
-            <Image
-              alt='GitHub'
-              height={10}
-              src='/images/tools/github.svg'
-              width={10}
-            />
-          ) : (
-            <Image
-              alt='GitHub'
-              height={10}
-              src='/images/tools/vercel.svg'
-              width={10}
-            />
-          ))}
+        <Title direction='vertical' level='h3' title={title} />
+        {isGitHub && (
+          <Image
+            alt='GitHub'
+            height={20}
+            src='/images/tools/github.svg'
+            width={20}
+          />
+        )}
+        {isVercel && (
+          <Image
+            alt='Vercel'
+            height={20}
+            src='/images/tools/vercel.svg'
+            width={20}
+          />
+        )}
         {isCommerce && <CoinIcon />}
       </div>
       <div className={style.image}>

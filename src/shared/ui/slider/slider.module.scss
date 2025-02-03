@@ -1,5 +1,9 @@
 @use "@/styles/abstracts" as *;
 
+.wrapper {
+  padding: var(--default-size, $default-size);
+}
+
 .slider {
   display: flex;
   flex-wrap: nowrap;

@@ -25,11 +25,11 @@
 
 .socials {
   display: grid;
-  gap: to-rem(10);
+  gap: var(--default-size, $default-size);
 }
 
 .labels {
-  margin-block-end: to-rem(20);
+  margin-block-end: var(--default-size, $default-size);
   display: grid;
   gap: to-rem(5);
 }
