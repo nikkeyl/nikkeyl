@@ -8,18 +8,16 @@ import { defaultSliderOptions } from '@/config/default-slider-options';
 import { extractFileName } from '@/helpers/extract-file-name';
 import { customers } from '@/mocks/customers';
 import { Controls } from '@/ui/controls/controls';
-import { Title } from '@/ui/title/title';
+import { Head } from '@/ui/head/head';
+import { Slider } from '@/ui/slider/slider';
 import { CustomerCard } from '@/widgets/customer-card/customer-card';
-
-import style from './customers.module.scss';
 
 const Customers = () => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
   const [isScrollNext, setIsScrollNext] = useState(false);
 
-  const translationsTitle = useTranslations('titles');
-  const translationsReview = useTranslations('customers');
+  const translations = useTranslations('customers');
 
   const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
@@ -54,29 +52,26 @@ const Customers = () => {
 
   return (
     <section>
-      <div className={style.head}>
-        <Title title={translationsTitle('customers')} />
+      <Head title='customers'>
         <Controls
           isScrollNext={isScrollNext}
           isScrollPrevious={isScrollPrevious}
           scrollNext={scrollNext}
           scrollPrevious={scrollPrevious}
         />
-      </div>
-      <div ref={sliderRef}>
-        <ul className={style.slider}>
-          {customers.map(({ avatar, key, siteLink }) => (
-            <li key={key} className={style.slide}>
-              <CustomerCard
-                avatar={avatar}
-                name={translationsReview(`${extractFileName(avatar)}.name`)}
-                siteLink={siteLink}
-                text={translationsReview(`${extractFileName(avatar)}.text`)}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      </Head>
+      <Slider ref={sliderRef}>
+        {customers.map(({ avatar, key, siteLink }) => (
+          <li key={key}>
+            <CustomerCard
+              avatar={avatar}
+              name={translations(`${extractFileName(avatar)}.name`)}
+              siteLink={siteLink}
+              text={translations(`${extractFileName(avatar)}.text`)}
+            />
+          </li>
+        ))}
+      </Slider>
     </section>
   );
 };
