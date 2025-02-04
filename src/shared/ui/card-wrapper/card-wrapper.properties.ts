@@ -6,6 +6,7 @@ import type {
 
 type Properties = PropsWithChildren &
   DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & {
+    ariaLabel?: string;
     type?: 'a' | 'div';
   };
 

@@ -51,11 +51,6 @@ ul {
 }
 
 button {
-  transition: var(--default-transition, $default-transition);
-
-  // stylelint-disable-next-line
-  transition-property: background-color, scale, color;
-
   &:not(:disabled) {
     @include media-hover {
       background-color: var(--color-highlight, $color-highlight);
@@ -79,6 +74,15 @@ a {
   appearance: none;
 
   text-decoration: none;
+
+  transition: var(--default-transition, $default-transition);
+
+  // stylelint-disable-next-line
+  transition-property: background-color, scale, color;
+
+  &:focus-visible {
+    scale: 0.9;
+  }
 
   &:disabled,
   [aria-disabled="true"] {

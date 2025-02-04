@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { blur } from '@/config/constants';
+import { extractFileName } from '@/helpers/extract-file-name';
 import { LinkIcon } from '@/icons/link';
 import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Text } from '@/ui/text/text';
@@ -13,12 +14,12 @@ const CustomerCard = (properties: Properties) => {
   const { avatar, name, siteLink, text } = properties;
 
   return (
-    <CardWrapper className={style.wrapper}>
+    <CardWrapper ariaLabel={name} className={style.wrapper}>
       <div className={style.inner}>
         <div className={style.head}>
           <div className={style.image}>
             <Image
-              alt={avatar}
+              alt={extractFileName(avatar, true)}
               blurDataURL={`data:image/webp;base64,${blur}`}
               height={60}
               placeholder='blur'
@@ -27,7 +28,7 @@ const CustomerCard = (properties: Properties) => {
             />
           </div>
           <div className={style.info}>
-            <Title className={style.name} level='h3' title={name} />
+            <Title className={style.name} level='h3' text={name} />
             <a
               className={style.link}
               href={siteLink}

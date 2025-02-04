@@ -1,12 +1,14 @@
 'use client';
 
+import clsx from 'clsx';
 import slider from 'embla-carousel-react';
+import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
-import { Controls } from '@/ui/controls/controls';
+import { ArrowIcon } from '@/icons/arrow';
+import { Title } from '@/ui/title/title';
 
-import { Head } from '../head/head';
 import style from './slider.module.scss';
 import { Properties } from './slider.properties';
 
@@ -16,6 +18,9 @@ const Slider = (properties: Properties) => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
   const [isScrollNext, setIsScrollNext] = useState(false);
+
+  const translationsTitle = useTranslations('titles');
+  const translationsArrows = useTranslations('arrows');
 
   const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
@@ -50,16 +55,33 @@ const Slider = (properties: Properties) => {
 
   return (
     <section className={style.wrapper}>
-      {title && (
-        <Head title={title}>
-          <Controls
-            isScrollNext={isScrollNext}
-            isScrollPrevious={isScrollPrevious}
-            scrollNext={scrollNext}
-            scrollPrevious={scrollPrevious}
-          />
-        </Head>
-      )}
+      <div className={style.head}>
+        <Title text={translationsTitle(title)} />
+        <div className={style.controls}>
+          <button
+            aria-disabled={!isScrollPrevious}
+            aria-label={translationsArrows('previous')}
+            className={style.button}
+            disabled={!isScrollPrevious}
+            onClick={scrollPrevious}
+            title={translationsArrows('previous')}
+            type='button'
+          >
+            <ArrowIcon />
+          </button>
+          <button
+            aria-disabled={!isScrollNext}
+            aria-label={translationsArrows('next')}
+            className={clsx(style.button, style.rotate)}
+            disabled={!isScrollNext}
+            onClick={scrollNext}
+            title={translationsArrows('next')}
+            type='button'
+          >
+            <ArrowIcon />
+          </button>
+        </div>
+      </div>
       <div ref={sliderRef}>
         <ul className={style.slider}>{children}</ul>
       </div>

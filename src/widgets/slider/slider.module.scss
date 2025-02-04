@@ -1,5 +1,16 @@
 @use "@/styles/abstracts" as *;
 
+.wrapper {
+  padding: var(--default-size, $default-size);
+}
+
+.head {
+  margin-block-end: var(--default-size, $default-size);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 .controls {
   display: flex;
   flex-wrap: nowrap;
@@ -22,5 +33,15 @@
 
   &.rotate {
     rotate: 180deg;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--default-size, $default-size);
+
+  > li {
+    flex: 0 0 to-rem(290);
   }
 }

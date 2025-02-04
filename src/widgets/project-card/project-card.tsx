@@ -14,6 +14,7 @@ const ProjectCard = (properties: Properties) => {
   const {
     alt,
     href,
+    index,
     isCommerce = false,
     isGitHub,
     isVercel,
@@ -24,9 +25,9 @@ const ProjectCard = (properties: Properties) => {
   const translations = useTranslations('buttons');
 
   return (
-    <CardWrapper className={style.wrapper} href={href} type='a'>
+    <CardWrapper ariaLabel={title} className={style.wrapper} href={href} type='a'>
       <div className={style.info}>
-        <Title direction='vertical' level='h3' title={title} />
+        <Title direction='vertical' level='h3' text={title} />
         {isGitHub && (
           <Image
             alt='GitHub'
@@ -49,7 +50,7 @@ const ProjectCard = (properties: Properties) => {
         <Image
           alt={alt || ''}
           blurDataURL={`data:image/webp;base64,${blur}`}
-          fetchPriority='low'
+          fetchPriority={index >= 3 ? 'low' : 'high'}
           fill
           placeholder='blur'
           priority

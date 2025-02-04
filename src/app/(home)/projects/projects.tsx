@@ -1,6 +1,6 @@
 import { projects } from '@/mocks/projects';
-import { Slider } from '@/ui/slider/slider';
 import { ProjectCard } from '@/widgets/project-card/project-card';
+import { Slider } from '@/widgets/slider/slider';
 
 const Projects = () => (
   <Slider title='projects'>
@@ -10,6 +10,7 @@ const Projects = () => (
           <ProjectCard
             alt={alt}
             href={href}
+            index={key}
             isCommerce={isCommerce}
             isGitHub={isGitHub || false}
             isVercel={isVercel || false}

@@ -10,6 +10,7 @@ type Properties = DetailedHTMLProps<
 > &
   DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> & {
     title: string;
+    index: number;
     isGitHub?: boolean;
     isVercel?: boolean;
     isCommerce?: boolean;
