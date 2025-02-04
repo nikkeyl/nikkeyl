@@ -24,7 +24,7 @@ const ProjectCard = (properties: Properties) => {
   const translations = useTranslations('buttons');
 
   return (
-    <CardWrapper className={style.wrapper} href={href} type='a'>
+    <CardWrapper ariaLabel={title} className={style.wrapper} href={href} type='a'>
       <div className={style.info}>
         <Title direction='vertical' level='h3' text={title} />
         {isGitHub && (

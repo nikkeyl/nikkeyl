@@ -4,14 +4,19 @@ import style from './card-wrapper.module.scss';
 import type { Properties } from './card-wrapper.properties';
 
 const CardWrapper = (properties: Properties) => {
-  const { children, className, href, title, type = 'div' } = properties;
+  const { ariaLabel, children, className, href, title, type = 'div' } = properties;
 
   return type === 'div' ? (
-    <div className={clsx(style.wrapper, className)} title={title}>
+    <div
+      aria-label={ariaLabel}
+      className={clsx(style.wrapper, className)}
+      title={title}
+    >
       {children}
     </div>
   ) : (
     <a
+      aria-label={ariaLabel}
       className={clsx(style.wrapper, className)}
       href={href}
       rel='nofollow noreferrer'

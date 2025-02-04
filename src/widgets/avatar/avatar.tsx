@@ -11,7 +11,7 @@ const Avatar = (properties: Properties) => {
   const { alt, src } = properties;
 
   return (
-    <CardWrapper className={style.wrapper}>
+    <CardWrapper ariaLabel={author} className={style.wrapper}>
       <Title className={style.title} direction='vertical' level='h1' text={author} />
       <Image
         alt={alt}

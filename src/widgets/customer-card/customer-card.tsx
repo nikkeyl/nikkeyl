@@ -14,7 +14,7 @@ const CustomerCard = (properties: Properties) => {
   const { avatar, name, siteLink, text } = properties;
 
   return (
-    <CardWrapper className={style.wrapper}>
+    <CardWrapper ariaLabel={name} className={style.wrapper}>
       <div className={style.inner}>
         <div className={style.head}>
           <div className={style.image}>
