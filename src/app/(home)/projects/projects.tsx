@@ -10,6 +10,7 @@ const Projects = () => (
           <ProjectCard
             alt={alt}
             href={href}
+            index={key}
             isCommerce={isCommerce}
             isGitHub={isGitHub || false}
             isVercel={isVercel || false}

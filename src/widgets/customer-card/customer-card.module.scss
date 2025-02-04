@@ -126,7 +126,7 @@
   transition: var(--default-transition, $default-transition);
 
   // stylelint-disable
-  transition-property: color;
+  transition-property: color, scale;
 
   > svg {
     color: var(--color-highlight, $color-highlight);

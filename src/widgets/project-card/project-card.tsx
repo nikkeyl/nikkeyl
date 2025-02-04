@@ -14,6 +14,7 @@ const ProjectCard = (properties: Properties) => {
   const {
     alt,
     href,
+    index,
     isCommerce = false,
     isGitHub,
     isVercel,
@@ -49,7 +50,7 @@ const ProjectCard = (properties: Properties) => {
         <Image
           alt={alt || ''}
           blurDataURL={`data:image/webp;base64,${blur}`}
-          fetchPriority='low'
+          fetchPriority={index >= 3 ? 'low' : 'high'}
           fill
           placeholder='blur'
           priority

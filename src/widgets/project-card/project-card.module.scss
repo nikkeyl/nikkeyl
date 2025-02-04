@@ -13,7 +13,8 @@
 
   flex-wrap: nowrap;
 
-  transition: transform var(--default-transition, $default-transition);
+  transition: var(--default-transition, $default-transition);
+  transition-property: transform, scale;
 
   &::after {
     inset-block-start: to-rem(-1);
