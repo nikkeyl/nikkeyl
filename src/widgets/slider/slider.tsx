@@ -7,8 +7,8 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
 import { ArrowIcon } from '@/icons/arrow';
+import { Title } from '@/ui/title/title';
 
-import { Title } from '../title/title';
 import style from './slider.module.scss';
 import { Properties } from './slider.properties';
 
@@ -19,7 +19,8 @@ const Slider = (properties: Properties) => {
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
   const [isScrollNext, setIsScrollNext] = useState(false);
 
-  const translations = useTranslations('titles');
+  const translationsTitle = useTranslations('titles');
+  const translationsArrows = useTranslations('arrows');
 
   const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
@@ -55,26 +56,26 @@ const Slider = (properties: Properties) => {
   return (
     <section className={style.wrapper}>
       <div className={style.head}>
-        <Title title={translations(title)} />
+        <Title text={translationsTitle(title)} />
         <div className={style.controls}>
           <button
             aria-disabled={!isScrollPrevious}
-            aria-label='Previous Slide'
+            aria-label={translationsArrows('previous')}
             className={style.button}
             disabled={!isScrollPrevious}
             onClick={scrollPrevious}
-            title='Previous Slide'
+            title={translationsArrows('previous')}
             type='button'
           >
             <ArrowIcon />
           </button>
           <button
             aria-disabled={!isScrollNext}
-            aria-label='Next Slide'
+            aria-label={translationsArrows('next')}
             className={clsx(style.button, style.rotate)}
             disabled={!isScrollNext}
             onClick={scrollNext}
-            title='Next Slide'
+            title={translationsArrows('next')}
             type='button'
           >
             <ArrowIcon />

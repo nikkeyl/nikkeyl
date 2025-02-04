@@ -4,7 +4,7 @@ import style from './title.module.scss';
 import type { Properties } from './title.properties';
 
 const Title = (properties: Properties) => {
-  const { className, direction, level = 'h2', title } = properties;
+  const { className, direction, level = 'h2', text } = properties;
 
   const TitleLevel = level;
 
@@ -17,7 +17,7 @@ const Title = (properties: Properties) => {
         className,
       )}
     >
-      {title}
+      {text}
     </TitleLevel>
   );
 };

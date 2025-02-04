@@ -1,6 +1,6 @@
 import { projects } from '@/mocks/projects';
-import { Slider } from '@/ui/slider/slider';
 import { ProjectCard } from '@/widgets/project-card/project-card';
+import { Slider } from '@/widgets/slider/slider';
 
 const Projects = () => (
   <Slider title='projects'>

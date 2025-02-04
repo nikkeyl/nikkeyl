@@ -2,8 +2,8 @@ import { useTranslations } from 'next-intl';
 
 import { extractFileName } from '@/helpers/extract-file-name';
 import { customers } from '@/mocks/customers';
-import { Slider } from '@/ui/slider/slider';
 import { CustomerCard } from '@/widgets/customer-card/customer-card';
+import { Slider } from '@/widgets/slider/slider';
 
 const Customers = () => {
   const translations = useTranslations('customers');

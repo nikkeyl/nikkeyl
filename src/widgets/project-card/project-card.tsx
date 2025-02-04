@@ -26,7 +26,7 @@ const ProjectCard = (properties: Properties) => {
   return (
     <CardWrapper className={style.wrapper} href={href} type='a'>
       <div className={style.info}>
-        <Title direction='vertical' level='h3' title={title} />
+        <Title direction='vertical' level='h3' text={title} />
         {isGitHub && (
           <Image
             alt='GitHub'

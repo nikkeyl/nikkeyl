@@ -2,6 +2,10 @@
   "about": {
     "info": "Warum zum Teufel sollte man hier etwas über sich selbst schreiben, wenn die Projekte einem alles sagen und sogar viel besser zeigen?"
   },
+  "arrows": {
+    "next": "Nächstes Dia",
+    "previous": "Vorheriges Dia"
+  },
   "buttons": {
     "view": "Siehe"
   },
