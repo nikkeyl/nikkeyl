@@ -1,12 +1,14 @@
 'use client';
 
+import clsx from 'clsx';
 import slider from 'embla-carousel-react';
+import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useState } from 'react';
 
 import { defaultSliderOptions } from '@/config/default-slider-options';
-import { Controls } from '@/ui/controls/controls';
+import { ArrowIcon } from '@/icons/arrow';
 
-import { Head } from '../head/head';
+import { Title } from '../title/title';
 import style from './slider.module.scss';
 import { Properties } from './slider.properties';
 
@@ -16,6 +18,8 @@ const Slider = (properties: Properties) => {
   const [sliderRef, sliderApi] = slider(Object.assign(defaultSliderOptions));
   const [isScrollPrevious, setIsScrollPrevious] = useState(false);
   const [isScrollNext, setIsScrollNext] = useState(false);
+
+  const translations = useTranslations('titles');
 
   const scrollPrevious = useCallback(() => {
     if (sliderApi) sliderApi.scrollPrev();
@@ -50,16 +54,33 @@ const Slider = (properties: Properties) => {
 
   return (
     <section className={style.wrapper}>
-      {title && (
-        <Head title={title}>
-          <Controls
-            isScrollNext={isScrollNext}
-            isScrollPrevious={isScrollPrevious}
-            scrollNext={scrollNext}
-            scrollPrevious={scrollPrevious}
-          />
-        </Head>
-      )}
+      <div className={style.head}>
+        <Title title={translations(title)} />
+        <div className={style.controls}>
+          <button
+            aria-disabled={!isScrollPrevious}
+            aria-label='Previous Slide'
+            className={style.button}
+            disabled={!isScrollPrevious}
+            onClick={scrollPrevious}
+            title='Previous Slide'
+            type='button'
+          >
+            <ArrowIcon />
+          </button>
+          <button
+            aria-disabled={!isScrollNext}
+            aria-label='Next Slide'
+            className={clsx(style.button, style.rotate)}
+            disabled={!isScrollNext}
+            onClick={scrollNext}
+            title='Next Slide'
+            type='button'
+          >
+            <ArrowIcon />
+          </button>
+        </div>
+      </div>
       <div ref={sliderRef}>
         <ul className={style.slider}>{children}</ul>
       </div>
