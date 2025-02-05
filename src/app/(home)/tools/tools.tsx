@@ -2,18 +2,17 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import Marquee from 'react-fast-marquee';
 
 import { extractFileName } from '@/helpers/extract-file-name';
-import type { ToolsTypes } from '@/types/tools';
 import { Loader } from '@/ui/loader/loader';
 import { Title } from '@/ui/title/title';
+import { Marquee } from '@/widgets/marquee/marquee';
 import { ToolCard } from '@/widgets/tool-card/tool-card';
 
 import style from './tools.module.scss';
 
 const Tools = () => {
-  const [tools, setTools] = useState<ToolsTypes[]>([]);
+  const [tools, setTools] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const translations = useTranslations('titles');
@@ -44,10 +43,14 @@ const Tools = () => {
       {isLoading ? (
         <Loader text='loading' />
       ) : (
-        <Marquee className={style.list || ''} pauseOnHover speed={80}>
-          {tools.map(({ key, src }) => (
-            <ToolCard key={key} src={src} title={extractFileName(src, true)} />
-          ))}
+        <Marquee>
+          <ul>
+            {tools.map(({ key, src }) => (
+              <li key={key}>
+                <ToolCard src={src} title={extractFileName(src, true)} />
+              </li>
+            ))}
+          </ul>
         </Marquee>
       )}
     </section>
