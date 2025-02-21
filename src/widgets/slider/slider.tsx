@@ -64,7 +64,7 @@ const Slider = (properties: Properties) => {
             className={style.button}
             disabled={!isScrollPrevious}
             onClick={scrollPrevious}
-            title={translationsArrows('previous')}
+            title={isScrollPrevious ? translationsArrows('previous') : ''}
             type='button'
           >
             <ArrowIcon />
@@ -75,7 +75,7 @@ const Slider = (properties: Properties) => {
             className={clsx(style.button, style.rotate)}
             disabled={!isScrollNext}
             onClick={scrollNext}
-            title={translationsArrows('next')}
+            title={isScrollNext ? translationsArrows('next') : ''}
             type='button'
           >
             <ArrowIcon />
