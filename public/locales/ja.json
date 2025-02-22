@@ -17,7 +17,8 @@
   },
   "labels": {
     "commerce": "商業経験",
-    "development": "開発中"
+    "development": "開発中",
+    "work": "勤務"
   },
   "customers": {
     "alexey-mozgunov": {
@@ -27,6 +28,11 @@
   },
   "text": {
     "loading": "ロード..."
+  },
+  "tips": {
+    "commerce": "商業プロジェクト",
+    "github": "GitHubで公開",
+    "vercel": "Vercelに掲載"
   },
   "titles": {
     "customers": "お客様",

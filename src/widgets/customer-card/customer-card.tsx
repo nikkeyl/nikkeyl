@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import { blur } from '@/config/constants';
 import { extractFileName } from '@/helpers/extract-file-name';
-import { LinkIcon } from '@/icons/link';
 import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Text } from '@/ui/text/text';
 import { Title } from '@/ui/title/title';
@@ -35,7 +34,6 @@ const CustomerCard = (properties: Properties) => {
               rel='nofollow noreferrer'
               target='_blank'
             >
-              <LinkIcon />
               https:{siteLink}
             </a>
           </div>

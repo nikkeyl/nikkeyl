@@ -7,7 +7,7 @@ import style from './experience-label.module.scss';
 import type { Properties } from './experience-label.properties';
 
 const ExperienceLabel = async (properties: Properties) => {
-  const { icon, startDate, text } = properties;
+  const { icon, jobLink, startDate, text } = properties;
 
   const { months, years } = calculateExperience(new Date(startDate));
 
@@ -22,7 +22,12 @@ const ExperienceLabel = async (properties: Properties) => {
     <div className={style.wrapper}>
       <Icon />
       <Text color='blue'>
-        <span>{experienceText}</span> {text}
+        <span>{experienceText}</span> {text}{' '}
+        {jobLink && (
+          <a href={jobLink} rel='nofollow noreferrer' target='_blank'>
+            {jobLink}
+          </a>
+        )}
       </Text>
     </div>
   );
