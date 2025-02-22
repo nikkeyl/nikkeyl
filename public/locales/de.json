@@ -17,7 +17,8 @@
   },
   "labels": {
     "commerce": "kommerzielle erfahrung",
-    "development": "in entwicklung"
+    "development": "in entwicklung",
+    "work": "arbeiten in"
   },
   "customers": {
     "alexey-mozgunov": {
@@ -27,6 +28,11 @@
   },
   "text": {
     "loading": "Laden..."
+  },
+  "tips": {
+    "commerce": "Kommerzielles Projekt",
+    "github": "Veröffentlicht auf GitHub",
+    "vercel": "Veröffentlicht auf Vercel"
   },
   "titles": {
     "customers": "Kunden",

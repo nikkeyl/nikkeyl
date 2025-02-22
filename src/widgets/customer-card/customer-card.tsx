@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import { blur } from '@/config/constants';
 import { extractFileName } from '@/helpers/extract-file-name';
-import { LinkIcon } from '@/icons/link';
 import { CardWrapper } from '@/ui/card-wrapper/card-wrapper';
 import { Text } from '@/ui/text/text';
 import { Title } from '@/ui/title/title';
@@ -23,7 +22,7 @@ const CustomerCard = (properties: Properties) => {
               blurDataURL={`data:image/webp;base64,${blur}`}
               height={60}
               placeholder='blur'
-              src={avatar}
+              src={`/images/customers/${avatar}.jpg`}
               width={60}
             />
           </div>
@@ -35,7 +34,6 @@ const CustomerCard = (properties: Properties) => {
               rel='nofollow noreferrer'
               target='_blank'
             >
-              <LinkIcon />
               https:{siteLink}
             </a>
           </div>

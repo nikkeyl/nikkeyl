@@ -27,10 +27,11 @@ const Sidebar = () => {
         </ul>
       </div>
       <ul className={style.labels}>
-        {experience.map(({ icon, key, startDate, text }) => (
+        {experience.map(({ icon, jobLink, key, startDate, text }) => (
           <li key={key}>
             <ExperienceLabel
               icon={icon}
+              jobLink={jobLink || ''}
               startDate={startDate}
               text={translationsLabel(text)}
             />

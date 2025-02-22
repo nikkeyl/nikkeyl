@@ -1,12 +1,12 @@
 {
   "exclude": [
     "arrow.tsx",
+    "case.tsx",
     "coin.tsx",
     "de.json",
     "en.json",
     "github.tsx",
     "ja.json",
-    "link.tsx",
     "README.md",
     "ru.json",
     "telegram.tsx",

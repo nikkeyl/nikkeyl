@@ -112,25 +112,11 @@
 
 .link {
   color: var(--color-inverse, $color-inverse);
-
-  display: flex;
-
-  flex-wrap: nowrap;
-
-  gap: to-rem(5);
-
-  align-items: center;
-
   font-size: to-rem(16);
-
   transition: var(--default-transition, $default-transition);
 
   // stylelint-disable
   transition-property: color, scale;
-
-  > svg {
-    color: var(--color-highlight, $color-highlight);
-  }
 
   @include media-hover {
     color: var(--color-highlight, $color-highlight);

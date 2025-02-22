@@ -2,6 +2,22 @@
 
 .text {
   color: var(--color-accent, $color-accent);
+
+  a {
+    color: var(--color-inverse, $color-inverse);
+    transition: var(--default-transition, $default-transition);
+
+    // stylelint-disable
+    transition-property: color, scale;
+
+    @include media-hover {
+      color: var(--color-highlight, $color-highlight);
+
+      &:active {
+        color: var(--color-accent, $color-accent);
+      }
+    }
+  }
 }
 
 .blue {

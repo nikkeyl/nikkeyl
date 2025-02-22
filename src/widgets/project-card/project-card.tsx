@@ -22,7 +22,8 @@ const ProjectCard = (properties: Properties) => {
     title,
   } = properties;
 
-  const translations = useTranslations('buttons');
+  const translationsButtons = useTranslations('buttons');
+  const translationsTips = useTranslations('tips');
 
   return (
     <CardWrapper ariaLabel={title} className={style.wrapper} href={href} type='a'>
@@ -33,6 +34,7 @@ const ProjectCard = (properties: Properties) => {
             alt='GitHub'
             height={20}
             src='/images/tools/github.svg'
+            title={translationsTips('github')}
             width={20}
           />
         )}
@@ -41,10 +43,15 @@ const ProjectCard = (properties: Properties) => {
             alt='Vercel'
             height={20}
             src='/images/tools/vercel.svg'
+            title={translationsTips('vercel')}
             width={20}
           />
         )}
-        {isCommerce && <CoinIcon />}
+        {isCommerce && (
+          <div title={translationsTips('commerce')}>
+            <CoinIcon />
+          </div>
+        )}
       </div>
       <div className={style.image}>
         <Image
@@ -57,7 +64,7 @@ const ProjectCard = (properties: Properties) => {
           src={src || ''}
         />
         <div className={style.view}>
-          <Button text={translations('view')} />
+          <Button text={translationsButtons('view')} />
         </div>
       </div>
     </CardWrapper>
