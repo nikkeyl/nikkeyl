@@ -25,7 +25,7 @@ const ExperienceLabel = async (properties: Properties) => {
         <span>{experienceText}</span> {text}{' '}
         {jobLink && (
           <a href={jobLink} rel='nofollow noreferrer' target='_blank'>
-            {jobLink}
+            https:{jobLink}
           </a>
         )}
       </Text>

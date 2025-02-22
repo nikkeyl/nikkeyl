@@ -1,6 +1,6 @@
 const customers = [
   {
-    avatar: '/images/customers/alexey-mozgunov.jpg',
+    customer: 'alexey-mozgunov',
     key: 0,
     siteLink: '//brainarti.ru',
   },

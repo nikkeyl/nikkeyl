@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 
-import { extractFileName } from '@/helpers/extract-file-name';
 import { customers } from '@/mocks/customers';
 import { CustomerCard } from '@/widgets/customer-card/customer-card';
 import { Slider } from '@/widgets/slider/slider';
@@ -10,13 +9,13 @@ const Customers = () => {
 
   return (
     <Slider title='customers'>
-      {customers.map(({ avatar, key, siteLink }) => (
+      {customers.map(({ customer, key, siteLink }) => (
         <li key={key}>
           <CustomerCard
-            avatar={avatar}
-            name={translations(`${extractFileName(avatar)}.name`)}
+            avatar={customer}
+            name={translations(`${customer}.name`)}
             siteLink={siteLink}
-            text={translations(`${extractFileName(avatar)}.text`)}
+            text={translations(`${customer}.text`)}
           />
         </li>
       ))}

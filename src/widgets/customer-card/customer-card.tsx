@@ -22,7 +22,7 @@ const CustomerCard = (properties: Properties) => {
               blurDataURL={`data:image/webp;base64,${blur}`}
               height={60}
               placeholder='blur'
-              src={avatar}
+              src={`/images/customers/${avatar}.jpg`}
               width={60}
             />
           </div>

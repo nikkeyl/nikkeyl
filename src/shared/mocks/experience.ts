@@ -8,7 +8,7 @@ const experience = [
     key: 0,
     startDate: '2024-08-23',
     text: 'work',
-    jobLink: 'https://kimdevs.ru',
+    jobLink: '//kimdevs.ru',
   },
   {
     icon: CoinIcon,
