@@ -1,13 +1,8 @@
-import type {
-  AnchorHTMLAttributes,
-  DetailedHTMLProps,
-  PropsWithChildren,
-} from 'react';
+import type { ComponentProps } from 'react';
 
-type Properties = PropsWithChildren &
-  DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & {
-    ariaLabel?: string;
-    type?: 'a' | 'div';
-  };
+type Properties = ComponentProps<'a'> & {
+  ariaLabel?: string;
+  type?: 'a' | 'div';
+};
 
 export type { Properties };

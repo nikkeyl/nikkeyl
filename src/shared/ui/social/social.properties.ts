@@ -1,9 +1,6 @@
-import type { AnchorHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
 
-type Properties = DetailedHTMLProps<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  HTMLAnchorElement
-> & {
+type Properties = ComponentProps<'a'> & {
   ariaLabel: string;
   icon: () => ReactNode;
 };

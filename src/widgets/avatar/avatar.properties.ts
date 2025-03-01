@@ -1,6 +1,6 @@
-import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import type { ComponentProps } from 'react';
 
-type Properties = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
+type Properties = ComponentProps<'div'> & {
   src: string;
   alt: string;
 };
