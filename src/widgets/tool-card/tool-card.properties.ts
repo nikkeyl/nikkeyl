@@ -1,9 +1,6 @@
-import type { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
+import type { ComponentProps } from 'react';
 
-type Properties = DetailedHTMLProps<
-  ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
-> & {
+type Properties = ComponentProps<'img'> & {
   title: string;
 };
 

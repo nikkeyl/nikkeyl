@@ -1,6 +1,6 @@
-import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import type { ComponentProps } from 'react';
 
-type Properties = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
+type Properties = ComponentProps<'h1'> & {
   text: string;
   level?: 'h1' | 'h2' | 'h3';
   direction?: 'vertical';

@@ -1,5 +1,5 @@
-import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import type { ComponentProps } from 'react';
 
-type Properties = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type Properties = ComponentProps<'div'>;
 
 export type { Properties };
