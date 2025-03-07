@@ -14,11 +14,11 @@ const ToolCard = (properties: Properties) => {
       <Title className={style.title} direction='vertical' level='h3' text={title} />
       <div className={style.image}>
         <Image
-          alt={title || ''}
+          alt={title ?? ''}
           fetchPriority='low'
           height={60}
           priority
-          src={src || ''}
+          src={src ?? ''}
           width={60}
         />
       </div>

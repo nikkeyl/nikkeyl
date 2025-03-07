@@ -12,8 +12,8 @@ const Projects = () => (
             href={href}
             index={key}
             isCommerce={isCommerce}
-            isGitHub={isGitHub || false}
-            isVercel={isVercel || false}
+            isGitHub={isGitHub ?? false}
+            isVercel={isVercel ?? false}
             src={src}
             title={title}
           />

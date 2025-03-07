@@ -31,7 +31,7 @@ const Sidebar = () => {
           <li key={key}>
             <ExperienceLabel
               icon={icon}
-              jobLink={jobLink || ''}
+              jobLink={jobLink ?? ''}
               startDate={startDate}
               text={translationsLabel(text)}
             />
