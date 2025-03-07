@@ -55,13 +55,13 @@ const ProjectCard = (properties: Properties) => {
       </div>
       <div className={style.image}>
         <Image
-          alt={alt || ''}
+          alt={alt ?? ''}
           blurDataURL={`data:image/webp;base64,${blur}`}
           fetchPriority={index >= 2 ? 'low' : 'high'}
           fill
           placeholder='blur'
           priority
-          src={src || ''}
+          src={src ?? ''}
         />
         <div className={style.view}>
           <Button text={translationsButtons('view')} />
