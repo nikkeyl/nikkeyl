@@ -16,6 +16,12 @@
     block-size: to-rem(25);
     inline-size: to-rem(30);
   }
+
+  @include media-hover {
+    img {
+      scale: 1.1;
+    }
+  }
 }
 
 .image {
@@ -34,8 +40,9 @@
   justify-content: center;
 
   > img {
-    inline-size: to-rem(60);
     block-size: to-rem(60);
+    inline-size: to-rem(60);
+    transition: scale var(--default-transition, $default-transition);
   }
 }
 

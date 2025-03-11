@@ -1,4 +1,4 @@
-@use "./functions" as *;
+@use "functions" as *;
 
 // Main Colors
 $color-primary: #050a0e;
@@ -8,7 +8,7 @@ $color-inverse: #00f0ff;
 $color-accent: #ff003c;
 
 // RGB Colors
-$color-rgb-accent: rgb(255 0 60 / 20%);
+$color-accent-rgb-20: rgb(255 0 60 / 20%);
 
 // borders
 $default-border: to-rem(2) solid $color-accent;
