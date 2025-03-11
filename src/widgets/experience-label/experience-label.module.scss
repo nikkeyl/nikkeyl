@@ -1,12 +1,39 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
+  position: relative;
+
+  padding-inline-start: to-rem(10);
+
   display: flex;
+
   flex-wrap: nowrap;
+
   gap: to-rem(10);
+
   align-items: center;
 
+  &::before {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: to-rem(2);
+
+    transform: translateX(-50%);
+    rotate: 90deg;
+
+    background-color: var(--color-accent, $color-accent);
+
+    content: "";
+
+    block-size: to-rem(5);
+    inline-size: to-rem(2);
+  }
+
+  p {
+    display: grid;
+  }
+
   svg {
-    color: var(--color-highlight, $color-highlight);
+    color: var(--color-inverse, $color-inverse);
   }
 }
