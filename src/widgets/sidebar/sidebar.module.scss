@@ -30,11 +30,8 @@
 
 .labels {
   position: relative;
-
   margin-block-end: var(--default-size, $default-size);
-
   display: grid;
-
   gap: to-rem(5);
 
   &::before {
