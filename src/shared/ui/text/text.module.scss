@@ -20,8 +20,8 @@
   }
 }
 
-.blue {
-  color: var(--color-inverse, $color-inverse);
+.yellow {
+  color: var(--color-highlight, $color-inverse);
 
   span {
     color: var(--color-accent, $color-accent);

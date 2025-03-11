@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
 
 type Properties = PropsWithChildren & {
-  color?: 'blue';
+  color?: 'yellow';
 };
 
 export type { Properties };

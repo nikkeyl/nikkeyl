@@ -3,7 +3,8 @@ import type { ReactNode } from 'react';
 type Properties = {
   icon: () => ReactNode;
   text: string;
-  startDate: string;
+  now?: boolean | string;
+  startDate?: string;
   jobLink?: string;
 };
 

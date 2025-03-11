@@ -29,7 +29,24 @@
 }
 
 .labels {
+  position: relative;
+
   margin-block-end: var(--default-size, $default-size);
+
   display: grid;
+
   gap: to-rem(5);
+
+  &::before {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+
+    background-color: var(--color-accent, $color-accent);
+
+    content: "";
+
+    block-size: 150%;
+    inline-size: to-rem(2);
+  }
 }

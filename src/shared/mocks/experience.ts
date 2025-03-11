@@ -7,6 +7,7 @@ const experience = [
     icon: CaseIcon,
     key: 0,
     startDate: '2024-08-23',
+    now: true,
     text: 'work',
     jobLink: '//kimdevs.ru',
   },
