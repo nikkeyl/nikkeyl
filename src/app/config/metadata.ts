@@ -14,7 +14,7 @@ const images = [
   },
 ];
 const siteName = title;
-const siteURL = `https://${author}.vercel.app`;
+const siteURL = `https://${title}.vercel.app`;
 
 const metadata: Metadata = {
   alternates: { canonical: siteURL },
@@ -25,10 +25,10 @@ const metadata: Metadata = {
     statusBarStyle: 'black-translucent',
   },
   authors: {
-    name: author,
-    url: `https://t.me/${author}`,
+    name: title,
+    url: `https://t.me/${title}`,
   },
-  creator: author,
+  creator: title,
   description,
   keywords: [
     'about-me',
@@ -39,7 +39,7 @@ const metadata: Metadata = {
     'part-time',
     'portfolio',
     'soft-skills',
-    author,
+    title,
   ],
   metadataBase: new URL(siteURL),
   robots: {
@@ -58,7 +58,7 @@ const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
-    creator: author,
+    creator: title,
     description,
     images,
     site: siteURL,
