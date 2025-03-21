@@ -10,12 +10,12 @@ const projects = [
     title: 'aqua profi',
   },
   {
-    alt: 'Brainarti',
-    href: '//brainarti.ru',
+    alt: 'Brainbms',
+    href: '//brainbms.ru',
     isCommerce: true,
     key: 1,
-    src: '/images/projects/brainarti.jpg',
-    title: 'brainarti',
+    src: '/images/projects/brainbms.jpg',
+    title: 'brainbms',
   },
   {
     alt: 'Chillofi',
