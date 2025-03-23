@@ -35,7 +35,7 @@ const metadata: Metadata = {
     'freelance',
     'front-end',
     'full-time',
-    'herd-skills',
+    'hard-skills',
     'part-time',
     'portfolio',
     'soft-skills',
