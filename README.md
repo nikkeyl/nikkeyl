@@ -9,6 +9,7 @@
 <img src="public/images/tools/yaml.svg" height="50" width="50" alt="YAML" title="YAML" />&nbsp;
 <img src="public/images/tools/bun.svg" height="50" width="50" alt="Bun" title="Bun" />&nbsp;
 <img src="public/images/tools/node.svg" height="50" width="50" alt="NodeJS" title="NodeJS" />&nbsp;
+<img src="public/images/tools/express.svg" height="50" width="50" alt="Express" title="Express" />&nbsp;
 <img src="public/images/tools/nvm.svg" height="50" width="50" alt="NVM" title="NVM" />&nbsp;
 <img src="public/images/tools/pnpm.svg" height="50" width="50" alt="PNPM" title="PNPM" />&nbsp;
 <img src="public/images/tools/yarn.svg" height="50" width="50" alt="Yarn" title="Yarn" />&nbsp;
