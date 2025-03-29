@@ -4,14 +4,14 @@
 .wrapper {
   overscroll-behavior-block: none;
 
+  padding-block: var(--default-size, $default-size);
+
+  overflow: hidden auto;
+
   scrollbar-gutter: stable;
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent, $color-accent)
     var(--color-primary, $color-primary);
-
-  padding-block: var(--default-size, $default-size);
-
-  overflow: hidden auto;
 
   &::-webkit-scrollbar {
     inline-size: to-rem(5);
@@ -22,7 +22,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-accent, $color-accent);
     border-radius: to-rem(5);
+    background-color: var(--color-accent, $color-accent);
   }
 }

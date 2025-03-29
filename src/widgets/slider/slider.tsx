@@ -56,31 +56,33 @@ const Slider = (properties: Properties) => {
   return (
     <section className={style.wrapper}>
       <div className={style.head}>
-        <Title text={translationsTitle(title)} />
-        <div className={style.controls}>
-          <button
-            aria-disabled={!isScrollPrevious}
-            aria-label={translationsArrows('previous')}
-            className={style.button}
-            disabled={!isScrollPrevious}
-            onClick={scrollPrevious}
-            title={isScrollPrevious ? translationsArrows('previous') : ''}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-          <button
-            aria-disabled={!isScrollNext}
-            aria-label={translationsArrows('next')}
-            className={clsx(style.button, style.rotate)}
-            disabled={!isScrollNext}
-            onClick={scrollNext}
-            title={isScrollNext ? translationsArrows('next') : ''}
-            type='button'
-          >
-            <ArrowIcon />
-          </button>
-        </div>
+        <Title text={translationsTitle(title ?? '')} />
+        {(isScrollPrevious || isScrollNext) && (
+          <div className={style.controls}>
+            <button
+              aria-disabled={!isScrollPrevious}
+              aria-label={translationsArrows('previous')}
+              className={style.button}
+              disabled={!isScrollPrevious}
+              onClick={scrollPrevious}
+              title={isScrollPrevious ? translationsArrows('previous') : ''}
+              type='button'
+            >
+              <ArrowIcon />
+            </button>
+            <button
+              aria-disabled={!isScrollNext}
+              aria-label={translationsArrows('next')}
+              className={clsx(style.button, style.rotate)}
+              disabled={!isScrollNext}
+              onClick={scrollNext}
+              title={isScrollNext ? translationsArrows('next') : ''}
+              type='button'
+            >
+              <ArrowIcon />
+            </button>
+          </div>
+        )}
       </div>
       <div ref={sliderRef}>
         <ul className={style.slider}>{children}</ul>

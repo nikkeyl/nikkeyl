@@ -8,6 +8,7 @@ import { Text } from '@/ui/text/text';
 
 import { Avatar } from '../avatar/avatar';
 import { ExperienceLabel } from '../experience-label/experience-label';
+import { Tools } from '../../app/(home)/tools/tools';
 import style from './sidebar.module.scss';
 
 const Sidebar = () => {
@@ -16,30 +17,33 @@ const Sidebar = () => {
 
   return (
     <aside className={style.wrapper}>
-      <div className={style.avatar}>
-        <Avatar alt={author} src={`/images/about-me/${author}.svg`} />
-        <ul className={style.socials}>
-          {socials.map(({ ariaLabel, href, icon, key }) => (
+      <div className={style.inner}>
+        <div className={style.avatar}>
+          <Avatar alt={author} src={`/images/about-me/${author}.svg`} />
+          <ul className={style.socials}>
+            {socials.map(({ ariaLabel, href, icon, key }) => (
+              <li key={key}>
+                <Social ariaLabel={ariaLabel} href={href} icon={icon} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul className={style.labels}>
+          {experience.map(({ icon, jobLink, key, now, startDate, text }) => (
             <li key={key}>
-              <Social ariaLabel={ariaLabel} href={href} icon={icon} />
+              <ExperienceLabel
+                icon={icon}
+                jobLink={jobLink ?? ''}
+                now={now ?? false}
+                startDate={startDate}
+                text={translationsLabel(text)}
+              />
             </li>
           ))}
         </ul>
+        <Text>{translationsAbout('info')}</Text>
       </div>
-      <ul className={style.labels}>
-        {experience.map(({ icon, jobLink, key, now, startDate, text }) => (
-          <li key={key}>
-            <ExperienceLabel
-              icon={icon}
-              jobLink={jobLink ?? ''}
-              now={now ?? false}
-              startDate={startDate}
-              text={translationsLabel(text)}
-            />
-          </li>
-        ))}
-      </ul>
-      <Text>{translationsAbout('info')}</Text>
+      <Tools />
     </aside>
   );
 };

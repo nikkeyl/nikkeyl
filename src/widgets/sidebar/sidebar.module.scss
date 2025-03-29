@@ -1,14 +1,18 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  padding: var(--default-size, $default-size);
+  padding-block: var(--default-size, $default-size);
   border-block-end: to-rem(1) solid var(--color-accent, $color-accent);
 
   @media (width >= to-em(768)) {
-    padding: to-rem(30) var(--default-size, $default-size);
-    border-block-end: none;
+    padding-block: to-rem(30);
+    border-block-end: 0;
     border-inline-end: var(--default-border, $default-border);
   }
+}
+
+.inner {
+  padding-inline: var(--default-size, $default-size);
 }
 
 .avatar {
@@ -35,15 +39,15 @@
   gap: to-rem(5);
 
   &::before {
+    content: "";
+
     position: absolute;
     inset-block-end: 0;
     inset-inline-start: 0;
 
-    background-color: var(--color-accent, $color-accent);
-
-    content: "";
-
     block-size: 150%;
     inline-size: to-rem(2);
+
+    background-color: var(--color-accent, $color-accent);
   }
 }

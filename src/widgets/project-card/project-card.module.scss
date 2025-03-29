@@ -4,14 +4,14 @@
   transform: rotateX(15deg) rotateY(15deg) translateY(to-rem(-10))
     translateZ(to-rem(-10));
 
-  clip-path: polygon(90% 0, 100% 8.3%, 100% 100%, 10% 100%, 0 91.7%, 0 0);
-
   block-size: to-rem(350);
   max-inline-size: to-rem(290);
 
   display: flex;
 
   flex-wrap: nowrap;
+
+  clip-path: polygon(90% 0, 100% 8.3%, 100% 100%, 10% 100%, 0 91.7%, 0 0);
 
   transition: var(--default-transition, $default-transition);
   transition-property: transform, scale;
@@ -59,8 +59,6 @@
 .view {
   position: absolute;
 
-  background-color: var(--color-accent-rgb-20, $color-accent-rgb-20);
-
   padding-inline: var(--default-size, $default-size);
 
   block-size: 100%;
@@ -72,6 +70,8 @@
   flex-wrap: nowrap;
 
   align-items: center;
+
+  background-color: var(--color-accent-rgb-20, $color-accent-rgb-20);
 
   transition: opacity var(--default-transition, $default-transition);
 }

@@ -1,9 +1,9 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  clip-path: polygon(90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
   block-size: to-rem(200);
   inline-size: to-rem(200);
+  clip-path: polygon(90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
 
   &::after {
     inset-block-start: to-rem(-11);
