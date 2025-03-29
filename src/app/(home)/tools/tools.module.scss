@@ -1,8 +1,7 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  padding-block: var(--default-size, $default-size);
-  min-block-size: to-rem(170);
+  padding-block-start: var(--default-size, $default-size);
 }
 
 .title {

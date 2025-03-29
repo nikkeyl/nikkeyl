@@ -1,6 +1,6 @@
 @mixin pseudo {
-  position: absolute;
   content: "";
+  position: absolute;
 }
 
 @mixin media-hover($hover: hover, $pointer: fine) {

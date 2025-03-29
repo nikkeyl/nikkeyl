@@ -1,12 +1,6 @@
 @use "@/styles/abstracts" as *;
 
 .wrapper {
-  clip-path: polygon(95% 0, 100% 30%, 100% 100%, 5% 100%, 0 70%, 0 0);
-
-  background-color: var(--color-inverse, $color-inverse);
-
-  color: var(--color-primary, $color-primary);
-
   padding: to-rem(10);
 
   inline-size: 100%;
@@ -16,6 +10,12 @@
   flex-wrap: nowrap;
 
   justify-content: center;
+
+  clip-path: polygon(95% 0, 100% 30%, 100% 100%, 5% 100%, 0 70%, 0 0);
+
+  background-color: var(--color-inverse, $color-inverse);
+
+  color: var(--color-primary, $color-primary);
 
   font-size: to-rem(20);
   font-weight: 700;
