@@ -1,0 +1,16 @@
+{
+  "exclude": [
+    "archoleat.tsx",
+    "arrow.tsx",
+    "case.tsx",
+    "coin.tsx",
+    "de.json",
+    "en.json",
+    "github.tsx",
+    "ja.json",
+    "README.md",
+    "ru.json",
+    "telegram.tsx",
+    "terminal.tsx"
+  ]
+}

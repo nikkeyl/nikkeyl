@@ -1,0 +1,21 @@
+@use "functions" as *;
+
+// Main Colors
+$color-primary: #050a0e;
+$color-secondary: #fafafa;
+$color-highlight: #fcee09;
+$color-inverse: #00f0ff;
+$color-accent: #ff003c;
+
+// RGB Colors
+$color-accent-rgb-20: rgb(255 0 60 / 20%);
+
+// borders
+$default-border: to-rem(2) solid $color-accent;
+$dark-border: to-rem(2) solid $color-primary;
+
+// Sizes
+$default-size: to-rem(15);
+
+// Transitions
+$default-transition: 0.3s linear;

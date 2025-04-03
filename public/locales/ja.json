@@ -1,0 +1,43 @@
+{
+  "about": {
+    "info": "あなたのウェブサイトは、クロスブラウザ、アダプティブ、有効、セマンティック、アクセシブル、そして最適化されます！"
+  },
+  "arrows": {
+    "next": "次のスライド",
+    "previous": "前のスライド"
+  },
+  "buttons": {
+    "view": "表示"
+  },
+  "dates": {
+    "now": "- 今",
+    "month": "月",
+    "months": "月",
+    "year": "年",
+    "years": "年"
+  },
+  "labels": {
+    "commerce": "商業経験",
+    "development": "開発中",
+    "work": "勤務"
+  },
+  "customers": {
+    "alexey-mozgunov": {
+      "name":"アレクセイ モズグノフ",
+      "text":"nikkeylさんの迅速なサイト作成に感謝します。タスクは合意した期間内に完了しました。サイトは、現代のトレンドと要件に沿った軽くて質の高いものになりました。"
+    }
+  },
+  "text": {
+    "loading": "ロード..."
+  },
+  "tips": {
+    "commerce": "商業プロジェクト",
+    "github": "GitHubで公開",
+    "vercel": "Vercelに掲載"
+  },
+  "titles": {
+    "customers": "お客様",
+    "projects": "プロジェクト",
+    "tools": "ツール"
+  }
+}

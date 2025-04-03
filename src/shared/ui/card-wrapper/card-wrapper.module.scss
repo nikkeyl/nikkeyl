@@ -1,0 +1,16 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  position: relative;
+  border: var(--default-border, $default-border);
+  overflow: hidden;
+  background-color: var(--color-accent, $color-accent);
+
+  &::after {
+    @include pseudo;
+
+    z-index: 1;
+    transform: rotate(45deg);
+    border-block-end: var(--default-border, $default-border);
+  }
+}

@@ -1,0 +1,31 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--default-size, $default-size);
+
+  @include media-hover {
+    > ul {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.wrapper ul {
+  will-change: animation;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: var(--default-size, $default-size);
+
+  animation: marquee 50s linear infinite;
+
+  @keyframes marquee {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}

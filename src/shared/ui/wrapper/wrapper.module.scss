@@ -1,0 +1,10 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  block-size: 100svb;
+
+  @media (width >= to-em(768)) {
+    display: grid;
+    grid-template-columns: to-rem(320) 1fr;
+  }
+}

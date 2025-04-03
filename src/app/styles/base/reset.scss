@@ -1,0 +1,90 @@
+@use "@/styles/abstracts" as *;
+
+*,
+*::before,
+*::after {
+  user-select: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+html {
+  background-color: var(--color-primary, $color-primary);
+}
+
+body {
+  overscroll-behavior: none;
+  min-inline-size: to-rem(320);
+  font-size: to-rem(20);
+}
+
+section {
+  overflow: hidden;
+}
+
+img {
+  border-radius: inherit;
+
+  block-size: 100%;
+  inline-size: 100%;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+svg {
+  inline-size: to-rem(20);
+  block-size: to-rem(20);
+  flex: 0 0 to-rem(20);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  &:not(:disabled) {
+    @include media-hover {
+      background-color: var(--color-highlight, $color-highlight);
+
+      &:active {
+        scale: 0.9;
+        background-color: var(--color-accent, $color-accent);
+        color: var(--color-secondary, $color-secondary);
+      }
+    }
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+
+  display: block;
+  appearance: none;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition: var(--default-transition, $default-transition);
+  transition-property: background-color, scale, color;
+
+  &:focus-visible {
+    scale: 0.9;
+  }
+
+  &:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

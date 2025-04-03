@@ -1,0 +1,29 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  border-radius: 50%;
+
+  block-size: to-rem(40);
+  inline-size: to-rem(40);
+
+  overflow: hidden;
+
+  color: var(--color-inverse, $color-inverse);
+
+  transition: var(--default-transition, $default-transition);
+  transition-property: color, scale;
+
+  > svg {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
+  @include media-hover {
+    color: var(--color-highlight, $color-highlight);
+
+    &:active {
+      scale: 0.9;
+      color: var(--color-accent, $color-accent);
+    }
+  }
+}

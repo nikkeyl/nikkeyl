@@ -1,0 +1,53 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  padding-block: var(--default-size, $default-size);
+  border-block-end: to-rem(1) solid var(--color-accent, $color-accent);
+
+  @media (width >= to-em(768)) {
+    padding-block: to-rem(30);
+    border-block-end: 0;
+    border-inline-end: var(--default-border, $default-border);
+  }
+}
+
+.inner {
+  padding-inline: var(--default-size, $default-size);
+}
+
+.avatar {
+  margin-block-end: var(--default-size, $default-size);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: to-rem(30);
+
+  align-items: center;
+}
+
+.socials {
+  display: grid;
+  gap: var(--default-size, $default-size);
+}
+
+.labels {
+  position: relative;
+  margin-block-end: var(--default-size, $default-size);
+  display: grid;
+  gap: to-rem(5);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+
+    block-size: 150%;
+    inline-size: to-rem(2);
+
+    background-color: var(--color-accent, $color-accent);
+  }
+}

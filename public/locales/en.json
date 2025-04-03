@@ -1,0 +1,43 @@
+{
+  "about": {
+    "info": "Your website will be cross-browser, adaptive, valid, semantic, accessible and optimized!"
+  },
+  "arrows": {
+    "next": "Next Slide",
+    "previous": "Previous Slide"
+  },
+  "buttons": {
+    "view": "view"
+  },
+  "dates": {
+    "now": "- now",
+    "month": "month",
+    "months": "months",
+    "year": "year",
+    "years": "years"
+  },
+  "labels": {
+    "commerce": "commercial experience",
+    "development": "in development",
+    "work": "working in"
+  },
+  "customers": {
+    "alexey-mozgunov": {
+      "name":"Alexey Mozgunov",
+      "text":"Thanks to nikkeyl for the prompt creation of the site. The task was completed within the agreed time frame. The site turned out to be light and high-quality according to modern trends and requirements, which is important for it's SEO promotion."
+    }
+  },
+  "text": {
+    "loading": "Loading..."
+  },
+  "tips": {
+    "commerce": "Commercial Project",
+    "github": "Published on GitHub",
+    "vercel": "Published on Vercel"
+  },
+  "titles": {
+    "customers": "Customers",
+    "projects": "Projects",
+    "tools": "Tools"
+  }
+}

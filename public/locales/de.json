@@ -1,0 +1,43 @@
+{
+  "about": {
+    "info": "Ihre Website wird browserübergreifend, adaptiv, valide, semantisch, zugänglich und optimiert sein!"
+  },
+  "arrows": {
+    "next": "Nächstes Dia",
+    "previous": "Vorheriges Dia"
+  },
+  "buttons": {
+    "view": "Siehe"
+  },
+  "dates": {
+    "now": "- jetzt",
+    "month": "monat",
+    "months": "monate",
+    "year": "jahr",
+    "years": "jahre"
+  },
+  "labels": {
+    "commerce": "kommerzielle erfahrung",
+    "development": "in entwicklung",
+    "work": "arbeiten in"
+  },
+  "customers": {
+    "alexey-mozgunov": {
+      "name":"Alexej Mozgunow",
+      "text":"Vielen Dank an nikkeyl für die prompte Erstellung der Website. Die Aufgabe wurde innerhalb des vereinbarten Zeitrahmens abgeschlossen. Die Website ist leicht und qualitativ hochwertig und entspricht den modernen Trends und Anforderungen, was für die SEO-Förderung wichtig ist."
+    }
+  },
+  "text": {
+    "loading": "Laden..."
+  },
+  "tips": {
+    "commerce": "Kommerzielles Projekt",
+    "github": "Veröffentlicht auf GitHub",
+    "vercel": "Veröffentlicht auf Vercel"
+  },
+  "titles": {
+    "customers": "Kunden",
+    "projects": "Projekte",
+    "tools": "Werkzeuge"
+  }
+}

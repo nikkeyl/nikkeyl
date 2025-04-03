@@ -1,0 +1,29 @@
+@use "@/styles/abstracts" as *;
+
+.title {
+  font-weight: 700;
+}
+
+.h1,
+.h3 {
+  font-size: to-rem(20);
+}
+
+.h2 {
+  color: var(--color-highlight, $color-highlight);
+  font-size: to-rem(35);
+
+  @media (width >= to-em(768)) {
+    font-size: to-rem(40);
+  }
+}
+
+.vertical {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  text-orientation: upright;
+  text-wrap: nowrap;
+
+  writing-mode: vertical-lr;
+}

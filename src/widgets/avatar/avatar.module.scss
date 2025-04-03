@@ -1,0 +1,23 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  block-size: to-rem(200);
+  inline-size: to-rem(200);
+  clip-path: polygon(90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
+
+  &::after {
+    inset-block-start: to-rem(-11);
+    inset-inline-end: to-rem(-16);
+    block-size: to-rem(25);
+    inline-size: to-rem(30);
+  }
+
+  > img {
+    padding-inline-start: to-rem(20);
+  }
+}
+
+.title {
+  border-block-start: var(--dark-border, $dark-border);
+  inline-size: 100%;
+}

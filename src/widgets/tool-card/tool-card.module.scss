@@ -1,0 +1,52 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  max-block-size: to-rem(90);
+  max-inline-size: fit-content;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  clip-path: polygon(90% 0, 100% 12%, 100% 100%, 10% 100%, 0 88%, 0 0);
+
+  &::after {
+    inset-block-start: to-rem(-12);
+    inset-inline-end: to-rem(-24);
+    block-size: to-rem(25);
+    inline-size: to-rem(30);
+  }
+
+  @include media-hover {
+    img {
+      scale: 1.1;
+    }
+  }
+}
+
+.image {
+  padding: to-rem(5);
+
+  block-size: to-rem(90);
+  inline-size: to-rem(90);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-primary, $color-primary);
+
+  > img {
+    block-size: to-rem(60);
+    inline-size: to-rem(60);
+    transition: scale var(--default-transition, $default-transition);
+  }
+}
+
+.title {
+  border-block-start: var(--dark-border, $dark-border);
+  max-block-size: to-rem(90);
+}

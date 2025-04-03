@@ -1,0 +1,10 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  padding-block-start: var(--default-size, $default-size);
+}
+
+.title {
+  margin-block-end: var(--default-size, $default-size);
+  padding-inline: var(--default-size, $default-size);
+}

@@ -1,0 +1,47 @@
+@use "@/styles/abstracts" as *;
+
+.wrapper {
+  padding: var(--default-size, $default-size);
+}
+
+.head {
+  margin-block-end: var(--default-size, $default-size);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: to-rem(10);
+  align-items: center;
+}
+
+.button {
+  padding: to-rem(5);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0 0);
+
+  background-color: var(--color-inverse, $color-inverse);
+
+  color: var(--color-primary, $color-primary);
+
+  &.rotate {
+    rotate: 180deg;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--default-size, $default-size);
+
+  > li {
+    flex: 0 0 to-rem(280);
+  }
+}

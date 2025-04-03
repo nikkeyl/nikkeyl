@@ -1,0 +1,27 @@
+@use "@/styles/abstracts" as *;
+
+.text {
+  color: var(--color-accent, $color-accent);
+
+  a {
+    color: var(--color-inverse, $color-inverse);
+    transition: var(--default-transition, $default-transition);
+    transition-property: color, scale;
+
+    @include media-hover {
+      color: var(--color-highlight, $color-highlight);
+
+      &:active {
+        color: var(--color-accent, $color-accent);
+      }
+    }
+  }
+}
+
+.yellow {
+  color: var(--color-highlight, $color-inverse);
+
+  span {
+    color: var(--color-accent, $color-accent);
+  }
+}
