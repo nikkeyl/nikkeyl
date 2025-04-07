@@ -1,4 +1,4 @@
-<a href="https://nikkeyl.vercel.app" target="_blank">
+<a href="https://nikkeyl.vercel.app">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&duration=1500&pause=3000&color=FF003C&center=true&width=295&height=40&lines=Front+End+development+↗️" alt="Front End Development" />
 </a>
 
