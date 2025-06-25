@@ -24,12 +24,12 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@/config/*": ["./src/app/config/*"],
+      "@/config/*": ["./src/shared/config/*"],
       "@/helpers/*": ["./src/shared/helpers/*"],
       "@/icons/*": ["./src/shared/icons/*"],
       "@/mocks/*": ["./src/shared/mocks/*"],
       "@/socials/*": ["./public/socials/*"],
-      "@/styles/*": ["./src/app/styles/*"],
+      "@/styles/*": ["./src/shared/styles/*"],
       "@/types/*": ["./src/shared/types/*"],
       "@/ui/*": ["./src/shared/ui/*"],
       "@/widgets/*": ["./src/widgets/*"]
