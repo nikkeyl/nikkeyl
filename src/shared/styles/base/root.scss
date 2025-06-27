@@ -6,14 +6,10 @@
   --color-highlight: #{$color-highlight};
   --color-inverse: #{$color-inverse};
   --color-accent: #{$color-accent};
-
   --color-accent-rgb-20: #{$color-accent-rgb-20};
-
   --default-border: #{$default-border};
   --dark-border: #{$dark-border};
-
   --default-size: #{$default-size};
-
   --default-transition: #{$default-transition};
 
   color: var(--color-secondary, $color-secondary);
