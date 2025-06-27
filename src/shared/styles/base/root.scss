@@ -1,24 +1,19 @@
 @use "@/styles/abstracts" as *;
 
 :root {
-  // Main Colors
   --color-primary: #{$color-primary};
   --color-secondary: #{$color-secondary};
   --color-highlight: #{$color-highlight};
   --color-inverse: #{$color-inverse};
   --color-accent: #{$color-accent};
 
-  // RGB Color
   --color-accent-rgb-20: #{$color-accent-rgb-20};
 
-  // Borders
   --default-border: #{$default-border};
   --dark-border: #{$dark-border};
 
-  // Sizes
   --default-size: #{$default-size};
 
-  // Transitions
   --default-transition: #{$default-transition};
 
   color: var(--color-secondary, $color-secondary);
