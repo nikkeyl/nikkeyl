@@ -1,4 +1,4 @@
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&duration=1500&pause=3000&color=00CC6A&center=true&width=295&height=40&lines=Front+End+development" alt="Front End Development" />
+<img src="/public/images/about-me/nikkeyl.png" alt="nikkeyl" />
 
 ---
 
