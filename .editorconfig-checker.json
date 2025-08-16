@@ -10,6 +10,7 @@
     "ja.json",
     "README.md",
     "ru.json",
+    "semantic-pull-request-title.yaml",
     "telegram.tsx",
     "terminal.tsx"
   ]
