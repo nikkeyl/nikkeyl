@@ -1,6 +1,6 @@
 <img src="/public/images/about-me/nikkeyl.png" alt="nikkeyl" />
 
----
+----
 
 <img src="public/images/tools/javascript.svg" height="50" width="50" alt="JavaScript" title="JavaScript" />&nbsp;
 <img src="public/images/tools/typescript.svg" height="50" width="50" alt="TypeScript" title="TypeScript" />&nbsp;
