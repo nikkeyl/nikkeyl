@@ -30,6 +30,7 @@
 <img src="public/images/tools/mocha.svg" height="50" width="50" alt="Mocha" title="Mocha" />&nbsp;
 <img src="public/images/tools/playwright.svg" height="50" width="50" alt="PlayWright" title="PlayWright" />&nbsp;
 <img src="public/images/tools/vitest.svg" height="50" width="50" alt="Vitest" title="Vitest" />&nbsp;
+<img src="public/images/tools/cypress.svg" height="50" width="50" alt="Cypress" title="Cypress" />&nbsp;
 <img src="public/images/tools/editorconfig.svg" height="50" width="50" alt="Editorconfig" title="Editorconfig" />&nbsp;
 <img src="public/images/tools/prettier.svg" height="50" width="50" alt="Prettier" title="Prettier" />&nbsp;
 <img src="public/images/tools/eslint.svg" height="50" width="50" alt="ESLint" title="ESLint" />&nbsp;
