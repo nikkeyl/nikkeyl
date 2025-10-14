@@ -44,6 +44,7 @@
 <img src="public/images/tools/gitlab.svg" height="50" width="50" alt="GitLab" title="GitLab" />&nbsp;
 <img src="public/images/tools/vercel.svg" height="50" width="50" alt="Vercel" title="Vercel" />&nbsp;
 <img src="public/images/tools/directus.svg" height="50" width="50" alt="Directus" title="Directus" />&nbsp;
+<img src="public/images/tools/storybook.svg" height="50" width="50" alt="Storybook" title="Storybook" />&nbsp;
 <img src="public/images/tools/github-actions.svg" height="50" width="50" alt="GitHub actions" title="GitHub Actions" />&nbsp;
 <img src="public/images/tools/bem.svg" height="50" width="50" alt="BEM" title="BEM" />&nbsp;
 <img src="public/images/tools/browserslist.svg" height="50" width="50" alt="Browserslist" title="Browserslist" />&nbsp;
