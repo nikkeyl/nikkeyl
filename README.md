@@ -9,6 +9,7 @@
 <img src="public/images/tools/css.svg" height="50" width="50" alt="CSS3" title="CSS3" />&nbsp;
 <img src="public/images/tools/scss.svg" height="50" width="50" alt="SCSS" title="SCSS" />&nbsp;
 <img src="public/images/tools/tailwind.svg" height="50" width="50" alt="Tailwind" title="Tailwind" />&nbsp;
+<img src="public/images/tools/radix-ui.svg" height="50" width="50" alt="RadixUI" title="RadixUI" />&nbsp;
 <img src="public/images/tools/shadcn-ui.svg" height="50" width="50" alt="ShadcnUI" title="ShadcnUI" />&nbsp;
 <img src="public/images/tools/markdown.svg" height="50" width="50" alt="Markdown" title="Markdown" />&nbsp;
 <img src="public/images/tools/yaml.svg" height="50" width="50" alt="YAML" title="YAML" />&nbsp;
