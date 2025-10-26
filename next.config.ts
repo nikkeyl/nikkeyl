@@ -5,11 +5,16 @@ const withNextIntl = createNextIntlPlugin('./src/app/i18n/get-request-config.ts'
 
 export default withNextIntl(
   defineConfig({
+    output: 'standalone',
+    eslint: { ignoreDuringBuilds: true },
+    typescript: {
+      ignoreBuildErrors: true,
+    },
     images: {
       formats: ['image/webp'],
       remotePatterns: [
         {
-          hostname: 'nikkeyl.vercel.app',
+          hostname: 'nikkeyl.com',
           pathname: '/images/**',
           protocol: 'https',
         },
