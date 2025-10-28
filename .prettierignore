@@ -7,3 +7,4 @@ public
 # Ignores
 .gitignore
 .prettierignore
+.dockerignore
