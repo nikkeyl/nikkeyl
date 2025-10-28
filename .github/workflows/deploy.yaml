@@ -23,6 +23,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef
         with:
+          registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
@@ -37,7 +38,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.image.outputs.IMAGE_NAME }}:${{ steps.image.outputs.TAG }},${{ steps.image.outputs.IMAGE_NAME }}:latest
+          tags: ghcr.io/${{ steps.image.outputs.IMAGE_NAME }}:${{ steps.image.outputs.TAG }},${{ steps.image.outputs.IMAGE_NAME }}:latest
 
   deploy:
     name: Deploy
