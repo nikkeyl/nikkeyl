@@ -1,4 +1,1 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="50" height="50" rx="25" fill="black"/>
-<path d="M37 33.05H13L25 12L37 33.05Z" fill="white"/>
-</svg>
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol"><rect width="50" height="50" rx="25" fill="#000"/><path d="M37 33.05H13L25 12L37 33.05Z" fill="#fff"/></svg>
