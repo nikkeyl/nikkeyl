@@ -34,11 +34,17 @@
         inline-size: 100dvi;
         row-gap: 0.625rem;
         text-align: center;
-        padding: 1.25rem;
+        padding: 0.9375rem;
+      }
+
+      @media (width >= 48em) {
+        body {
+          padding: 1.25rem;
+        }
       }
 
       h1,
-      span {
+      p {
         line-height: 120%;
       }
 
@@ -52,13 +58,20 @@
       @media (width >= 48em) {
         h1 {
           font-size: 3rem;
+          line-height: 140%;
         }
       }
 
       p {
         font-family: "Noto Sans", sans-serif;
-        font-size: 1.25rem;
         font-weight: 600;
+        font-size: 1rem;
+      }
+
+      @media (width >= 48em) {
+        h1 {
+          font-size: 1.25rem;
+        }
       }
     </style>
   </head>
