@@ -1,4 +1,9 @@
-<img src="/about-me/nikkeyl.png" alt="nikkeyl" />
+<a href="https://nikkeyl.com" target="_blank">
+  <img src="/about-me/nikkeyl.png" alt="nikkeyl" />
+</a>
+<a href="https://github.com/archoleat" target="_blank">
+  <img src="https://github.com/archoleat/.github/blob/main/assets/label.jpg" alt="archoleat" width="100%" />
+</a>
 
 ---
 
