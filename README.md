@@ -41,3 +41,4 @@
 <img src="/tools/storybook.svg" height="50" width="50" alt="Storybook" title="Storybook" />&nbsp;
 <img src="/tools/github-actions.svg" height="50" width="50" alt="GitHub actions" title="GitHub Actions" />&nbsp;
 <img src="/tools/bem.svg" height="50" width="50" alt="BEM" title="BEM" />&nbsp;
+<img src="/tools/bash.svg" height="50" width="50" alt="Bash" title="Bash" />&nbsp;
