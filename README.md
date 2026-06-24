@@ -20,10 +20,6 @@
 <img src="/tools/bun.svg" height="50" width="50" alt="Bun" title="Bun" />&nbsp;
 <img src="/tools/node.svg" height="50" width="50" alt="NodeJS" title="NodeJS" />&nbsp;
 <img src="/tools/express.svg" height="50" width="50" alt="Express" title="Express" />&nbsp;
-<img src="/tools/nvm.svg" height="50" width="50" alt="NVM" title="NVM" />&nbsp;
-<img src="/tools/pnpm.svg" height="50" width="50" alt="PNPM" title="PNPM" />&nbsp;
-<img src="/tools/yarn.svg" height="50" width="50" alt="Yarn" title="Yarn" />&nbsp;
-<img src="/tools/npm.svg" height="50" width="50" alt="NPM" title="NPM" />&nbsp;
 <img src="/tools/vite.svg" height="50" width="50" alt="Vite" title="Vite" />&nbsp;
 <img src="/tools/rollup.svg" height="50" width="50" alt="Rollup" title="Rollup" />&nbsp;
 <img src="/tools/webpack.svg" height="50" width="50" alt="Webpack" title="Webpack" />&nbsp;
