@@ -7,6 +7,22 @@
 
 ---
 
+Frontend Developer specializing in **Next.js, TypeScript, and React**. I focus on web application development, database integration, and building scalable solutions.
+
+Throughout my career, I’ve focused on code quality and business value:
+
+- **Development and Architecture**: I build applications on Next.js—from the UI to server-side logic and database integrations. I developed a design system for batumi.estate.
+- **Open Source and Ecosystem**: I’ve created over 10 NPM packages, written frontend development standards, and founded the GitHub organization Archoleat.
+- **Mentoring and Code Review**: I conduct code reviews and guide junior developers in modern frontend practices.
+- **Automation**: I set up CI/CD and Docker and use AI tools so the team can focus on solving business problems rather than routine tasks.
+
+I adhere to clean code principles and ensure the accessibility and performance of user interfaces.
+
+**Stack**:
+Frontend: Next.js, React, TypeScript, Tailwind CSS
+
+---
+
 <img src="/tools/javascript.svg" height="50" width="50" alt="JavaScript" title="JavaScript" />&nbsp;
 <img src="/tools/typescript.svg" height="50" width="50" alt="TypeScript" title="TypeScript" />&nbsp;
 <img src="/tools/html.svg" height="50" width="50" alt="HTML5" title="HTML5" />&nbsp;
