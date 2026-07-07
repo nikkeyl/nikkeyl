@@ -53,3 +53,6 @@ Frontend: Next.js, React, TypeScript, Tailwind CSS
 <img src="/tools/storybook.svg" height="50" width="50" alt="Storybook" title="Storybook" />&nbsp;
 <img src="/tools/github-actions.svg" height="50" width="50" alt="GitHub actions" title="GitHub Actions" />&nbsp;
 <img src="/tools/bash.svg" height="50" width="50" alt="Bash" title="Bash" />&nbsp;
+<img src="/tools/nginx.svg" height="50" width="50" alt="Nginx" title="Nginx" />&nbsp;
+<img src="/tools/docker.svg" height="50" width="50" alt="Docker" title="Docker" />&nbsp;
+<img src="/tools/ubuntu.svg" height="50" width="50" alt="Ubuntu" title="Ubuntu" />&nbsp;
