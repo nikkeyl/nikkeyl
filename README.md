@@ -26,7 +26,6 @@ Frontend: Next.js, React, TypeScript, Tailwind CSS
 <img src="/tools/javascript.svg" height="50" width="50" alt="JavaScript" title="JavaScript" />&nbsp;
 <img src="/tools/typescript.svg" height="50" width="50" alt="TypeScript" title="TypeScript" />&nbsp;
 <img src="/tools/html.svg" height="50" width="50" alt="HTML5" title="HTML5" />&nbsp;
-<img src="/tools/pug.svg" height="50" width="50" alt="Pug" title="Pug" />&nbsp;
 <img src="/tools/css.svg" height="50" width="50" alt="CSS3" title="CSS3" />&nbsp;
 <img src="/tools/scss.svg" height="50" width="50" alt="SCSS" title="SCSS" />&nbsp;
 <img src="/tools/tailwind.svg" height="50" width="50" alt="Tailwind" title="Tailwind" />&nbsp;
@@ -35,7 +34,6 @@ Frontend: Next.js, React, TypeScript, Tailwind CSS
 <img src="/tools/markdown.svg" height="50" width="50" alt="Markdown" title="Markdown" />&nbsp;
 <img src="/tools/bun.svg" height="50" width="50" alt="Bun" title="Bun" />&nbsp;
 <img src="/tools/node.svg" height="50" width="50" alt="NodeJS" title="NodeJS" />&nbsp;
-<img src="/tools/express.svg" height="50" width="50" alt="Express" title="Express" />&nbsp;
 <img src="/tools/vite.svg" height="50" width="50" alt="Vite" title="Vite" />&nbsp;
 <img src="/tools/rollup.svg" height="50" width="50" alt="Rollup" title="Rollup" />&nbsp;
 <img src="/tools/webpack.svg" height="50" width="50" alt="Webpack" title="Webpack" />&nbsp;
