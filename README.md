@@ -4,22 +4,25 @@
 <a href="https://github.com/archoleat" target="_blank">
   <img src="https://github.com/archoleat/.github/blob/main/assets/label.jpg" alt="archoleat" width="100%" />
 </a>
+<img src="/assets/ghost-cyberbrain.png" alt="GHOST" width="100%" />
 
 ---
 
-Frontend Developer specializing in **Next.js, TypeScript, and React**. I focus on web application development, database integration, and building scalable solutions.
+Frontend Engineer working mainly with **TypeScript, React, and Next.js**. I build interfaces that remain understandable as products grow, with clear component boundaries, deliberate data flow, accessible interactions, and performance grounded in a solid understanding of the web platform.
 
-Throughout my career, I’ve focused on code quality and business value:
+I prefer predictable systems over clever abstractions. Code should live close to the responsibility it serves, data should be loaded where it is actually needed, and client-side behavior should be introduced only when interaction or browser APIs genuinely require it. I also pay attention to the states that are easy to overlook, including validation, loading, empty and error states, keyboard navigation, and mobile behavior.
 
-- **Development and Architecture**: I build applications on Next.js—from the UI to server-side logic and database integrations. I developed a design system for batumi.estate.
-- **Open Source and Ecosystem**: I’ve created over 10 NPM packages, written frontend development standards, and founded the GitHub organization Archoleat.
-- **Mentoring and Code Review**: I conduct code reviews and guide junior developers in modern frontend practices.
-- **Automation**: I set up CI/CD and Docker and use AI tools so the team can focus on solving business problems rather than routine tasks.
+Over the years, I have designed and developed interfaces for different kinds of products, including a design system for batumi.estate. I have also created more than ten NPM packages, written frontend development standards, and founded the Archoleat GitHub organization.
 
-I adhere to clean code principles and ensure the accessibility and performance of user interfaces.
+I write about React, frontend architecture, browser behavior, accessibility, performance, Git, and practical engineering on [nikkeyl.com](https://nikkeyl.com/en/articles). I also share smaller experiments, solutions, and reusable ideas through [GitHub Gists](https://gist.github.com/nikkeyl).
 
-**Stack**:
-Frontend: Next.js, React, TypeScript, Tailwind CSS
+### Special Projects
+
+One of my special projects is GHOST, a private engineering capability layer for AI coding agents. It translates practical development experience into reusable rules, knowledge, and skills that help agents make more consistent engineering decisions.
+
+I also work with CI/CD and Docker, participate in code reviews, mentor developers, and use AI tools as an amplifier for engineering thinking rather than a replacement for understanding.
+
+The tools I use most often include Next.js, React, TypeScript, and Tailwind CSS. Depending on the project, I also work with GraphQL, Directus, Payload CMS, Playwright, Vitest, Cypress, Docker, and GitHub Actions.
 
 ---
 
