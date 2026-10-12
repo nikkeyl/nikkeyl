@@ -1,5 +1,3 @@
-# nikkeyl
-
 Frontend Engineer focused on building maintainable web systems with **TypeScript**, **React**, and the **Web Platform**.
 
 I build frontend systems around **clear component boundaries**, **predictable data flow**, accessibility, performance, and long-term maintainability.
