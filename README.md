@@ -20,8 +20,3 @@ Frontend Engineer working with TypeScript, React and the Web Platform.
 
 - [Archoleat tooling](https://github.com/archoleat) and
   [npm packages](https://www.npmjs.com/~nikkeyl).
-
-## Files
-
-`README.md` is the GitHub profile page; `about-me/` and `assets/` hold images.
-This repository has no application runtime or build step.
