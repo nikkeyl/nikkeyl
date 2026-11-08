@@ -1,24 +1,30 @@
-Frontend Engineer working with TypeScript, React and the Web Platform.
+Frontend Engineer building web interfaces and frontend tooling with
+TypeScript and React.
 
-I build web interfaces and work on the structure behind them: component
-APIs, state ownership, data flow and the boundaries between UI and
-application logic. I prefer code whose behavior can be followed without
-tracing several layers of abstraction.
+My public work includes applications, shared tooling and engineering
+standards. I focus on component boundaries, predictable state and browser
+behavior.
 
-My work includes reusable UI components, design systems and developer
-tooling. I also write frontend standards and documentation to make
-implementation choices and maintenance easier to understand.
+## Projects and tooling
 
-Accessibility is part of how I design components, from HTML semantics to
-keyboard interaction and focus management. For performance work, I start
-with browser behavior and measured bottlenecks. JavaScript, CSS, rendering
-and HTTP help me decide where a framework fits and where the platform
-already provides what I need.
+- [Chillofi](https://github.com/nikkeyl/chillofi): a Next.js lo-fi player
+  with Web Audio volume control and switchable backgrounds.
 
-## Writing and tooling
+- [Stylelint SCSS config](https://github.com/archoleat/stylelint-config-extended-scss):
+  shared SCSS linting rules with property sorting.
 
-- [Articles](https://nikkeyl.com/en/articles) and
-  [frontend standards](https://nikkeyl.com/en/articles/standards)
+- [Reglib](https://github.com/archoleat/reglib): regular expressions for
+  reuse across JavaScript and TypeScript projects.
 
-- [Archoleat](https://github.com/archoleat) and
-  [npm packages](https://www.npmjs.com/~nikkeyl)
+## How I work
+
+I prefer explicit state ownership and component APIs that make their
+behavior clear to the caller. Accessibility starts with HTML semantics,
+keyboard interaction and focus management. For performance work, I look for
+the bottleneck before choosing an optimization.
+
+## Writing
+
+My [frontend standards](https://nikkeyl.com/en/articles/standards) document
+implementation conventions and the reasoning behind them. More writing is in
+[articles](https://nikkeyl.com/en/articles).
