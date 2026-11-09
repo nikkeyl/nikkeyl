@@ -1,9 +1,10 @@
 Frontend Engineer building web interfaces and frontend tooling with
 TypeScript and React.
 
-My public work includes applications, shared tooling and engineering
-standards. I focus on component boundaries, predictable state and browser
-behavior.
+I maintain [Archoleat](https://github.com/archoleat), where I publish frontend
+tooling, shared configurations and project templates. My public work includes
+applications and engineering standards. I focus on component boundaries,
+predictable state and browser behavior.
 
 ## Projects and tooling
 
@@ -13,8 +14,8 @@ behavior.
 - [Stylelint SCSS config](https://github.com/archoleat/stylelint-config-extended-scss):
   shared SCSS linting rules with property sorting.
 
-- [Reglib](https://github.com/archoleat/reglib): regular expressions for
-  reuse across JavaScript and TypeScript projects.
+- [Next Accordion](https://github.com/archoleat/next-accordion): an accordion
+  component for React and Next.js with a composable API.
 
 ## How I work
 
